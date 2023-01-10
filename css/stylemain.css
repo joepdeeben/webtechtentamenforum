@@ -1,0 +1,27 @@
+html {
+    background-color: white;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+#dothis {
+    color: black;
+    font-size: 80px;
+    margin: 20px;
+    text-align: left;
+}
