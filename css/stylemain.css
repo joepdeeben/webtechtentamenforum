@@ -9,12 +9,12 @@
 :root{
     --bg-color: #222372;
     --text-color: white;
-    --main-color: #29fd53
+    --main-color: #29fd53;
 }
 
 body{
-    min-height: 100vh;
-    background: var(--bg-color);
+    min-height: 200vh;
+    background:white;
     color: var(--text-color);
     overflow: hidden;
 }
@@ -28,9 +28,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: var(--bg-color);
     /* padding: 28px 12%; */
     transition: all .5s ease;
+    height:100px;
    
 }
 button {
@@ -55,17 +56,19 @@ button:hover {
     margin: 20px;
     text-align: left;
 }
-
+/* header is hier onder */
 .logo{
     display: flex;
     align-items: center;
+    padding-left: 5%;
+    size: 10em;
     
 }
 
 .logo i{
-    color: white;
-    font: 28px;
-    margin-right: 3px;
+    color: var(--text-color);
+    font-size: 28px;
+    margin-right: 7px;x;
 }
 .logo span{
     color:var(--text-color);
@@ -75,6 +78,7 @@ button:hover {
 
 .navigatie{
     display: flex;
+   
 }
 .navigatie a{
     color: var(--text-color);
@@ -104,7 +108,9 @@ button:hover {
     font-weight: 500;
     transition: all .50s ease;
 }
-
+.inbox i{
+    color: green
+}
 .user{
     display: flex;
     align-items: center;
@@ -145,7 +151,7 @@ button:hover {
         right: -100%;
         width: 270px;
         height: 29vh;
-        background: var(--main-color);
+        background: var(--bg-color);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -169,3 +175,4 @@ button:hover {
         right: 2%
     }
 }
+/* einde header */
