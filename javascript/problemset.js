@@ -17,9 +17,11 @@ var answers = [
 function checkans(){
           var value = document.getElementById("numb").value;
           if (value == answers[randOptionNum]) {
-              window.alert("correct!");
+              document.getElementById("feedback").innerHTML = "correct!";
+              document.getElementById("feedback").innerHTML.style.color = "green";
            } else {
-              window.alert("try again");
+              document.getElementById("feedback").innerHTML = "try again!";
+              document.getElementById("feedback").innerHTML.style.color = "red";
            }
          };
 
