@@ -1,0 +1,87 @@
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+:root{
+    --bg-color: #222372;
+    --text-color: white;
+    --main-color: #29fd53
+}
+
+
+body{
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+
+#dothis {
+    color: white;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+#numb {
+    width: 33%;
+    border: 2px green;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    color: black;
+}
+
+#feedback {
+    color: white;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+#showanswer {
+    visibility: hidden;
+}
+
+#ans {
+    color: white;
+    font: sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+.opgave_form {
+    margin-top: 100px;
+
+
+
+
+}
+button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    background-color: green;
+    border: 2px white;
+    border-radius: 4px;
+    color: white;
+
+
+}
+
+button:hover {
+    background-color: white;
+    color: green;
+}
+
