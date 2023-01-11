@@ -20,7 +20,7 @@ function checkans(){
               document.getElementById("feedback").innerHTML = "correct!";
            } else {
               document.getElementById("feedback").innerHTML = "try again!";
-              document.getElementById("showanswer").style.visibility = visible;
+              document.getElementById("showanswer").style.visibility = "visible";
 
            }
          };
@@ -36,6 +36,7 @@ function randprob(){
          window.randOptionNum = Math.floor(Math.random() * questions.length);
          document.getElementById("dothis").innerHTML = '';
          document.getElementById("dothis").innerHTML = questions[randOptionNum];
+         document.getElementById("showanswer").style.visibility = "hidden";
 
 
 };
