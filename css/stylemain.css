@@ -1,4 +1,5 @@
 * {
+
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -271,4 +272,14 @@ footer {
 }
 .uva{
     margin-left: 10px;
+}
+.achtergrond{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.test-div{
+    color: red;
+    background-color: green;
 }
