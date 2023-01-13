@@ -12,6 +12,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    overflow:hidden;
 
 }
 .header{
