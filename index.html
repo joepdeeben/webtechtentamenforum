@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="javascript/formopen.js"></script>
     <link rel="stylesheet" href="css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -15,7 +16,11 @@
 
 <body>
   <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-<button onclick="FormJarenOpen();">hoi</button>
+
+  <div class="test-div" id="testid">
+    Home
+  </div>
+  
   <form style='visibility:collapse' id="formjaren" class="jarencheckbox" style="text-align:center">
     <input type="radio" id="jaar1" name="jaren" value="Jaar1">
     <label for="jaar1">Jaar 1</label><br>
@@ -25,9 +30,7 @@
     <label for="jaar3">Jaar 3</label>
   </form>
 
-    <div class="test-div" id="testid">
-      Home
-    </div>
+
     
   
 
