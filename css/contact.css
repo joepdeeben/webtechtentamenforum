@@ -1,0 +1,116 @@
+:root{
+    --bg-color: #304ba3;
+    --text-color: white;
+    --main-color: #29fd53;
+    --hover-color: #8bced7;
+    --background-color: rgba(212, 225, 226, 0.937);
+    --div-color: #a9dce3;
+}
+
+*{
+    background-color:var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+.header{
+    background: var(--bg-color);
+    position: relative;
+    width: 101%;
+    left: -10px;
+    right: 0;
+    top:-10px;
+    height: 30px;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+.person{
+    background: var(--div-color);
+    float: left;
+    padding-left: 1%;
+    margin: 20px;
+    width: 30%;
+    min-height: 250px;
+    max-height: fit-content;
+    min-width: 400px;
+    border-radius: 20px;
+}
+.person-name{
+    background-color: transparent;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 20%;
+    float: right;
+}
+.person-names{
+   margin-right: 35%;
+   background: transparent;
+   float: right;
+   padding-top: 20px;
+   text-align: center;
+}
+.person-names p{
+    background: transparent;
+}
+.person-names p:hover{
+    color: gray;
+    transition: .5s ease;
+}
+.person-name i{
+    background-color: transparent;
+}
+.user-image{
+    background-color: transparent;
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.user-image-image{
+    width: 80%;
+    background-color: var(--main-color);
+    border-radius: 100px;
+    max-width: 130px;
+}
+.user-image-image:hover{
+    width: 85%;
+    transition: .5s ease;
+    cursor: grab;
+}
+.contact-info{
+    padding-top: 30%;
+    background:transparent;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 50px;
+    
+}
+.contact-info a{
+    background-color: transparent;
+    color: black;
+}
+.contact-info a:hover{
+    color: rgb(113, 115, 116);
+    font-size: larger;
+    transition: .5s ease;
+}
+
+button
+{
+  height:30px;
+  width:150px;
+  border-radius:8px;
+  padding:10px;
+  font-size:20px;
+  font-family: 'Oswald', sans-serif;
+  height:52px;
+  cursor:pointer;
+  background-color:wheat;
+}
+.person:hover{
+    transition: .5s;
+    background: var(--hover-color);
+    
+}
