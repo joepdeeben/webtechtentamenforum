@@ -15,13 +15,37 @@
 
 <body>
     <header>
-        <a href="#" class="logo"><i class="ri-home-line"></i><span>Home</span></a>
+        <a href="#" class="logo"><img src="images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button" onclick="document.getElementById('testid').innerHTML = 'Home'">Home</button></span></a>
             
 
         <ul class="navigatie">
-            <li class="dropdown"><a href="#">Vakken</a></li>
-            <li><a href="#">Stel je vraag</a></li>
-            <li><a href="#">Submit een opgave</a></li>
+            
+            <div class="dropdown">
+              <button class="dropbtn">Vakken</button>
+              <div class="dropdown-content">
+                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Jaar 1'">Jaar 1</button></a>
+                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Jaar 2'">Jaar 2</button></a>
+                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Jaar 3'">Jaar 3</button></a>
+              </div>
+            </div>
+            
+            <div class="dropdown">
+              <button class="dropbtn" onclick="document.getElementById('testid').innerHTML = 'Stel je vraag'">Stel je vraag</button>
+              <div class="dropdown-content">
+                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
+                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
+              </div>
+              
+            </div>
+            <div class="dropdown">
+            <button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button>
+            <div class="dropdown-content">
+              <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
+              <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
+            </div>
+            
+          </div>
+            
         </ul>
 
             <div class="main">
@@ -32,9 +56,10 @@
             <script type="text/javascript" src="javascript/scriptnav.js"></script>
     
     </header>
-    
-   
-<div class="test"> testetst</div>
+    <img class="achtergrond" src="images/uva-logo2.png" >
+    <div class="test-div" id="testid">
+      Home
+    </div>
 <footer>
     <div class="people-info">
       <h3>Ons Team</h3>
@@ -50,9 +75,9 @@
       <h3>Contact: ki37-webtech@group.uva.nl</h3>
 
     </div>
-    <div class="button">
-      <a href="https://example.com">Druk hier voor meer informatie</a>
+    <div class="more-info">
+      <h3><a href="https://example.com">Druk hier voor meer informatie</a></h3>
     </div>
-  </footer>>
+  </footer>
 </body>
 </html>
