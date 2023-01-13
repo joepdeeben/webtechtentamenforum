@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="javascript/formopen.js"></script>
     <link rel="stylesheet" href="css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -14,70 +15,25 @@
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo"><img src="images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button" onclick="document.getElementById('testid').innerHTML = 'Home'">Home</button></span></a>
-            
+  <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
-        <ul class="navigatie">
-            
-            <div class="dropdown">
-              <button class="dropbtn">Vakken</button>
-              <div class="dropdown-content">
-                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Jaar 1'">Jaar 1</button></a>
-                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Jaar 2'">Jaar 2</button></a>
-                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Jaar 3'">Jaar 3</button></a>
-              </div>
-            </div>
-            
-            <div class="dropdown">
-              <button class="dropbtn" onclick="document.getElementById('testid').innerHTML = 'Stel je vraag'">Stel je vraag</button>
-              <div class="dropdown-content">
-                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
-                <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
-              </div>
-              
-            </div>
-            <div class="dropdown">
-            <button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button>
-            <div class="dropdown-content">
-              <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
-              <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
-            </div>
-            
-          </div>
-            
-        </ul>
+  <div class="test-div" id="testid">
+    Home
+  </div>
+  
+  <form style='visibility:collapse' id="formjaren" class="jarencheckbox" style="text-align:center">
+    <input type="radio" id="jaar1" name="jaren" value="Jaar1">
+    <label for="jaar1">Jaar 1</label><br>
+    <input type="radio" id="jaar2" name="jaren" value="Jaar2">
+    <label for="jaar1">Jaar 2</label><br>
+    <input type="radio" id="jaar3" name="jaren" value="Jaar3">
+    <label for="jaar3">Jaar 3</label>
+  </form>
 
-            <div class="main">
-                <li><a href="#" class="user"><i class="ri-inbox-line"></i>Inbox</a></a></li>
-                <li><a href="#" class="user"><i class="ri-user-3-line"></i>Account</a></li>
-                <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
-            <script type="text/javascript" src="javascript/scriptnav.js"></script>
+
     
-    </header>
-    <img class="achtergrond" src="images/uva-logo2.png" >
-    <div class="test-div" id="testid">
-      Home
-    </div>
-<footer>
-    <div class="people-info">
-      <h3>Ons Team</h3>
-      
-        
-          <h4>Olivier Stam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surja Sarker</h4>
-          <h4>Mark Broerse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joep Deeben</h4><h4>Florian van Daleboudt</h4>
-          
-        
-       
-    </div>
-    <div class="contact-info">
-      <h3>Contact: ki37-webtech@group.uva.nl</h3>
+  
 
-    </div>
-    <div class="more-info">
-      <h3><a href="https://example.com">Druk hier voor meer informatie</a></h3>
-    </div>
-  </footer>
+  <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 </body>
 </html>
