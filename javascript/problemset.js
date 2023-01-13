@@ -1,7 +1,7 @@
 var questions = [
                 '2 + 5',
                 '2y + 4 = 0',
-                'x(x+1)',
+                'zet in de cnv: \n (p →q) → ¬r',
                 '10 - 5'
 
 ];
@@ -9,7 +9,7 @@ var questions = [
 var answers = [
                 '7',
                 'y = -2',
-                'x² + x',
+                '(p ∨ ¬r) ∧ (¬q ∨ ¬r)',
                 '5'
 
 ];
@@ -37,6 +37,8 @@ function randprob(){
          document.getElementById("dothis").innerHTML = '';
          document.getElementById("dothis").innerHTML = questions[randOptionNum];
          document.getElementById("showanswer").style.visibility = "hidden";
+         document.getElementById("ans").innerHTML = "";
+         document.getElementById("feedback").innerHTML = "";
 
 
 };

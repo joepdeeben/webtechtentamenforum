@@ -1,28 +1,14 @@
-* {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-}
-
-:root{
-    --bg-color: #222372;
-    --text-color: white;
-    --main-color: #29fd53
-}
-
 
 body{
     min-height: 100vh;
-    background: var(--bg-color);
+    background-color: white;
     color: var(--text-color);
     overflow: hidden;
 }
 
 
 #dothis {
-    color: white;
+    color: black;
     font: sans-serif;
     font-size: 40px;
     margin: 20px;
@@ -39,7 +25,7 @@ body{
 }
 
 #feedback {
-    color: white;
+    color: black;
     font: sans-serif;
     font-size: 40px;
     margin: 20px;
@@ -51,7 +37,7 @@ body{
 }
 
 #ans {
-    color: white;
+    color: black;
     font: sans-serif;
     font-size: 40px;
     margin: 20px;
@@ -59,7 +45,7 @@ body{
 }
 
 .opgave_form {
-    margin-top: 100px;
+    margin-top: 20px;
 
 
 
@@ -72,7 +58,7 @@ button {
     margin: auto;
     padding: 20px;
     width: 200px;
-    background-color: green;
+    background-color: #2F97A2;
     border: 2px white;
     border-radius: 4px;
     color: white;
