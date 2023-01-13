@@ -300,4 +300,11 @@ footer {
   border: none;
   min-width: 250px;
 }
+.jarencheckbox {
+color: black;
+font-size: 40px;
+width: 400px;
+background-color: red;
+padding-top: 20px;
+}
   
