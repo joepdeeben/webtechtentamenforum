@@ -15,11 +15,21 @@
 
 <body>
   <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-  
-    <img class="achtergrond" src="images/uva-logo2.png" >
+
+  <form class="jarencheckbox" style="text-align:center">
+    <input type="radio" id="jaar1" name="jaren" value="Jaar1">
+    <label for="jaar1">Jaar 1</label><br>
+    <input type="radio" id="jaar2" name="jaren" value="Jaar2">
+    <label for="jaar1">Jaar 2</label><br>
+    <input type="radio" id="jaar3" name="jaren" value="Jaar3">
+    <label for="jaar3">Jaar 3</label>
+  </form>
+    
     <div class="test-div" id="testid">
       Home
     </div>
+    
+  
 
   <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 </body>
