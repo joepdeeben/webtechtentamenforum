@@ -130,7 +130,7 @@ button
 }
 
 /* form */
-/* Form styling */
+
 form {
     margin: 10px auto;
     width: 80%;
@@ -138,7 +138,7 @@ form {
     border-radius: 10px;
   }
   
-  /* Input and label styling */
+
   label, input, textarea {
     display: block;
     margin: 10px 0;
@@ -156,7 +156,7 @@ form {
     border-radius: 5px;
   }
   
-  /* Submit button styling */
+
   input[type="submit"] {
     background: var(--bg-color);
     color: #fff;
