@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <section class="informatie">
     <div class="header"> Contact pagina</div>
         <div class="person">
             
@@ -132,12 +133,21 @@
         <br> Telefoon:&nbsp020 525 4410
     </div>
 </div>
+</section>
+<form action="mailto:olivier.stam@icloud.com" method="post" enctype="text/plain">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="jouw@email.com" required>
+    <br>
+    <label for="subject">Onderwerp:</label>
+    <input type="text" id="subject" name="subject" placeholder="Bug, probleem..." required>
+    <br>
+    <label for="message">Bericht:</label>
+    <textarea id="message" name="message" placeholder="Typ hier uw bericht" required></textarea>
+    <br>
+    <input type="submit" value="Stuur de mail naar ons team" onClick="alert('Dank voor de feedback!');">
+  </form>
 </body>
 
- <!-- 020 525 1400
-                        020 525 9111
-                        020 525 9110
-                        020 525 4410
-                    -->
+
 
 </html>
