@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
-    <title>Homepage</title>
+    <title>Vakken</title>
 
 </head>
 
@@ -18,8 +18,25 @@
   <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
   <div class="test-div" id="testid">
-    Home
-  </div>   
+    Vakken
+  </div>
+  
+  <div id="selectiejaren" style="color:red">
+    Selecteer hier in welk jaar je zit
+
+  </div>
+
+  <form id="formjaren" class="jarencheckbox" style="text-align:center">
+    <input type="radio" id="jaar1" name="jaren" value="Jaar1"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
+    <label for="jaar1">Jaar 1</label><br>
+    <input type="radio" id="jaar2" name="jaren" value="Jaar2"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
+    <label for="jaar1">Jaar 2</label><br>
+    <input type="radio" id="jaar3" name="jaren" value="Jaar3"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
+    <label for="jaar3">Jaar 3</label>
+  </form>
+
+
+    
   
 
   <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
