@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="up to date">
+      <change beforePath="$PROJECT_DIR$/css/stylerandomproblem.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylerandomproblem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/problemset.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/problemset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomproblem.html" beforeDir="false" afterPath="$PROJECT_DIR$/randomproblem.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="randomproblem" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="randomproblem" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2K8crZFLdb3lOY88xlDRJmq1IXZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/javascript" />
+      <recent name="$PROJECT_DIR$/css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="" />
+      <created>1673359849723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673359849723</updated>
+    </task>
+    <task id="LOCAL-00001" summary="css map">
+      <created>1673360503766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673360503766</updated>
+    </task>
+    <task id="LOCAL-00002" summary="hallo weg">
+      <created>1673360747232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673360747232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1673360848896</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673360848896</updated>
+    </task>
+    <task id="LOCAL-00004" summary="heeft nu een pagina die een willekeurig probleem geeft bij klikken op de knop.">
+      <created>1673365238333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673365238333</updated>
+    </task>
+    <task id="LOCAL-00005" summary="kan nu antwoorden checken">
+      <created>1673368949997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673368949997</updated>
+    </task>
+    <task id="LOCAL-00006" summary="css style aangepast">
+      <created>1673437615206</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673437615206</updated>
+    </task>
+    <task id="LOCAL-00007" summary="up to date">
+      <created>1673603771643</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673603771643</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="css map" />
+    <MESSAGE value="hallo weg" />
+    <MESSAGE value="test" />
+    <MESSAGE value="heeft nu een pagina die een willekeurig probleem geeft bij klikken op de knop." />
+    <MESSAGE value="kan nu antwoorden checken" />
+    <MESSAGE value="css style aangepast" />
+    <MESSAGE value="up to date" />
+    <option name="LAST_COMMIT_MESSAGE" value="up to date" />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+</project>
