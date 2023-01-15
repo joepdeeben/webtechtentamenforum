@@ -134,18 +134,45 @@
     </div>
 </div>
 </section>
-<form action="mailto:olivier.stam@icloud.com" method="post" enctype="text/plain">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="jouw@email.com" required>
+<form>
+    <!-- <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="jouw@email.com" required> -->
     <br>
+    <label for="recipient-select">Selecteer de ontvanger:</label>
+        <select id="recipient-select" name="recipient">
+            <option value="ki37_webtech@group.uva.nl">Ons team</option>
+            <option value="surja.sarker@student.uva.nl">Surja Sarker</option>
+            <option value="mark.broerse@student.uva.nl">Mark Broerse</option>
+            <option value="olivier.stam@student.uva.nl">Olivier Stam</option>
+            <option value="joep.deeben@student.uva.nl">Joep Deeben</option>
+            <option value="florian.v.daleboudt@student.uva.nl">Florian van Daleboudt</option>
+        </select>
     <label for="subject">Onderwerp:</label>
     <input type="text" id="subject" name="subject" placeholder="Bug, probleem..." required>
     <br>
     <label for="message">Bericht:</label>
     <textarea id="message" name="message" placeholder="Typ hier uw bericht" required></textarea>
     <br>
-    <input type="submit" value="Stuur de mail naar ons team" onClick="alert('Dank voor de feedback!');">
-  </form>
+    <a id="email-link" href="#" onClick="alert('Dank voor de feedback!')">Stuur de mail naar ons team</a>
+</form>
+
+<script>
+    var select = document.getElementById("recipient-select");
+    var emailLink = document.getElementById("email-link");
+    var subject = document.getElementById("subject");
+    var message = document.getElementById("message");
+    select.addEventListener("change", function() {
+        emailLink.href = "mailto:" + select.value + "?cc=ki37_webtech@group.uva.nl&subject=" + subject.value + "&body=" + message.value;
+    });
+    subject.addEventListener("input", function() {
+        emailLink.href = "mailto:" + select.value + "?cc=ki37_webtech@group.uva.nl&subject=" + subject.value + "&body=" + message.value;
+    });
+    message.addEventListener("input", function() {
+        emailLink.href = "mailto:" + select.value + "?cc=ki37_webtech@group.uva.nl&subject=" + subject.value + "&body=" + message.value;
+    });
+</script>
+
+
 </body>
 
 
