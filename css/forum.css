@@ -6,6 +6,23 @@ main{
     overflow: hidden;
 }
 
+.forum-threads {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+}
+
+.vakken ul li {
+    border: 1px solid #000;
+    padding: 10px;
+    display: inline-block;
+}
+.vakken ul {
+    text-align:center;
+}
+.vakken {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+}
 a {
     color: blue;
 }
