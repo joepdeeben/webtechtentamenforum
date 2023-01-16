@@ -307,4 +307,57 @@ width: 400px;
 background-color: red;
 padding-top: 20px;
 }
-  
+.submitdiv{
+   
+height: 650px;
+border: 2px solid #304ba3;
+overflow: auto;
+}
+.headline{
+color: black;
+margin-left: 10%;
+}
+.titelvraagdiv{
+    height: 30%;
+    width: 80%;
+    align-self: center;
+border: 1px solid #000000;
+border-radius: 25px;
+margin: 3%;
+}
+.vraagdiv{
+    height: 60%;
+    width: 80%;
+    align-self: center;
+border: 1px solid #000000;
+border-radius: 25px;
+margin: 3%;
+}
+.titelvraagtext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+.titelvraagtextdiv{
+    height: 20%;
+    margin-top: 1%;
+    margin: 2%
+}
+.titelvraaginvuldiv{
+    height: 60%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.vraagtext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+.vraagtextdiv{
+    height: 20%;
+    margin: 1%
+}
+.vraaginvuldiv{
+    height: 60%;
+    margin-left: 2%;
+}

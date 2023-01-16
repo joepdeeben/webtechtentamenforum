@@ -149,15 +149,17 @@ form {
     font-weight: bold;
   }
   
-  input, textarea {
+  input, textarea, select, option, a {
     width: 100%;
     padding: 10px;
     border: 2px solid var(--bg-color);
     border-radius: 5px;
   }
-  
+  select, option{
+    width: 12%;
+  }
 
-  input[type="submit"] {
+  input[type="submit"], a {
     background: var(--bg-color);
     color: #fff;
     padding: 10px 20px;
