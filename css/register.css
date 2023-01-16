@@ -70,3 +70,9 @@ form {
     background-color: #8bced7;
   }
   
+  input[type="submit"]:active {
+    background-color: #8bced7;
+  }
+  
+
+  
