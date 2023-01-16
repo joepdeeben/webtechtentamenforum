@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="up to date">
-      <change beforePath="$PROJECT_DIR$/css/stylerandomproblem.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylerandomproblem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/problemset.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/problemset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomproblem.html" beforeDir="false" afterPath="$PROJECT_DIR$/randomproblem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/forum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum.html" beforeDir="false" afterPath="$PROJECT_DIR$/forum.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="randomproblem" />
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -37,6 +37,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2K8crZFLdb3lOY88xlDRJmq1IXZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
