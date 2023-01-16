@@ -18,34 +18,24 @@
 <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>   
 
 
-<div class="submitdiv" >
-    <h1 class="headline">Stel een vraag over een vak</h1>
-    <div class="titelvraagdiv">
-        <div class="titelvraagtextdiv">
-
-            <a class="titelvraagtext"> Wat is de titel van uw vraag </a>
+<div class="logindiv" >
+    <div class="logintextdiv">
+        <h1 class="logintext">KI Forum</h1>
+    </div>
+    <div class="usernamediv">
+        <input type="text" id="logingebruikersnaam" name="gebruikersnaam" placeholder="gebruikersnaam"><br>
         </div>
-        <div class="titelvraaginvuldiv">
-            <input type="text" id="titelvraag" name="vraagnaam" value="hier de titel van uw vraag"><br>
+    <div class="wachtwoorddiv">
+        <input type="password" id="loginwachtwoord" name="wachtwoord" placeholder="wachtwoord"><br>
         </div>
-
+    <div class="loginbuttondiv">
+        <button class="loginbutton" type="submit">Log in</button>
+        </div> 
+    <div class="registeraanraaddiv">
+        <a href="regestratie.html" class="registeraanraadtext">Nog geen account? registreer je nu!</a>
+        </div>   
     </div>
-    <div class="vraagdiv">
-        <div class="vraagtextdiv">
-
-            <a class="vraagtext"> Wat is uw volledige vraag? </a>
-        </div>
-        <div class="vraaginvuldiv">
-                <textarea id="vraagvolledig" name="vraagcontent" rows="9" cols="60">vul hier uw volledig geformuleerde vraag in</textarea>
-    </div>
-   
-
-    </div>
-    <div class="submitbuttondiv">
-        <button class="submitbutton">submit</button>
-    </div>
-</div>  
-
+    
 
 <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>   
 
