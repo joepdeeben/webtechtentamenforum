@@ -1,7 +1,7 @@
 var questions = [
                 '2 + 5',
                 '2y + 4 = 0',
-                'zet in de cnv: \n (p →q) → ¬r',
+                'zet in de cnv: (p →q) → ¬r',
                 '10 - 5'
 
 ];
