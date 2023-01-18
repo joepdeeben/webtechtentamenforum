@@ -36,7 +36,7 @@ header{
     height:80px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-   
+    
     
 
 }
@@ -265,10 +265,66 @@ footer {
     justify-content: center;
     position: relative;
 }
-.test-div{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 41, 128);
-    font-size: 100px;
+.main-div-head{
+    margin-left:10%;
+    margin-top: 1%;
+    color: var(--bg-color);
+    font-size:30px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+}
+.main-div{
+    margin-left: 5%;
+    margin-top: 1%;
+    color: var(--bg-color);
+    font-size:20px;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content:space-between
+}
+.inmain, .inmain-mid {
+    transform:
+      perspective(800px)
+      rotateX(-1deg);
+    transition: transform 1s ease 0s;
+    border-radius: 4px;
+    box-shadow:
+      rgba(0, 0, 0, 0.149) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+      rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+      rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+.inmain:hover, .inmain-mid:hover {
+      transform: perspective(800px) rotateY(-4deg);
+    }
+  
+.inmain{
+    padding: 10px;
+    border: 3px solid var(--bg-color);
+    width: 25%;
+}
+.inmain-mid{
+    padding: 10px;
+    border: 3px solid var(--bg-color);
+    width: 40%;
+}
+.titel-main{
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+.message-main{
+    font-weight: 300;
+    font-size: 1em;
+}
+.titel {
+    color: var(--bg-color);
 }
 .homebtn {
     background-color: var(--bg-color);
@@ -347,12 +403,19 @@ margin: 3%;
     height: 60%;
     margin-left: 2%;
 }
+
+
 .logindiv{
-   width: 40%;
+    width: 40%;
     height: 650px;
-    border: 2px solid #304ba3;
+    border: 3px solid var(--bg-color);
     margin-left: 30%;
+    margin-top: 2%;
+    border-radius: 7px;
     }
+.logindiv:hover{
+    border-radius: 10px;
+}
 .logintextdiv{
     height: 20%;
     width: 50%;
@@ -368,9 +431,10 @@ margin: 3%;
     margin-top: 1%;
     height: 20%;
     width: 100%;
+    
 }
 #logingebruikersnaam{
-border-color: #304ba3;
+border: 3px solid var(--bg-color);
 border-radius: 4px;
 height: 50%;
 width: 70%;
@@ -378,13 +442,23 @@ margin-left: 15%;
 margin-top: 4%;
 font-size: large;
 }
+#logingebruikersnaam:hover{
+    border: 3px solid #8bced7;
+    height: 50%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 4%;
+    font-size: large;
+    transition: .2s, .3s ease;
+    border-radius: 6px;
+    }
 .wachtwoorddiv{
     margin-top: 1%;
     height: 20%;
     width: 100%;
 }
 #loginwachtwoord{
-border-color: #304ba3;
+border: 3px solid var(--bg-color);
 border-radius: 4px;    
 height: 50%;
 width: 70%;
@@ -392,6 +466,17 @@ margin-left: 15%;
 margin-top: 0%;
 font-size: large;
 }
+#loginwachtwoord:hover{
+    border: 3px solid #8bced7;
+      
+    height: 50%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 0%;
+    font-size: large;
+    transition: .2s, .3s ease;
+    border-radius: 6px;
+    }
 input::placeholder{
     font-size: large;
 }
