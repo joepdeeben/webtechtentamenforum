@@ -7,14 +7,3 @@ vakList.forEach(function(vak) {
         }
     }
 
-let addThreadBtn = document.getElementById("addThreadBtn");
-let threadList = document.querySelector(".threads");
-
-addThreadBtn.addEventListener("click", function(){
-    // Create a new li element
-    let newThread = document.createElement("li");
-    newThread.innerHTML = '<a href="#">New thread</a><span>Started by: <a href="#">Username</a></span>';
-
-    // Append the new li element to the ul element
-    threadList.appendChild(newThread);
-});

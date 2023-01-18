@@ -12,7 +12,7 @@ main{
     background-color: #ADD8E6;
 }
 
-#content {
+.content {
     width: 300px;
     height: 50px;
 }
@@ -32,6 +32,25 @@ main{
 .opgave {
     border: 2px solid #000;
     background-color: #ADD8E6;
+}
+
+.post {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+    text-align: left;
+}
+
+.post-info {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.post_form {
+    border: 2px solid #000;
+    background-color: #ADD8E6;
+    text-align: left;
 }
 
 .vakken {
