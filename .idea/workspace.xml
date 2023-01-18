@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="javascript werkt niet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/forum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/forum.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forumthreads.html" beforeDir="false" afterPath="$PROJECT_DIR$/forumthreads.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/forum.js" afterDir="false" />
     </list>
@@ -172,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674054734002</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="javascript werkt niet">
+      <created>1674055730781</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674055730781</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
