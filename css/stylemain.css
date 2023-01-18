@@ -35,12 +35,9 @@ header{
     transition: all .5s ease;
     height:80px;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    
-    
-
+    border-bottom-right-radius: 15px;  
 }
-
+    
 
 #dothis {
     color: black;
@@ -215,12 +212,21 @@ footer {
   border: none;
   min-width: 250px;
 }
+.dropbtn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    min-width: 250px;
+    transition: .0s ease;
+  }
 .dropdown {
   position: relative;
   display: inline-block;
 }
 .dropdown:hover {
-    color: var(--main-color);
+    color: var(--bg-color);
     border-top-right-radius: 10px ;
 }
 
@@ -229,7 +235,6 @@ footer {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,01);
   z-index: 1;
   min-width: 250px;
