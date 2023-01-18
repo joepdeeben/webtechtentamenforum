@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
     <title>Homepage</title>
-    <script src="submitQ.js"></script>
 </head>
 
 <body>
@@ -41,9 +40,37 @@
    
 
     </div>
-    <div class="submitbuttondiv">
-        <button class="submitbutton">submit</button>
+<div class="dropdownjaardiv">
+
+    <div class="jaartextdiv">
+
+        <a class="jaartext"> in welk jaar wordt het vak van uw vraag gegeven</a>
     </div>
+    <select name="jaarvanvak" id="jaardrop">
+        <option value="select">Selecteer een jaar</option>
+        <option value="jaar 1">Jaar 1</option>
+        <option value="jaar 2">Jaar 2</option>
+        <option value="jaar 3">Jaar 3</option>
+      </select>
+    </div>
+
+    <div class="dropdownvakdiv">
+
+        <div class="vaktextdiv">
+    
+            <a class="vaktext"> Over welk vak stelt u een vraag?</a>
+        </div>
+        <select name="vakQ" id="vakdrop">
+            <option value="select">Selecteer een Vak</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Inleiding KI">Inleiding KI</option>
+            <option value="Inleiding logica">Inleidin logica</option>
+          </select>
+        </div>
+      
+        <div class="submitQbuttondiv">
+            <button class="submitQbutton" type="submit">Submit</button>
+            </div> 
 </div>  
 
 
