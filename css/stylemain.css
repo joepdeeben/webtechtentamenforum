@@ -287,7 +287,7 @@ footer {
     color: var(--bg-color);
     font-size:20px;
     width: 90%;
-    height: fit-content;
+    height: 200%;
     display: flex;
     flex-direction: row;
     
@@ -318,16 +318,68 @@ footer {
     padding: 10px;
     border: 3px solid var(--bg-color);
     width: 40%;
+    height: fit-content;
 }
 .titel-main{
     font-weight: bold;
     font-size: 2em;
     
 }
+.leaderboard, .leaderboard-user, .leaderboard-username {
+    
+
+    margin:8px;
+    border: 3px
+}
+.leaderboard-user1, .leaderboard-user2, .leaderboard-user3{
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid var(--bg-color);
+    margin: 8px;
+}
+.leaderboard-user1:hover{
+    background-color: gold;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+}
+.leaderboard-user2:hover{
+    background-color: silver;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid rgb(165, 165, 165);
+}
+.leaderboard-user3:hover{
+    background-color: #d28c47;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid rgb(151, 114, 22)
+}
+.leaderboard-userprofile{
+    border-radius: 50%;
+    margin: 6px;
+    
+}
+.leaderboard-username, .leaderboard-userxp{
+    position: absolute;
+    padding: 10px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.leaderboard-userxp{
+    width: 20%;
+    right: 0;
+    padding-top: 3%;
+    
+}
 .message-main{
     font-weight: 300;
     font-size: 1em;
 }
+
 .titel {
     color: var(--bg-color);
 }
