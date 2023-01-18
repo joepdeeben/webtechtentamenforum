@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="template voor een thread met forum post gemaakt">
+    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="javascript werkt niet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forumthreads.html" beforeDir="false" afterPath="$PROJECT_DIR$/forumthreads.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/forum.js" afterDir="false" />
@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674051154245</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="javascript werkt niet">
+      <created>1674054734002</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674054734002</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -180,7 +187,8 @@
     <MESSAGE value="javascript deel toegevoegd om te threads per vak te kunnen selecteren uit een (nog te maken) database." />
     <MESSAGE value="javascript knop toegevoegd om een thread te maken" />
     <MESSAGE value="template voor een thread met forum post gemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="template voor een thread met forum post gemaakt" />
+    <MESSAGE value="javascript werkt niet" />
+    <option name="LAST_COMMIT_MESSAGE" value="javascript werkt niet" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
