@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/stylemain.css">
   <meta name="viewport" content="with=device-width, initialscale=1.0">
+  <script src="javascript/forum.js"></script>
   <title>Forum</title>
 </head>
 
@@ -19,12 +20,12 @@
             <form id="input">
             <p>Bericht</p>
             <textarea class="content" name="content"></textarea>
-            <button class="submitquestion">Posten</button>
+            <button onclick="addComment()" class="submitquestion">Posten</button>
             </form>
   </section>
   <h2>Recente posts</h2>
 
-  <section class="thread_posts">
+  <div id="thread-posts" class="thread-posts">
     <div class="post">
         <div class="post-info">
           <div id="username"><b>Username</b></div>
@@ -40,7 +41,8 @@
 <!--        <a href="#">Delete</a>-->
       </div>
     </div>
-  </section>
+
+  </div>
 
 </main>
 <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>

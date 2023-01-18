@@ -7,3 +7,13 @@ vakList.forEach(function(vak) {
         }
     }
 
+
+
+function addComment() {
+    let threadPosts = document.getElementById("thread-posts");
+    let newPost = document.createElement("div");
+    newPost.classList.add("post");
+    newPost.innerHTML = "test";
+    threadPosts.appendChild(newPost);
+}
+
