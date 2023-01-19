@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="kan nu thread posts maken, heb ook een thread page toegevoegd om individuele threads te laden">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/forum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/forum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum.html" beforeDir="false" afterPath="$PROJECT_DIR$/forum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/forum.js" afterDir="false" />
-    </list>
+    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="navigeerknoppen toegevoegd aan forum.js en forum.html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674055730781</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="navigeerknoppen toegevoegd aan forum.js en forum.html">
+      <created>1674152987272</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674152987272</updated>
+    </task>
+    <task id="LOCAL-00015" summary="navigeerknoppen toegevoegd aan forum.js en forum.html">
+      <created>1674153030989</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674153030989</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,7 +205,8 @@
     <MESSAGE value="javascript knop toegevoegd om een thread te maken" />
     <MESSAGE value="template voor een thread met forum post gemaakt" />
     <MESSAGE value="javascript werkt niet" />
-    <option name="LAST_COMMIT_MESSAGE" value="javascript werkt niet" />
+    <MESSAGE value="navigeerknoppen toegevoegd aan forum.js en forum.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="navigeerknoppen toegevoegd aan forum.js en forum.html" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />

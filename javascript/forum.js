@@ -27,7 +27,7 @@ function nextyear() {
    }
    else if (sectionVak === "Jaar2") {
         document.getElementById(sectionVak).remove();
-        wrapperyear.insertAdjacentHTML("afterbegin", '<section id="Jaar3" class="vakken"><button onclick="lastyear()" type="button" class="year-selector">jaar 2</button><h2>Vakken jaar 3</h2><ul ><li><a href="#">Bayesian statistics</a></li><li><a href="#">Computer vision</a></li><li><a href="#">Psychology</a></li></ul></section>');
+        wrapperyear.insertAdjacentHTML("afterbegin", '<section id="Jaar3" class="vakken"><button onclick="lastyear()" type="button" class="year-selector">jaar 2</button><h2>Vakken jaar 3</h2><ul ><li><a href="#">Alumni Discussie</a></li><li><a href="#">Project</a></li><li><a href="#">Minor</a></li></ul></section>');
    }
 }
 
