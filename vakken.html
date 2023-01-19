@@ -27,13 +27,20 @@
   </div>
 
   <form id="formjaren" class="jarencheckbox" style="text-align:center">
-    <input type="radio" id="jaar1" name="jaren" value="Jaar1"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
+    <input type="radio" id="jaar1" name="jaren" value="Jaar1"  onclick="document.getElementById('selectiejaren').style.visibility='collapse';ShowYearOne()">
     <label for="jaar1">Jaar 1</label><br>
-    <input type="radio" id="jaar2" name="jaren" value="Jaar2"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
+    <input type="radio" id="jaar2" name="jaren" value="Jaar2"  onclick="document.getElementById('selectiejaren').style.visibility='collapse';ShowYearTwo()">
     <label for="jaar2">Jaar 2</label><br>
-    <input type="radio" id="jaar3" name="jaren" value="Jaar3"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
+    <input type="radio" id="jaar3" name="jaren" value="Jaar3"  onclick="document.getElementById('selectiejaren').style.visibility='collapse';ShowYearThree()">
     <label for="jaar3">Jaar 3</label>
   </form>
+
+  <div style="left: 10px; right:100px">
+  <iframe id="framejaar1" src="jaar1.html" style="visibility:collapse" width="32%" height="1000px"></iframe>
+  <iframe id="framejaar2" src="jaar2.html" style="visibility:collapse" width="32%" height="1000px"></iframe>
+  <iframe id="framejaar3" src="jaar3.html" style="visibility:collapse" width="32%" height="1000px"></iframe>
+
+  </div>
 
 
     
