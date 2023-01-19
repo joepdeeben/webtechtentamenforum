@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="javascript/formopen.js"></script>
+  <script src="javascript/vakkenfuncties.js"></script>
     <link rel="stylesheet" href="css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -21,19 +21,22 @@
     Vakken
   </div>
   
-  <div id="selectiejaren" style="color:red">
+  <div id="selectiejaren" style="color:red; text-align: center;">
     Selecteer hier in welk jaar je zit
-
   </div>
 
-  <form id="formjaren" class="jarencheckbox" style="text-align:center">
-    <input type="radio" id="jaar1" name="jaren" value="Jaar1"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
-    <label for="jaar1">Jaar 1</label><br>
-    <input type="radio" id="jaar2" name="jaren" value="Jaar2"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
-    <label for="jaar2">Jaar 2</label><br>
-    <input type="radio" id="jaar3" name="jaren" value="Jaar3"  onclick="document.getElementById('selectiejaren').style.visibility='collapse'">
-    <label for="jaar3">Jaar 3</label>
-  </form>
+  <div style="margin: 0 auto; text-align: center;">
+    <button id="buttonjaar1" class="vakkennavbutton" onclick="ShowYearOne()" width="200px">Jaar 1</button>
+    <button id="buttonjaar2" class="vakkennavbutton" onclick="ShowYearTwo()" width="200px">Jaar 2</button>
+    <button id="buttonjaar3" class="vakkennavbutton" onclick="ShowYearThree()" width="200px">Jaar 3</button>
+  </div>
+
+  <div>
+  <iframe id="framejaar1" src="jaar1.html" style="display:none; border-style: hidden" width="100%" height="1000px"></iframe>
+  <iframe id="framejaar2" src="jaar2.html" style="display:none; border-style: hidden;" width="100%" height="1000px"></iframe>
+  <iframe id="framejaar3" src="jaar3.html" style="display:none; border-style: hidden;" width="100%" height="1000px"></iframe>
+
+  </div>
 
 
     

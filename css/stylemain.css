@@ -35,12 +35,9 @@ header{
     transition: all .5s ease;
     height:80px;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    
-    
-
+    border-bottom-right-radius: 15px;  
 }
-
+    
 
 #dothis {
     color: black;
@@ -215,12 +212,21 @@ footer {
   border: none;
   min-width: 250px;
 }
+.dropbtn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    min-width: 250px;
+    transition: .0s ease;
+  }
 .dropdown {
   position: relative;
   display: inline-block;
 }
 .dropdown:hover {
-    color: var(--main-color);
+    color: var(--bg-color);
     border-top-right-radius: 10px ;
 }
 
@@ -229,7 +235,6 @@ footer {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,01);
   z-index: 1;
   min-width: 250px;
@@ -282,7 +287,7 @@ footer {
     color: var(--bg-color);
     font-size:20px;
     width: 90%;
-    height: fit-content;
+    height: 200%;
     display: flex;
     flex-direction: row;
     
@@ -313,16 +318,68 @@ footer {
     padding: 10px;
     border: 3px solid var(--bg-color);
     width: 40%;
+    height: fit-content;
 }
 .titel-main{
     font-weight: bold;
     font-size: 2em;
     
 }
+.leaderboard, .leaderboard-user, .leaderboard-username {
+    
+
+    margin:8px;
+    border: 3px
+}
+.leaderboard-user1, .leaderboard-user2, .leaderboard-user3{
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid var(--bg-color);
+    margin: 8px;
+}
+.leaderboard-user1:hover{
+    background-color: gold;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+}
+.leaderboard-user2:hover{
+    background-color: silver;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid rgb(165, 165, 165);
+}
+.leaderboard-user3:hover{
+    background-color: #d28c47;
+    transition: .3s ease;
+    display: grid;
+    border-radius: 10px;
+    border: 3px solid rgb(151, 114, 22)
+}
+.leaderboard-userprofile{
+    border-radius: 50%;
+    margin: 6px;
+    
+}
+.leaderboard-username, .leaderboard-userxp{
+    position: absolute;
+    padding: 10px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.leaderboard-userxp{
+    width: 20%;
+    right: 0;
+    padding-top: 3%;
+    
+}
 .message-main{
     font-weight: 300;
     font-size: 1em;
 }
+
 .titel {
     color: var(--bg-color);
 }
@@ -521,4 +578,98 @@ input::placeholder{
 .registeraanraadtext{
     color: #304ba3;
 
+}
+#jaardrop{
+    border-color: #304ba3;
+    border-radius: 4px;
+    height: 50%;
+    width: 30%;
+    margin-left: 5%;
+    font-size: large;
+    background-color: white;
+}
+.dropdownjaardiv{
+    height: 20%;
+    width: 100%;
+}
+.jaartextdiv{
+    height: 20%;
+    margin: 1%;
+    margin-left: 4%
+}
+.jaartext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+
+#vakdrop{
+    border-color: #304ba3;
+    border-radius: 4px;
+    height: 50%;
+    width: 30%;
+    margin-left: 5%;
+    font-size: large;
+    background-color: white;
+}
+.dropdownvakdiv{
+    height: 20%;
+    width: 100%;
+}
+.vaktextdiv{
+    height: 20%;
+    margin: 1%;
+    margin-left: 4%
+}
+.vaktext{
+    color: black;
+    font-size: x-large;
+    padding-top: 5%;
+}
+.submitQbuttondiv{
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+
+}
+.submitQbutton{
+    
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background-color: #304ba3;
+    color: white;
+    border-color: black;
+    width: 10%;
+    margin-left: 5%;
+
+    
+
+}
+
+.vakkennavbutton{
+    
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background-color: #304ba3;
+    color: white;
+    border-color: black;
+    width: 30%;
 }

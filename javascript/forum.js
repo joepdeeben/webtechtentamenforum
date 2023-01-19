@@ -18,3 +18,27 @@ function addComment() {
   textArea.value = "";
 }
 
+
+function nextyear() {
+   let sectionVak = document.getElementsByClassName("vakken")[0].id;
+   if (sectionVak === "Jaar1") {
+        document.getElementById(sectionVak).remove();
+        wrapperyear.insertAdjacentHTML("afterbegin", '<section id="Jaar2" class="vakken"><button onclick="lastyear()" type="button" class="year-selector">jaar 1</button><h2>Vakken jaar 2</h2><ul ><li><a href="#">Bayesian statistics</a></li><li><a href="#">Computer vision</a></li><li><a href="#">Psychology</a></li></ul><button onclick="nextyear()" type="button" class="year-selector">jaar 3</button></section>');
+   }
+   else if (sectionVak === "Jaar2") {
+        document.getElementById(sectionVak).remove();
+        wrapperyear.insertAdjacentHTML("afterbegin", '<section id="Jaar3" class="vakken"><button onclick="lastyear()" type="button" class="year-selector">jaar 2</button><h2>Vakken jaar 3</h2><ul ><li><a href="#">Bayesian statistics</a></li><li><a href="#">Computer vision</a></li><li><a href="#">Psychology</a></li></ul></section>');
+   }
+}
+
+function lastyear() {
+   let sectionVak = document.getElementsByClassName("vakken")[0].id;
+   if (sectionVak === "Jaar3") {
+        document.getElementById(sectionVak).remove();
+        wrapperyear.insertAdjacentHTML("afterbegin", '<section id="Jaar2" class="vakken"><button onclick="lastyear()" type="button" class="year-selector">jaar 1</button><h2>Vakken jaar 2</h2><ul ><li><a href="#">Bayesian statistics</a></li><li><a href="#">Computer vision</a></li><li><a href="#">Psychology</a></li></ul><button onclick="nextyear()" type="button" class="year-selector">jaar 3</button></section>');
+   }
+   else if (sectionVak === "Jaar2") {
+        document.getElementById(sectionVak).remove();
+        wrapperyear.insertAdjacentHTML("afterbegin", '<section id="Jaar1" class="vakken"><h2>Vakken jaar 1</h2><ul ><li><a href="#">Python</a></li><li><a href="#">Calculus</a></li><li><a href="#">Problem Solving and search</a></li></ul><button onclick="nextyear()" type="button" class="year-selector">jaar 2</button></section>');
+   }
+}

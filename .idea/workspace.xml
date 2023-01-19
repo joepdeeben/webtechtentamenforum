@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="kan nu thread posts maken, heb ook een thread page toegevoegd om individuele threads te laden" />
+    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="kan nu thread posts maken, heb ook een thread page toegevoegd om individuele threads te laden">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/forum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/forum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum.html" beforeDir="false" afterPath="$PROJECT_DIR$/forum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/forum.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +24,12 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/randomproblem" />
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="randomproblem" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,17 +183,6 @@
     <option name="localTasksCounter" value="14" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="css map" />
     <MESSAGE value="hallo weg" />
@@ -202,8 +196,7 @@
     <MESSAGE value="javascript knop toegevoegd om een thread te maken" />
     <MESSAGE value="template voor een thread met forum post gemaakt" />
     <MESSAGE value="javascript werkt niet" />
-    <MESSAGE value="kan nu thread posts maken, heb ook een thread page toegevoegd om individuele threads te laden" />
-    <option name="LAST_COMMIT_MESSAGE" value="kan nu thread posts maken, heb ook een thread page toegevoegd om individuele threads te laden" />
+    <option name="LAST_COMMIT_MESSAGE" value="javascript werkt niet" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
