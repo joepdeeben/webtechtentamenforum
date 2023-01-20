@@ -187,11 +187,12 @@ footer {
   
   .people-info, .contact-info, .button {
     flex-grow: 1;
-    padding-left: 1%;
-    
+    padding-left: 10px;
+    width: 30%;
   }
   .more-info{
     padding-right:4%;
+    
   }
   
   .people-info h4 {
@@ -673,3 +674,5 @@ input::placeholder{
     border-color: black;
     width: 30%;
 }
+
+
