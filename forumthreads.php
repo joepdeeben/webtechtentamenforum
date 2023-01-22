@@ -26,7 +26,7 @@
     <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
     <div id="sidebar">
             <form action="" method="get">
-                <label for="thread_id">Select Thread:</label>
+                <h5>Select Thread:</h>
                 <ul>
                     <?php
                         $sql = "SELECT thread_id, thread_name FROM threads";
