@@ -515,7 +515,7 @@ margin-bottom: 1%;
 
 .logindiv{
     width: 40%;
-    height: 650px;
+    height: 600px;
     border: 3px solid var(--bg-color);
     margin-left: 30%;
     margin-top: 2%;
@@ -622,7 +622,7 @@ input::placeholder{
 }
 .registeraanraaddiv{
     height: 10%;
-    width: 38%;
+    width: 100%;
     margin-left: 32%;
 
 }
