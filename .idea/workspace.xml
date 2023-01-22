@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="navigeerknoppen toegevoegd aan forum.js en forum.html" />
+    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database.">
+      <change afterPath="$PROJECT_DIR$/randomproblem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/forumphp.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/forumphp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylerandomproblem.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylerandomproblem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forumthreads.php" beforeDir="false" afterPath="$PROJECT_DIR$/forumthreads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomproblem.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +38,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/randomproblem.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/randomproblem.php" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,25 +49,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/j/IdeaProjects/webtechtentamenforum/forum&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/joep/IdeaProjects/webtechtentamenforum",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum\forum" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum" />
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum\css" />
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum\forum" />
       <recent name="$PROJECT_DIR$/javascript" />
-      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -175,21 +185,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674055730781</updated>
     </task>
-    <task id="LOCAL-00014" summary="navigeerknoppen toegevoegd aan forum.js en forum.html">
-      <created>1674152987272</created>
+    <task id="LOCAL-00014" summary="meer detail">
+      <created>1674153330434</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1674152987272</updated>
+      <updated>1674153330434</updated>
     </task>
-    <task id="LOCAL-00015" summary="navigeerknoppen toegevoegd aan forum.js en forum.html">
-      <created>1674153030989</created>
+    <task id="LOCAL-00015" summary="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database.">
+      <created>1674352566934</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1674153030989</updated>
+      <updated>1674352566934</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database.">
+      <created>1674352694605</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674352694605</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -205,8 +222,9 @@
     <MESSAGE value="javascript knop toegevoegd om een thread te maken" />
     <MESSAGE value="template voor een thread met forum post gemaakt" />
     <MESSAGE value="javascript werkt niet" />
-    <MESSAGE value="navigeerknoppen toegevoegd aan forum.js en forum.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigeerknoppen toegevoegd aan forum.js en forum.html" />
+    <MESSAGE value="meer detail" />
+    <MESSAGE value="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database." />
+    <option name="LAST_COMMIT_MESSAGE" value="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database." />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />

@@ -25,7 +25,7 @@
             <a class="titelvraagtext"> Wat is de titel van uw vraag </a>
         </div>
         <div class="titelvraaginvuldiv">
-            <input type="text" id="titelvraag" name="vraagnaam" value="hier de titel van uw vraag"><br>
+            <input type="text" id="titelvraag" name="vraagnaam" placeholder="Hier de titel van uw vraag"><br>
         </div>
 
     </div>
@@ -35,7 +35,7 @@
             <a class="vraagtext"> Wat is uw volledige vraag? </a>
         </div>
         <div class="vraaginvuldiv">
-                <textarea id="vraagvolledig" name="vraagcontent" rows="9" cols="60">vul hier uw volledig geformuleerde vraag in</textarea>
+                <textarea id="vraagvolledig" placeholder="Vul hier de geformuleerde vraag in" name="vraagcontent" rows="9" cols="230"></textarea>
     </div>
    
 
@@ -44,10 +44,10 @@
 
     <div class="jaartextdiv">
 
-        <a class="jaartext"> in welk jaar wordt het vak van uw vraag gegeven</a>
+        <a class="jaartext"> In welk jaar wordt het vak van uw vraag gegeven</a>
     </div>
     <select name="jaarvanvak" id="jaardrop">
-        <option value="select">Selecteer een jaar</option>
+        <option value="select" disabled selected>Selecteer een jaar</option>
         <option value="jaar 1">Jaar 1</option>
         <option value="jaar 2">Jaar 2</option>
         <option value="jaar 3">Jaar 3</option>
@@ -61,7 +61,7 @@
             <a class="vaktext"> Over welk vak stelt u een vraag?</a>
         </div>
         <select name="vakQ" id="vakdrop">
-            <option value="select">Selecteer een Vak</option>
+            <option value="select" disabled selected>Selecteer een Vak</option>
             <option value="Prolog">Prolog</option>
             <option value="Inleiding KI">Inleiding KI</option>
             <option value="Inleiding logica">Inleidin logica</option>
@@ -74,8 +74,8 @@
 </div>  
 
 
-<iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>   
-
+<!-- <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>   
+ -->
 
 </body>
 </html>
