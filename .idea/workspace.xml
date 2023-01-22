@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="javascript werkt niet">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/forum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/forum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forumthreads.html" beforeDir="false" afterPath="$PROJECT_DIR$/forumthreads.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/forum.js" afterDir="false" />
+    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="meer detail">
+      <change afterPath="$PROJECT_DIR$/css/forumphp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forumthreads.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/forum.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forumthreads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/forumthreads.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="randomproblem" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,25 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/j/IdeaProjects/webtechtentamenforum/forum",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/j/IdeaProjects/webtechtentamenforum/forum&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum\forum" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum" />
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum\css" />
       <recent name="C:\Users\j\IdeaProjects\webtechtentamenforum\forum" />
       <recent name="$PROJECT_DIR$/javascript" />
-      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674055730781</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="meer detail">
+      <created>1674153330434</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674153330434</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,7 +205,8 @@
     <MESSAGE value="javascript knop toegevoegd om een thread te maken" />
     <MESSAGE value="template voor een thread met forum post gemaakt" />
     <MESSAGE value="javascript werkt niet" />
-    <option name="LAST_COMMIT_MESSAGE" value="javascript werkt niet" />
+    <MESSAGE value="meer detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="meer detail" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
