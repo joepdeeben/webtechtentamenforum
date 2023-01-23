@@ -447,11 +447,11 @@ width: 400px;
 background-color: red;
 padding-top: 20px;
 }
-.submitdiv{
+/* .submitdiv{
    
 /* border: 5px solid var(--bg-color);
 border-radius: 10px; */
-}
+
 .headline{
 color: black;
 margin-left: 10%;
@@ -515,7 +515,7 @@ margin-bottom: 1%;
 
 .logindiv{
     width: 40%;
-    height: 650px;
+    height: 600px;
     border: 3px solid var(--bg-color);
     margin-left: 30%;
     margin-top: 2%;
@@ -525,15 +525,15 @@ margin-bottom: 1%;
     border-radius: 10px;
 }
 .logintextdiv{
-    height: 20%;
-    width: 50%;
-    margin-left: 25%;
+    height: 30%;
+    width: 100%;
+    text-align: center;
 
 }
 .logintext{
     color: #304ba3;
     font-size: 515%;
-    
+    width: 100%;
 }
 .usernamediv{
     margin-top: 1%;
@@ -545,17 +545,13 @@ margin-bottom: 1%;
 border: 3px solid var(--bg-color);
 border-radius: 4px;
 height: 50%;
-width: 70%;
-margin-left: 15%;
-margin-top: 4%;
+margin-top: 12px;
 font-size: large;
 }
 #logingebruikersnaam:hover{
     border: 3px solid #8bced7;
     height: 50%;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 4%;
+    margin-top: 12px;
     font-size: large;
     transition: .2s, .3s ease;
     border-radius: 6px;
@@ -569,18 +565,13 @@ font-size: large;
 border: 3px solid var(--bg-color);
 border-radius: 4px;    
 height: 50%;
-width: 70%;
-margin-left: 15%;
-margin-top: 0%;
+margin-top: 12px;
 font-size: large;
 }
 #loginwachtwoord:hover{
     border: 3px solid #8bced7;
-      
     height: 50%;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 0%;
+    margin-top: 12px;
     font-size: large;
     transition: .2s, .3s ease;
     border-radius: 6px;
@@ -622,7 +613,7 @@ input::placeholder{
 }
 .registeraanraaddiv{
     height: 10%;
-    width: 38%;
+    width: 100%;
     margin-left: 32%;
 
 }
@@ -731,3 +722,14 @@ textarea{
 }
 
 
+.page-titel{
+    color: var(--bg-color);
+    width: 30%;
+    font-size: x-large;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

@@ -29,7 +29,7 @@
 
     </div>
     <div class="more-info">
-      <h3><a href="contact.html"  target="_blank">Druk hier voor meer informatie</a></h3>
+      <h3><a href="../contact.html"  target="_blank">Druk hier voor meer informatie</a></h3>
     </div>
   
 </section>
