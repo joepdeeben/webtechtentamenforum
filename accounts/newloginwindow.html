@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="javascript/formopen.js"></script>
     <link rel="stylesheet" href="../css/stylemain.css">
+    <link rel="stylesheet" href="../css/register.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="viewport" content="with=device-width, initialscale=1.0">
@@ -22,21 +24,22 @@
    
 
 <div class="logindiv" >
-    <div class="logintextdiv">
-        <h1 class="logintext">KI Forum</h1>
-    </div>
-    <div class="usernamediv">
+    <form>
+        
+        <div class="logintextdiv">
+            <h1 class="logintext">KI Forum</h1>
+        </div>
         <label for="username"></label>
         <input type="text" id="logingebruikersnaam" name="gebruikersnaam" placeholder=" Gebruikersnaam of E-mail"><br>
-        </div>
-    <div class="wachtwoorddiv">
+        
+        <label for="password"></label>
         <input type="password" id="loginwachtwoord" name="wachtwoord" placeholder=" Wachtwoord"><br>
-        </div>
-    <div class="loginbuttondiv">
-        <button class="loginbutton" type="submit" onclick="changeIframe()">Log in</button> <!---asl dit goed gaat dan account pagina-->
-        </div> 
-    <div class="registeraanraaddiv">
-        <a href="accounts/regestratie.html" class="registeraanraadtext" target="_blank">Nog geen account? registreer je nu!</a>
+       <br>
+        
+        <input type="submit" value="Log in!" onclick="return validateForm()">
+      </form>
+      <div class="registeraanraaddiv">
+        <a href="../accounts/regestratie.html" class="registeraanraadtext" target="_blank">Nog geen account? registreer je nu!</a>
         </div>   
     </div>
     
