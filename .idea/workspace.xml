@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database." />
+    <list default="true" id="d960449f-97a2-4f6a-910c-30e18b201866" name="Changes" comment="testfile">
+      <change afterPath="$PROJECT_DIR$/test2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674352694605</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="testfile">
+      <created>1674515674606</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674515674606</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,7 +226,8 @@
     <MESSAGE value="javascript werkt niet" />
     <MESSAGE value="meer detail" />
     <MESSAGE value="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database." />
-    <option name="LAST_COMMIT_MESSAGE" value="php en css gemaakt voor, de threads, een lijst links van alle threads en een request om alle posts te pullen uit de database." />
+    <MESSAGE value="testfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="testfile" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
