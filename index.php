@@ -42,36 +42,55 @@
       </div>
     </div>
 
-
+    <?php
+    $leader = "Joep";
+    $leaderXP = 250;
+    $second = "Mark";
+    $secondXP = 200;
+    $third = "Olivier";
+    $thirdXP = 150;
+    $fourth = "Surja";
+    $fourthXP = 100;
+    $fifth = "Florian";
+    $fifthXP = 0;
+    ?>
     <div class="inmain">
       <div class="titel-main">
         Leaderbord 
       </div>
       <div class="message-main">
-        <div class="leaderboard"> Top 3:
+        <div class="leaderboard"> Top 5:</div>
 
           <div class="leaderboard-user1">
             <div class="leaderboard-userprofile">
               <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
             
             <span class="leaderboard-username">
-                Mark
+            <?php
+            echo $leader;
+            ?>
             </span>
             <span class="leaderboard-userxp">
-              100xp
+            <?php
+            echo " $leaderXP XP";
+            ?>
             </span>
           </div>
           </div>
-      </div>
+      
       <div class="leaderboard-user2">
         <div class="leaderboard-userprofile">
           <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
         
         <span class="leaderboard-username">
-            Mark
+            <?php
+            echo $second;
+            ?>
         </span>
         <span class="leaderboard-userxp">
-          100xp
+        <?php
+            echo "$secondXP XP";
+            ?>
         </span>
       </div>
       </div>
@@ -81,13 +100,52 @@
       <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
     
     <span class="leaderboard-username">
-        Mark
+    <?php
+            echo $third;
+            ?>
     </span>
     <span class="leaderboard-userxp">
-      100xp
+    <?php
+            echo "$thirdXP XP";
+            ?>
     </span>
   </div>
   </div>
+  <div class="leaderboard-user45">
+    <div class="leaderboard-userprofile">
+      <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
+    
+    <span class="leaderboard-username">
+    <?php
+            echo $fourth;
+            ?>
+    </span>
+    <span class="leaderboard-userxp">
+    <?php
+            echo "$fourthXP XP";
+            ?>
+    </span>
+  </div>
+  </div>
+
+  <div class="leaderboard-user45">
+    <div class="leaderboard-userprofile">
+      <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
+    
+    <span class="leaderboard-username">
+    <?php
+            echo $fifth;
+            ?>
+    </span>
+    <span class="leaderboard-userxp">
+    <?php
+            echo "$fifthXP XP";
+            ?>
+    </span>
+  </div>
+  </div>
+
+  
 </div>
 
     
