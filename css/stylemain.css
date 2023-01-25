@@ -870,6 +870,17 @@ textarea {
 .titel-opgave-sub{
 
 }
-input[type="opgave"]{
-    width: 1000px;
+input[type="titelvraag"]{
+    width: 100%;
+    box-sizing: content-box;
+}
+.info-vraag, .titel-opgave-sub, .antwoord-opgave, .opgave, .afbeelding, textarea{
+    border: 3px #304ba3 solid;
+    margin: 12px;
+    width: 90%;
+}
+.jaar-vraag, .vak-vraag{
+    border: 3px #304ba3 solid;
+    margin: 12px;
+    width: 10%;
 }
