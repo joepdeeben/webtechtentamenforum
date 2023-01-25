@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <script src="javascript/vakkenfuncties.js"></script>
-    <link rel="stylesheet" href="css/stylemain.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
+    <link rel="stylesheet" href="../css/register.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="viewport" content="with=device-width, initialscale=1.0">
@@ -16,9 +16,9 @@
 </head>
 <body>
    
-    <?php include 'header.php';?>
-    <?php include 'accounts/newloginwindow.php';?>
-    <?php include 'footer.php';?>
+    <?php include '../standard/header.php';?>
+    <?php include '../accounts/newloginwindow.php';?>
+    <?php include '../standard/footer.php';?>
     
     </body>
 </html>
