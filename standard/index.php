@@ -62,7 +62,7 @@
 
           <div class="leaderboard-user1">
             <div class="leaderboard-userprofile">
-              <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
+              <img class="leaderboard-userprofile" src="../images/uva-logo2.png" alt="uva-logo" height=50px>
             
             <span class="leaderboard-username">
             <?php
@@ -79,7 +79,7 @@
       
       <div class="leaderboard-user2">
         <div class="leaderboard-userprofile">
-          <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
+          <img class="leaderboard-userprofile" src="../images/uva-logo2.png" alt="uva-logo" height=50px>
         
         <span class="leaderboard-username">
             <?php
@@ -96,7 +96,7 @@
   </div>
   <div class="leaderboard-user3">
     <div class="leaderboard-userprofile">
-      <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
+      <img class="leaderboard-userprofile" src="../images/uva-logo2.png" alt="uva-logo" height=50px>
     
     <span class="leaderboard-username">
     <?php
@@ -112,7 +112,7 @@
   </div>
   <div class="leaderboard-user45">
     <div class="leaderboard-userprofile">
-      <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
+      <img class="leaderboard-userprofile" src="../images/uva-logo2.png" alt="uva-logo" height=50px>
     
     <span class="leaderboard-username">
     <?php
@@ -129,7 +129,7 @@
 
   <div class="leaderboard-user45">
     <div class="leaderboard-userprofile">
-      <img class="leaderboard-userprofile" src="images/uva-logo2.png" alt="uva-logo" height=50px>
+      <img class="leaderboard-userprofile" src="../images/uva-logo2.png" alt="uva-logo" height=50px>
     
     <span class="leaderboard-username">
     <?php
