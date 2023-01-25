@@ -22,11 +22,11 @@
     <ul class="navigatie">
         
         <div class="dropdown">
-          <a href="vakken.html"><button class="dropbtn" onclick="FormJarenOpen()">Vakken</button></a> 
+          <a href="vakken.php"><button class="dropbtn" onclick="FormJarenOpen()">Vakken</button></a> 
           <div class="dropdown-content">
-            <a href="vakken.html"><button class="dropdown-contentbutton" onclick="ShowYearOne();">Jaar 1</button></a>
-            <a href="vakken.html"><button class="dropdown-contentbutton" onclick="ShowYearTwo();">Jaar 2</button></a>
-            <a href="vakken.html"><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
+            <a href="vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearOne();">Jaar 1</button></a>
+            <a href="vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearTwo();">Jaar 2</button></a>
+            <a href="vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
           </div>
         </div>
         
