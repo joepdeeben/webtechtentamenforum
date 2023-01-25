@@ -15,6 +15,7 @@
 </head>
 
 <body>
+<?php include '../standard/header.php';?>
     <div>
         <div class="page-titel">
           Verander uw gegevens
@@ -56,5 +57,7 @@
        </div>
        
       </div>
+      <?php include '../standard/footer.php';?>
+    
 </body>
 </html>
