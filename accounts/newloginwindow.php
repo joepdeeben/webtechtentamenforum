@@ -39,7 +39,7 @@
         <input type="submit" value="Log in!" onclick="return validateForm()">
       </form>
       <div class="registeraanraaddiv">
-        <a href="../accounts/regestratie.html" class="registeraanraadtext" target="_blank">Nog geen account? registreer je nu!</a>
+        <a href="regestratie.php" class="registeraanraadtext" target="_blank">Nog geen account? registreer je nu!</a>
         </div>   
     </div>
     
