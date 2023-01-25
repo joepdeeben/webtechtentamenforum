@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  <?php include 'header.php'?>
 
   <div class="test-div" id="testid">
     Vakken
@@ -31,17 +31,16 @@
     <button id="buttonjaar3" class="vakkennavbutton" onclick="ShowYearThree()" width="200px">Jaar 3</button>
   </div>
 
-  <div>
-  <iframe id="framejaar1" src="jaar1.html" style="display:none; border-style: hidden" width="100%" height="1000px"></iframe>
-  <iframe id="framejaar2" src="jaar2.html" style="display:none; border-style: hidden;" width="100%" height="1000px"></iframe>
-  <iframe id="framejaar3" src="jaar3.html" style="display:none; border-style: hidden;" width="100%" height="1000px"></iframe>
-
+  <div id='framejaar1' style='display:none'>
+  <?php include 'jaar1.html'?>
+  </div>
+  <div id='framejaar2' style='display:none'>
+  <?php include 'jaar2.html'?>
+  </div>
+  <div id='framejaar3' style='display:none'>
+  <?php include 'jaar3.html'?>
   </div>
 
-
-    
-  
-
-  <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  <?php include 'footer.php'?>
 </body>
 </html>

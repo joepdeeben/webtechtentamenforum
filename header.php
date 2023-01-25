@@ -16,17 +16,17 @@
 </head>
 
 <header>
-    <a href="index.html" class="logo"><img src="images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button">Home</button></span></a>
+    <a href="../index.php" class="logo"><img src="../images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button">Home</button></span></a>
         
 
     <ul class="navigatie">
         
         <div class="dropdown">
-          <a href="vakken.html"><button class="dropbtn" onclick="FormJarenOpen()">Vakken</button></a> 
+          <a href="vakken.php"><button class="dropbtn" onclick="FormJarenOpen()">Vakken</button></a> 
           <div class="dropdown-content">
-            <a href="vakken.html"><button class="dropdown-contentbutton" onclick="ShowYearOne();">Jaar 1</button></a>
-            <a href="vakken.html"><button class="dropdown-contentbutton" onclick="ShowYearTwo();">Jaar 2</button></a>
-            <a href="vakken.html"><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
+            <a href="vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearOne();">Jaar 1</button></a>
+            <a href="vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearTwo();">Jaar 2</button></a>
+            <a href="vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
           </div>
         </div>
         
@@ -39,7 +39,7 @@
           
         </div>
         <div class="dropdown">
-        <a href="index.html"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>
+        <a href="index.php"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>
         <div class="dropdown-content">
           <!-- <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
           <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
@@ -51,7 +51,7 @@
 
         <div class="main">
             <li><a href="#" class="user"><i class="ri-inbox-line"></i>Inbox</a></a></li>
-            <li><a href="account.html" class="user"><i class="ri-user-3-line"></i>Account</a></li>
+            <li><a href="../account.html" class="user"><i class="ri-user-3-line"></i>Account</a></li>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
         <script type="text/javascript" src="javascript/scriptnav.js"></script>

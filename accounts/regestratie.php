@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <script src="javascript/formopen.js"></script>
-    <link rel="stylesheet" href="css/stylemain.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
+    <link rel="stylesheet" href="../css/register.css">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -13,47 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
     <title>Regestratie</title>
-
+    <script src="../javascript/login.js"></script>
 </head>
 <body>
-    
-  <script>
-    function validateForm() {
-      var username = document.getElementById("username").value;
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
-      var gender = document.getElementById("gender").value;
-      var errors = [];
-
-      if (username == "") {
-        errors.push("Username is required");
-      }
-      else if (username.length < 2) {
-        errors.push("Username must be at least 2 characters long");
-      }
-      else if (!/^[a-zA-Z]+$/.test(username)) {
-        errors.push("Username must contain only alphabetical letters");
-      }
-
-      if (email == "") {
-        errors.push("Email is required");
-      }
-      if (password == "") {
-        errors.push("Password is required");
-      }
-      if (gender == "") {
-        errors.push("Gender is required");
-      }
-
-      if (errors.length > 0) {
-        alert(errors.join("\n"));
-        return false;
-      } else {
-        return true;
-      }
-    }
-
-  </script>
+      <?php include '../header.php';?>
     <form>
         <label for="name" ></label>
         <input type="text" id="name" placeholder="Naam" name="name" required>
@@ -68,19 +31,19 @@
         </select>
         <br>
         <label for="username"></label>
-        <input type="text" id="username" placeholder="Username" name="username" required>
+        <input type="text" id="logingebruikersnaam" placeholder="Gebruikersnaam" name="gebruikersnaam" required>
         <br>
         <label for="email"></label>
         <input type="email" id="email" placeholder="E-mail" name="email" required>
         <br>
         <label for="password"></label>
-        <input type="password" id="wachtwoord" placeholder="wachtwoord" name="wachtwoord" required>
+        <input type="password" id="wachtwoord" placeholder="Wachtwoord" name="wachtwoord" required>
         <br>
         
         <input type="submit" value="Registreer!" onclick="return validateForm()">
       </form>
       
 
-  
-     </body>
+      <?php include '../footer.php';?>
+      </body>
   </html>
