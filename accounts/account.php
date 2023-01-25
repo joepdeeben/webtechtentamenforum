@@ -16,9 +16,12 @@
 </head>
 <body>
    
-    <?php include '../standard/header.php';?>
-    <?php include '../accounts/newloginwindow.php';?>
-    <?php include '../standard/footer.php';?>
+    <?php
+    $login = 'newloginwindow.php';
+    include '../standard/header.php';
+    include '../accounts/' . $login;
+    include '../standard/footer.php';
+    ?>
     
     </body>
 </html>
