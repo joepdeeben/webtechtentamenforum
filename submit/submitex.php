@@ -37,7 +37,7 @@
     </div>
 
     <div class="titel-opgave-sub">
-        <input type="text" id="titel-vraag" name="titel-vraag" placeholder="Wat is de titel van uw opgave?">
+        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw opgave?">
     </div>
     <div class="opgave">
             <textarea id="vraagvolledig" placeholder="Vul hier de geformuleerde opgave in" name="vraagcontent" rows="9" cols="230"></textarea>
