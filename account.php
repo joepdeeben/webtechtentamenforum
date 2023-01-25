@@ -16,11 +16,9 @@
 </head>
 <body>
    
-    <iframe src="../header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <?php include 'header.php';?>
+    <?php include 'accounts/changeinfo.html';?>
+    <?php include 'footer.php';?>
     
-    <iframe src="accounts/changeinfo.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-    
-    
-    <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-</body>
+    </body>
 </html>

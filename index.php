@@ -15,8 +15,7 @@
 </head>
 
 <body>
-  <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-
+<?php include 'header.php';?>
   <div class="main-div-head" id="main-div">
        Welkom op  KI forum 
   </div>   
@@ -154,7 +153,6 @@
 </div>   
 
 
-
-  <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-</body>
+<?php include 'footer.php';?>
+  </body>
 </html>
