@@ -17,7 +17,7 @@
 <body>
    
     <?php include 'header.php';?>
-    <?php include 'accounts/changeinfo.html';?>
+    <?php include 'accounts/newloginwindow.php';?>
     <?php include 'footer.php';?>
     
     </body>
