@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="viewport" content="with=device-width, initialscale=1.0">
@@ -29,7 +29,7 @@
 
     </div>
     <div class="more-info">
-      <h3><a href="../contact.html"  target="_blank">Druk hier voor meer informatie</a></h3>
+      <h3><a href="../standard/contact.php"  target="_blank">Druk hier voor meer informatie</a></h3>
     </div>
   
 </section>

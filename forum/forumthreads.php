@@ -18,12 +18,12 @@
 // ?>
 <html>
 <head>
-    <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
     <title>Forum</title>
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="css/forumphp.css">
-    <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
+    <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> <!-- include veranderen joep-->
     <div id="sidebar">
             <form action="" method="get">
                 <h5>Selecteer vak:</h>
