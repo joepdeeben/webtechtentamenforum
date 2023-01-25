@@ -440,6 +440,15 @@ header{
   border: none;
   min-width: 250px;
 }
+.dropdown-content:hover, .dropdown-contentbutton:hover  {
+    background-color: var(--text-color);
+  color: #1b223d;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  min-width: 250px;
+  transition: .3s;
+}
 .jarencheckbox {
 color: black;
 font-size: 40px;
