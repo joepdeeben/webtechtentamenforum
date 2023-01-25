@@ -51,6 +51,7 @@
     </div>
     </form>
 </div>
+<?php include '../standard/footer.php';?>
 
 
 </body>

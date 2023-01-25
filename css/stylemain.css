@@ -842,9 +842,14 @@ textarea {
     margin-bottom: 5%;
 }
 .subex{
-    background: #29fd53;
+    width: 90%;
+    margin-left: 5%;
     height: 100%;
     margin-top: 12px;
+    border-radius: 23px;
+    background: linear-gradient(225deg, #f0f0f0, #ebebeb);
+    box-shadow:  -32px 32px 64px #cccccc,
+                 32px -32px 64px #f4f4f4;
 }
 .titel-vraag{
     font-size: 50px;
@@ -852,11 +857,7 @@ textarea {
     text-decoration: underline var(--bg-color);
     padding-left: 4%;
     padding-top: 4%
-}
-.info-vraag{
-    width: 100%;
-    overflow: hidden;
-    padding-top: 12px;
+
 }
 .jaar-vraag{
     float: left;
@@ -867,20 +868,47 @@ textarea {
 .vak-vraag{
     float: left;
 }
-.titel-opgave-sub{
 
-}
-input[type="titelvraag"]{
-    width: 100%;
-    box-sizing: content-box;
-}
-.info-vraag, .titel-opgave-sub, .antwoord-opgave, .opgave, .afbeelding, textarea{
-    border: 3px #304ba3 solid;
+.info-vraag, .antwoord-opgave, .opgave, .afbeelding, textarea{
+    /* border: 3px #304ba3 solid; */
     margin: 12px;
     width: 90%;
 }
 .jaar-vraag, .vak-vraag{
-    border: 3px #304ba3 solid;
+    /* border: 3px #304ba3 solid; */
     margin: 12px;
     width: 10%;
+}
+
+.info-vraag select{
+    color: var(--bg-color);
+    border: 3px var(--bg-color);
+    background: linear-gradient(225deg, #f0f0f0, #ebebeb);
+}
+.info-vraag select-selected{
+    color: var(--text-color);
+    background-color: #263b81;;
+}
+
+.info-vraag{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 12px;
+}
+
+.titel-opgave-sub{
+    width: 30%;
+    margin-left: 2%;
+    border-radius: 23px;
+    box-shadow:  -32px -32px 64px #cccccc,
+             32px 32px 64px #f4f4f4;
+}
+
+.antwoord-opgave textarea, .opgave textarea, .titel-opgave-sub{ 
+    border: 3px var(--bg-color) solid;
+    border-radius: 10px;
+    padding: 4px;
+    }
+.subex input, .subex textarea{
+    background: linear-gradient(225deg, #f0f0f0, #ebebeb);
 }
