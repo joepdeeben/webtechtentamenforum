@@ -10,6 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    
     <title>Vakken</title>
 
 </head>
@@ -32,13 +33,13 @@
   </div>
 
   <div id='framejaar1' style='display:none'>
-  <?php include 'jaar1.html'?>
+  <?php include 'jaar1.php'?>
   </div>
   <div id='framejaar2' style='display:none'>
-  <?php include 'jaar2.html'?>
+  <?php include 'jaar2.php'?>
   </div>
   <div id='framejaar3' style='display:none'>
-  <?php include 'jaar3.html'?>
+  <?php include 'jaar3.php'?>
   </div>
 
   <?php include '../standard/footer.php'?>

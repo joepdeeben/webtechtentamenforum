@@ -17,7 +17,7 @@
 <?php include '../standard/header.php';?>
 
 <div class="subex">
-    <span class="titel-vraag">Stel een Vraag!</span>
+    <span class="titel-vraag"> Submit een opgave</span>
     <form>
     <div class="info-vraag">
         <div class="jaar-vraag">
@@ -37,19 +37,21 @@
     </div>
 
     <div class="titel-opgave-sub">
-        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw vraag?">
+        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw opgave?">
     </div>
     <div class="opgave">
-            <textarea id="vraagvolledig" placeholder="Vul hier een geformuleerde vraag in" name="vraagcontent" rows="9" cols="230"></textarea>
+            <textarea id="vraagvolledig" placeholder="Vul hier de geformuleerde opgave in" name="vraagcontent" rows="9" cols="230"></textarea>
   
     </div>
-    
+    <div class="antwoord-opgave">
+            <textarea id="vraagvolledig" placeholder="Vul hier het antwoord in" name="vraagcontent" rows="9" cols="230"></textarea>
+    </div>
     <div class="afbeelding">
-        Upload een afbeelding bij de opgave: <br>
+        Upload een afbeelding bij de vraag: <br>
         <input type="file" accept="image/*">
     </div>
     <div class="submitbtn">
-    <input  type="submit" value="Stel uw vraag!" onclick="return validateForm()">
+    <input  type="submit" value="Submit de opgave!" onclick="return validateForm()">
 </div>
        </form>
 </div>

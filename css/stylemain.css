@@ -7,20 +7,20 @@
 }
 
 
-:root{
+:root {
     --bg-color: #304ba3;
     --text-color: white;
     --main-color: #29fd53;
 }
 
-body{
+body {
     min-height: 200vh;
-    background:white;
+    background: white;
     color: var(--text-color);
     overflow: hidden;
 }
 
-header{
+header {
     position: relative;
     width: 101%;
     top: -10px;
@@ -33,11 +33,11 @@ header{
     background: var(--bg-color);
     /* padding: 28px 12%; */
     transition: all .5s ease;
-    height:80px;
+    height: 80px;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;  
+    border-bottom-right-radius: 15px;
 }
-    
+
 
 #dothis {
     color: black;
@@ -45,32 +45,35 @@ header{
     margin: 20px;
     text-align: left;
 }
+
 /* header is hier onder */
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     padding-left: 5%;
     size: 10em;
-    
+
 }
 
-.logo i{
+.logo i {
     color: var(--text-color);
     font-size: 28px;
     margin-right: 7px;
 }
-.logo span{
-    color:var(--text-color);
+
+.logo span {
+    color: var(--text-color);
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-.navigatie{
+.navigatie {
     display: flex;
-   
+
 }
-.navigatie a{
+
+.navigatie a {
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
@@ -79,20 +82,22 @@ header{
     transition: all .50s ease;
 }
 
-.navigatie a:hover{
+.navigatie a:hover {
     color: var(--bg-color);
-    
+
 
 }
-.navigatie a.active{
+
+.navigatie a.active {
     color: var(--main-color)
 }
 
-.main{
+.main {
     display: flex;
     align-items: center;
 }
-.main a{
+
+.main a {
     margin-right: 25px;
     margin-left: 10px;
     color: var(--text-color);
@@ -100,21 +105,26 @@ header{
     font-weight: 500;
     transition: all .50s ease;
 }
-.inbox i{
+
+.inbox i {
     color: green
 }
-.user{
+
+.user {
     display: flex;
     align-items: center;
 }
-.user i{
+
+.user i {
     color: var(--text-color);
     font-size: 28px;
     margin-right: 7px;
 }
-.main a:hover{
+
+.main a:hover {
     color: var(--main-color);
 }
+
 #menu-icon {
     font-size: 35px;
     color: var(--text-color);
@@ -122,22 +132,25 @@ header{
     z-index: 10001;
     display: none;
 }
-@media (max-width: 1200px){
-    header{
+
+@media (max-width: 1200px) {
+    header {
         padding: 14px 2%;
         transition: .2s;
     }
-    .navigatie a{
+
+    .navigatie a {
         padding: 5px 0;
         margin: 0px 20px;
     }
 }
 
-@media (max-width: 1090px){
-    #menu-icon{
+@media (max-width: 1090px) {
+    #menu-icon {
         display: block;
     }
-    .navigatie{
+
+    .navigatie {
         position: absolute;
         top: 100%;
         right: -100%;
@@ -150,23 +163,29 @@ header{
         border-radius: 10px;
         transform: all .50s ease;
     }
-    .navigatie a{
+
+    .navigatie a {
         display: block;
         margin: 12px 0;
         padding: 0px 25px;
-        transition: all .50s ease;;
+        transition: all .50s ease;
+        ;
     }
-    .navigatie a:hover{
+
+    .navigatie a:hover {
         color: var(--text-color);
         transform: translateY(5px);
     }
-    .navigatie a.active{
+
+    .navigatie a.active {
         color: var(--text-color);
     }
-    .navigatie.open{
+
+    .navigatie.open {
         right: 2%
     }
 }
+
 /* einde header */
 /* begin footer */
 .footer {
@@ -175,45 +194,50 @@ header{
     position: absolute;
     bottom: 0;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-left: 100px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     left: 0;
-    right:0;
-    padding-top:30px;
-    
-  }
-  
-  
-  .people-info, .contact-info, .button {
+    right: 0;
+    padding-top: 30px;
+
+}
+
+
+.people-info,
+.contact-info,
+.button {
     flex-grow: 1;
     padding-left: 10px;
     width: 30%;
-  }
-  .more-info{
-    padding-right:4%;
-    
-  }
-  
-  .people-info h4 {
-   margin:-1;
-  }
-  
-  a {
+}
+
+.more-info {
+    padding-right: 4%;
+
+}
+
+.people-info h4 {
+    margin: -1;
+}
+
+a {
     color: #fff;
-    
-  }
-  /*-- dropdown --*/
+
+}
+
+/*-- dropdown --*/
 
 .dropbtn {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  padding: 5px;
-  font-size: 18px;
-  border: none;
-  min-width: 250px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    min-width: 250px;
 }
+
 .dropbtn:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
@@ -222,32 +246,34 @@ header{
     border: none;
     min-width: 250px;
     transition: .0s ease;
-  }
-.dropdown {
-  position: relative;
-  display: inline-block;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown:hover {
     color: var(--bg-color);
-    border-top-right-radius: 10px ;
+    border-top-right-radius: 10px;
 }
 
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,01);
-  z-index: 1;
-  min-width: 250px;
-  border-bottom-left-radius: 15px ;
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 01);
+    z-index: 1;
+    min-width: 250px;
+    border-bottom-left-radius: 15px;
 }
 
 .dropdown-content a {
-  color: var(--bg-color);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: var(--bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 
@@ -256,84 +282,98 @@ header{
 }
 
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-*/
-.dropdown:hover .dropbtn:hover {
-    background-color: yellow; 
+*/ .dropdown:hover .dropbtn:hover {
+    background-color: yellow;
     color: var(--main-color);
 }
-.uva{
+
+.uva {
     margin-left: 10px;
 }
-.achtergrond{
+
+.achtergrond {
     width: 200px;
     display: flex;
     justify-content: center;
     position: relative;
 }
-.main-div-head{
-    margin-left:10%;
+
+.main-div-head {
+    margin-left: 10%;
     margin-top: 1%;
     color: var(--bg-color);
-    font-size:30px;
+    font-size: 30px;
     width: 80%;
     display: flex;
     flex-direction: row;
-    
+
     justify-content: space-evenly;
 }
-.main-div{
+
+.main-div {
     margin-left: 5%;
     margin-top: 1%;
     color: var(--bg-color);
-    font-size:20px;
+    font-size: 20px;
     width: 90%;
     height: 200%;
     display: flex;
     flex-direction: row;
-    
-    justify-content:space-between
+
+    justify-content: space-between
 }
-.inmain, .inmain-mid {
+
+.inmain,
+.inmain-mid {
     transform:
-      perspective(800px)
-      rotateX(-1deg);
+        perspective(800px) rotateX(-1deg);
     transition: transform 1s ease 0s;
     border-radius: 4px;
     box-shadow:
-      rgba(0, 0, 0, 0.149) 0px 0px 0px 1px,
-      rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
-      rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
-      rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+        rgba(0, 0, 0, 0.149) 0px 0px 0px 1px,
+        rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+        rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+        rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
 }
-.inmain:hover, .inmain-mid:hover {
-      transform: perspective(800px) rotateY(-4deg);
-    }
-  
-.inmain{
+
+.inmain:hover,
+.inmain-mid:hover {
+    transform: perspective(800px) rotateY(-4deg);
+}
+
+.inmain {
     padding: 10px;
     border: 3px solid var(--bg-color);
     width: 25%;
 }
-.inmain-mid{
+
+.inmain-mid {
     padding: 10px;
     border: 3px solid var(--bg-color);
     width: 40%;
     height: fit-content;
 }
-.titel-main{
+
+.titel-main {
     font-weight: bold;
     font-size: 2em;
-    
-}
-.leaderboard, .leaderboard-user, .leaderboard-username {
-    
 
-    margin:8px;
+}
+
+.leaderboard,
+.leaderboard-user,
+.leaderboard-username {
+
+
+    margin: 8px;
     border: 3px
 }
-.leaderboard-user1{
+
+.leaderboard-user1 {
     display: grid;
     border-radius: 10px;
     border: 3px solid var(--bg-color);
@@ -342,7 +382,8 @@ header{
     width: 96%;
     align-items: center;
 }
-.leaderboard-user2{
+
+.leaderboard-user2 {
     display: grid;
     border-radius: 10px;
     border: 3px solid var(--bg-color);
@@ -351,47 +392,53 @@ header{
     width: 94%;
     align-items: center;
 }
-.leaderboard-user3{
+
+.leaderboard-user3 {
     display: grid;
     border-radius: 10px;
     border: 3px solid var(--bg-color);
-    margin-left:4%;
+    margin-left: 4%;
     margin-bottom: 10px;
     width: 92%;
     align-items: center;
-    
+
 }
-.leaderboard-user45{
+
+.leaderboard-user45 {
     display: grid;
     border-radius: 10px;
     border: 3px solid var(--bg-color);
-    margin-left:5%;
+    margin-left: 5%;
     margin-bottom: 10px;
     width: 90%;
     align-items: center;
 }
-.leaderboard-user1:hover{
+
+.leaderboard-user1:hover {
     background-color: gold;
     transition: .3s ease;
     display: grid;
     border-radius: 10px;
     border: 3px solid goldenrod;
 }
-.leaderboard-user2:hover{
+
+.leaderboard-user2:hover {
     background-color: silver;
     transition: .3s ease;
     display: grid;
     border-radius: 10px;
     border: 3px solid rgb(165, 165, 165);
 }
-.leaderboard-user3:hover{
+
+.leaderboard-user3:hover {
     background-color: #d28c47;
     transition: .3s ease;
     display: grid;
     border-radius: 10px;
     border: 3px solid rgb(151, 114, 22)
 }
-.leaderboard-user45:hover{
+
+.leaderboard-user45:hover {
     background-color: var(--bg-color);
     color: white;
     transition: .3s ease;
@@ -399,24 +446,40 @@ header{
     border-radius: 10px;
     border: 3px solid darkblue
 }
-.leaderboard-userprofile{
+
+.leaderboard-userprofile {
     border-radius: 50%;
     margin: 6px;
-    
+
 }
-.leaderboard-username, .leaderboard-userxp{
+
+.leaderboard-userprofile img:hover,
+.leaderboard-user1:hover,
+.leaderboard-user2:hover,
+.leaderboard-user3:hover,
+.leaderboard-user45:hover,
+.leaderboard-userprofile:hover
+{
+transform: perspective(200px) rotateX(2deg);
+
+}
+
+.leaderboard-username,
+.leaderboard-userxp {
     position: absolute;
     padding: 10px;
     padding-left: 3%;
     padding-top: 1%;
 }
-.leaderboard-userxp{
+
+.leaderboard-userxp {
     width: 20%;
     right: 0;
     padding-top: 3%;
-    
+
 }
-.message-main{
+
+.message-main {
     font-weight: 300;
     font-size: 1em;
 }
@@ -424,178 +487,204 @@ header{
 .titel {
     color: var(--bg-color);
 }
+
 .homebtn {
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 1px;
     font-size: 18px;
     border: none;
-  }
+}
 
-  .dropdown-contentbutton {
+.dropdown-contentbutton {
     background-color: var(--text-color);
-  color: var(--bg-color);
-  padding: 5px;
-  font-size: 18px;
-  border: none;
-  min-width: 250px;
+    color: var(--bg-color);
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    min-width: 250px;
 }
-.dropdown-content:hover, .dropdown-contentbutton:hover  {
+
+.dropdown-content:hover,
+.dropdown-contentbutton:hover {
     background-color: var(--text-color);
-  color: #1b223d;
-  padding: 5px;
-  font-size: 20px;
-  border: none;
-  min-width: 250px;
-  transition: .3s;
+    color: #1b223d;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    min-width: 250px;
+    transition: .3s;
 }
+
 .jarencheckbox {
-color: black;
-font-size: 40px;
-width: 400px;
-background-color: red;
-padding-top: 20px;
+    color: black;
+    font-size: 40px;
+    width: 400px;
+    background-color: red;
+    padding-top: 20px;
 }
+
 /* .submitdiv{
    
 /* border: 5px solid var(--bg-color);
 border-radius: 10px; */
 
-.headline{
-color: black;
-margin-left: 10%;
-text-align: center;
+.headline {
+    color: black;
+    margin-left: 10%;
+    text-align: center;
 }
-.titelvraagdiv{
+
+.titelvraagdiv {
     height: 30%;
     width: 90%;
     align-self: center;
-border: 2px solid var(--bg-color);
-border-radius: 25px;
-margin-left: 5%;
-margin-bottom: 1%;
+    border: 2px solid var(--bg-color);
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-bottom: 1%;
 }
-.vraagdiv{
+
+.vraagdiv {
     height: 60%;
     width: 90%;
     align-self: center;
     border: 2px solid var(--bg-color);
-border-radius: 25px;
-margin-left: 5%;
-margin-bottom: 1%;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-bottom: 1%;
 }
-.titelvraagtext{
+
+.titelvraagtext {
     color: black;
     font-size: x-large;
     padding-top: 5%;
     text-align: center;
 }
-.titelvraagtextdiv{
+
+.titelvraagtextdiv {
     height: 20%;
     margin-top: 1%;
     margin: 2%
 }
-.titelvraaginvuldiv{
+
+.titelvraaginvuldiv {
     height: 60%;
     margin: 2%;
     margin-left: 2%;
 
 }
-#titelvraag{
+
+#titelvraag {
     color: var(--bg-color);
     width: 80%;
     border: var(--bg-color);
     padding: 6px;
 }
-.vraagtext{
+
+.vraagtext {
     color: black;
     font-size: x-large;
     padding-top: 5%;
 }
-.vraagtextdiv{
+
+.vraagtextdiv {
     height: 20%;
     margin: 1%
 }
-.vraaginvuldiv{
+
+.vraaginvuldiv {
     height: 60%;
     margin-left: 2%;
 }
 
 
-.logindiv{
+.logindiv {
     width: 40%;
     height: 600px;
     border: 3px solid var(--bg-color);
     margin-left: 30%;
     margin-top: 2%;
     border-radius: 7px;
-    }
-.logindiv:hover{
+}
+
+.logindiv:hover {
     border-radius: 10px;
 }
-.logintextdiv{
+
+.logintextdiv {
     height: 30%;
     width: 100%;
     text-align: center;
 
 }
-.logintext{
+
+.logintext {
     color: #304ba3;
     font-size: 515%;
     width: 100%;
 }
-.usernamediv{
-    margin-top: 1%;
-    height: 20%;
-    width: 100%;
-    
-}
-#logingebruikersnaam{
-border: 3px solid var(--bg-color);
-border-radius: 4px;
-height: 50%;
-margin-top: 12px;
-font-size: large;
-}
-#logingebruikersnaam:hover{
-    border: 3px solid #8bced7;
-    height: 50%;
-    margin-top: 12px;
-    font-size: large;
-    transition: .2s, .3s ease;
-    border-radius: 6px;
-    }
-.wachtwoorddiv{
-    margin-top: 1%;
-    height: 20%;
-    width: 100%;
-}
-#loginwachtwoord{
-border: 3px solid var(--bg-color);
-border-radius: 4px;    
-height: 50%;
-margin-top: 12px;
-font-size: large;
-}
-#loginwachtwoord:hover{
-    border: 3px solid #8bced7;
-    height: 50%;
-    margin-top: 12px;
-    font-size: large;
-    transition: .2s, .3s ease;
-    border-radius: 6px;
-    }
-input::placeholder{
-    font-size: large;
-}
-.loginbuttondiv{
+
+.usernamediv {
     margin-top: 1%;
     height: 20%;
     width: 100%;
 
 }
-.loginbutton{
-    
+
+#logingebruikersnaam {
+    border: 3px solid var(--bg-color);
+    border-radius: 4px;
+    height: 50%;
+    margin-top: 12px;
+    font-size: large;
+}
+
+#logingebruikersnaam:hover {
+    border: 3px solid #8bced7;
+    height: 50%;
+    margin-top: 12px;
+    font-size: large;
+    transition: .2s, .3s ease;
+    border-radius: 6px;
+}
+
+.wachtwoorddiv {
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+}
+
+#loginwachtwoord {
+    border: 3px solid var(--bg-color);
+    border-radius: 4px;
+    height: 50%;
+    margin-top: 12px;
+    font-size: large;
+}
+
+#loginwachtwoord:hover {
+    border: 3px solid #8bced7;
+    height: 50%;
+    margin-top: 12px;
+    font-size: large;
+    transition: .2s, .3s ease;
+    border-radius: 6px;
+}
+
+input::placeholder {
+    font-size: large;
+}
+
+.loginbuttondiv {
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+
+}
+
+.loginbutton {
+
     cursor: pointer;
     outline: 0;
     display: inline-block;
@@ -613,24 +702,27 @@ input::placeholder{
     width: 22%;
     margin-left: 39%;
 
-    
+
 
 }
+
 .loginbutton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)
-
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
 }
-.registeraanraaddiv{
+
+.registeraanraaddiv {
     height: 10%;
     width: 100%;
     margin-left: 32%;
 
 }
-.registeraanraadtext{
+
+.registeraanraadtext {
     color: #304ba3;
 
 }
-#jaardrop{
+
+#jaardrop {
     border-color: #304ba3;
     border-radius: 4px;
     height: 50%;
@@ -639,25 +731,29 @@ input::placeholder{
     font-size: large;
     background-color: white;
 }
-.dropdownjaardiv, .dropdownvakdiv{
+
+.dropdownjaardiv,
+.dropdownvakdiv {
     height: 20%;
     width: 90%;
     margin-left: 5%;
 }
-.jaartextdiv{
+
+.jaartextdiv {
     width: 90%;
     height: 20%;
     margin: 1%;
     margin-left: 4%
 }
-.jaartext{
+
+.jaartext {
     color: black;
     font-size: x-large;
     padding-top: 5%;
     padding: 0;
 }
 
-#vakdrop{
+#vakdrop {
     border-color: #304ba3;
     border-radius: 4px;
     height: 50%;
@@ -667,29 +763,32 @@ input::placeholder{
     background-color: white;
 }
 
-.vaktextdiv{
+.vaktextdiv {
     height: 20%;
     margin: 1%;
     margin-left: 4%
 }
-.vaktext{
+
+.vaktext {
     color: black;
     font-size: x-large;
     padding-top: 5%;
 }
-.submitQbuttondiv{
+
+.submitQbuttondiv {
     margin-top: 1%;
     height: 20%;
     width: 100%;
 
 }
 
-textarea{
+textarea {
     border: var(--bg-color);
     padding: 6px;
 }
-.submitQbutton{
-    
+
+.submitQbutton {
+
     cursor: pointer;
     outline: 0;
     display: inline-block;
@@ -707,12 +806,12 @@ textarea{
     width: 10%;
     margin-left: 10%;
 
-    
+
 
 }
 
-.vakkennavbutton{
-    
+.vakkennavbutton {
+
     cursor: pointer;
     outline: 0;
     display: inline-block;
@@ -731,7 +830,7 @@ textarea{
 }
 
 
-.page-titel{
+.page-titel {
     color: var(--bg-color);
     width: 30%;
     font-size: x-large;
@@ -742,3 +841,98 @@ textarea{
     margin-top: 5%;
     margin-bottom: 5%;
 }
+.subex{
+    width: 90%;
+    height: fit-content;
+    margin-left: 5%;
+    margin-top: 12px;
+    border-radius: 23px;
+    background: linear-gradient(225deg, #f0f0f0, #ebebeb);
+    box-shadow:  -32px 32px 64px #cccccc,
+                 32px -32px 64px #f4f4f4;
+    padding-bottom: 8px;
+}
+.titel-vraag{
+    font-size: 50px;
+    color: var(--bg-color);
+    text-decoration: underline var(--bg-color);
+    padding-left: 4%;
+    padding-top: 4%
+
+}
+.jaar-vraag{
+    float: left;
+    width: 200px;
+    padding-left: 4%;
+    
+}
+.vak-vraag{
+    float: left;
+}
+
+.info-vraag, .antwoord-opgave, .opgave, .afbeelding, textarea{
+    /* border: 3px #304ba3 solid; */
+    margin: 8px;
+    width: 90%;
+}
+.jaar-vraag, .vak-vraag{
+    /* border: 3px #304ba3 solid; */
+    margin: 12px;
+    width: 10%;
+}
+
+.info-vraag select{
+    color: var(--bg-color);
+    border: 3px var(--bg-color);
+    background: linear-gradient(225deg, #f0f0f0, #ebebeb);
+}
+.info-vraag select-selected{
+    color: var(--text-color);
+    background-color: #263b81;;
+}
+
+.info-vraag{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 12px;
+}
+
+.titel-opgave-sub{
+    width: 30%;
+    margin-left: 2%;
+    border-radius: 23px;
+    box-shadow:  -32px -32px 64px #cccccc,
+             32px 32px 64px #f4f4f4;
+}
+
+.antwoord-opgave textarea, .opgave textarea, .titel-opgave-sub{ 
+    border: 3px var(--bg-color) solid;
+    border-radius: 10px;
+    padding: 6px;
+    }
+.subex input, .subex textarea{
+    background: linear-gradient(225deg, #f0f0f0, #ebebeb);
+}
+.afbeelding{
+    width: 80%;
+    color: var(--bg-color);
+    margin-left: 2%;
+}
+.submitbtn  input[type="submit"]{
+    color: white;
+    border: 3px var(--bg-color) solid;
+    margin-left: 30%;
+    width: 30%;
+    height: 50px;
+    font-size: large;
+    background: var(--bg-color);
+    border-radius: 10px;
+}
+.submitbtn{
+    margin-right: 20px;
+    padding-bottom: 200px;
+    
+    align-content: center;
+    
+}
+
