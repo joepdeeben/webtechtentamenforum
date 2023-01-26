@@ -26,7 +26,7 @@
           <div class="dropdown-content">
             <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearOne();">Jaar 1</button></a>
             <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearTwo();">Jaar 2</button></a>
-            <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
+            <a href="../vakken/vakken.php"Z><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
           </div>
         </div>
         
