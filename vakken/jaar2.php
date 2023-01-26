@@ -28,7 +28,7 @@
     <a class="vaktext"> Over welk vak wil je meer informatie zien?</a>
 </div>
 <div  style='text-align:center'>
-<select name="vakQ" id="dropdownvakkenjaar2">
+<select id="dropdownvakkenjaar2" onchange="ShowInfoJaar2()">
     <option value="select" disabled selected>Selecteer een Vak</option>
     <option value="Bay">Bayesian statistics for machine learning</option>
     <option value="Com">Computersystemen</option>
@@ -42,6 +42,9 @@
     <option value="Twee">Tweedejaarsproject BSc KI</option>
     <option value="Ori">Oriëntatie op studie en loopbaan</option>
   </select>
+</div>
+
+<div id='vaktekstjaar2' style='color:red'>
 </div>
 
 </body>

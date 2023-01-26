@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="../javascript/vakkenfuncties.js"></script>
+  <script src="../javascript/vakkenfuncties.js">
+  </script>
     <link rel="stylesheet" href="../css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -25,10 +26,10 @@
     <a class="vaktext"> Over welk vak wil je meer informatie zien?</a>
 </div>
 <div  style='text-align:center'>
-<select name="vakQ" id="dropdownvakkenjaar1">
+<select id="dropdownvakkenjaar1" onchange="ShowInfoJaar1()">
     <option value="select" disabled selected>Selecteer een Vak</option>
-    <option value="Pro" onclick="ShowInfo()">Prolog</option>
-    <option value="Iki" onclick="ShowInfo()">Inleiding KI</option>
+    <option value="Pro">Prolog</option>
+    <option value="Iki">Inleiding KI</option>
     <option value="Log">Inleiding logica</option>
     <option value="Py">Introductie in programmeren</option>
     <option value="Web">Webtechnologie</option>
@@ -41,9 +42,12 @@
   </select>
 </div>
 
-<div class="hallo" id='Protekst' style='display:none;color:blueviolet;text-align:center'>
-Tes
+<div id='Pro' style='color:red;display:none'>
+Prolog
+</div>
 
+<div id='Iki' style='color:red;display:none'>
+Inleiding KI
 </div>
 
 </body>
