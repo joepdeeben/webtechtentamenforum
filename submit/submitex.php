@@ -56,9 +56,10 @@
 
 <script>
 var options = {
-  "jaar1": ["Option 1a", "Option 1b", "Option 1c"],
-  "jaar2": ["Option 2a", "Option 2b", "Option 2c"],
-  "jaar3": ["Option 3a", "Option 3b", "Option 3c"]
+  "jaar1": ["Prolog", "Inleiding KI", "Inleiding Logica", "Introductie in programmeren", "Webtechnologie", "Lineare algebra", "Inleiding Cognitieve Psychologie", "Calculus en Optimalisatie", "Taaltheorie en taalverwerking", "Informatievisualisatie", "PAV", "Algemeen jaar 1"],
+  "jaar2": ["Bayesian Statistics for Machine Learning", "Computersystemen", "Computationele logica", "Leren", "Leren en Beslissen", "Datastructuren en Algoritmen", "Natuurlijke taalmodellen en interface", "Cognitive modelling","Introduction to computer vision","Tweedejaarsproject BSc KI", "Oriëntatie op studie en loopbaan", "Algemeen jaar 2"  ],
+  "jaar3": ["Keuzevakken", "Filosofie en AI", "Keuzevak", "Afstudeerproject BSc KI", "Algemeen jaar 3"],
+  "Algemeen": ["Algemeen jaar 1", "Algemeen jaar 2", "Algemeen jaar 3", "Algemeen studie" ]
 };
 
 $("#jaar").change(function() {

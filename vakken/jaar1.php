@@ -28,17 +28,18 @@
 <div  style='text-align:center'>
 <select id="dropdownvakkenjaar1" onchange="ShowInfoJaar1()">
     <option value="select" disabled selected>Selecteer een Vak</option>
-    <option value="Pro">Prolog</option>
-    <option value="Iki">Inleiding KI</option>
-    <option value="Log">Inleiding logica</option>
-    <option value="Py">Introductie in programmeren</option>
-    <option value="Web">Webtechnologie</option>
-    <option value="Lin">Lineaire algebra</option>
-    <option value="Cog">Inleiding cognitieve psychologie</option>
-    <option value="Calc">Calculus en optimalisatie</option>
-    <option value="Taal">Taaltheorie en taalverwerking</option>
-    <option value="Inf">Informatievisualisatie</option>
-    <option value="Pav">Practicum academische vaardigheden</option>
+    <option value="Prolog">Prolog</option>
+    <option value="Inleiding KI">Inleiding KI</option>
+    <option value="Inleiding Logica">Inleiding logica</option>
+    <option value="Introductie in programmeren">Introductie in programmeren</option>
+    <option value="Webtechnologie">Webtechnologie</option>
+    <option value="Lineare algebra">Lineaire algebra</option>
+    <option value="Inleiding Cognitieve Psychologie">Inleiding cognitieve psychologie</option>
+    <option value="Calculus en Optimalisatie">Calculus en optimalisatie</option>
+    <option value="Taaltheorie en taalverwerking">Taaltheorie en taalverwerking</option>
+    <option value="Informatievisualisatie">Informatievisualisatie</option>
+    <option value="PAV">Practicum academische vaardigheden</option>
+    <option value="Algemeen jaar 1">Algemene vragen jaar 1</option>
   </select>
 </div>
 
