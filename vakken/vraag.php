@@ -14,11 +14,28 @@
     <title>Vraag</title>
 
 </head>
-
+<?php
+$vraagtitel = "dit is de titel van de vraag";
+$vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? even kijken hoe dat gaat met phpaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddd dddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssss";
+?>
 <body>
-
-  <div style='color:orange;font-size:50px;text-align:center'>
-    Hier komen vragen enzo te staan
+  <div class="vraagtemplate">
+    <div class="titelvraagtemplate">
+      <?php
+      echo $vraagtitel;
+      ?>
+    </div>
+    <div class="vraagvan">
+      van iemadn
+    </div>
+    <div class="vraagintro">
+      <?php
+      echo substr($vraagintro, 0, 200), '...';
+      ?>
+    </div>
+    <div class="likes">
+      aantal like asdfasd
+    </div>
   </div>
 
 
