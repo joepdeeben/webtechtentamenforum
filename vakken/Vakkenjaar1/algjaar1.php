@@ -22,7 +22,7 @@
   </div>
 
 <div>
-<?php include 'vraag.php'?>
+<?php include '../vraag.php'?>
 </div>
 
 
