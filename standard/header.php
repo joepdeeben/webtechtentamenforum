@@ -32,14 +32,14 @@
         
         <div class="dropdown">
           <a href="../submit/submitQ.php"><button class="dropbtn" onclick="document.getElementById('testid').innerHTML = 'Stel je vraag'">Stel je vraag</button></a>
-          <div class="dropdown-content">
+          <!-- <div class="dropdown-content">
             <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
             <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
-          </div>
+          </div> -->
           
         </div>
         <div class="dropdown">
-        <a href="../standard/index.php"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>
+        <a href="../submit/submitex.php"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>
         <div class="dropdown-content">
           <!-- <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
           <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
