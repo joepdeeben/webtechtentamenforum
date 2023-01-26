@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="../javascript/vakkenfuncties.js">
+  <script src="../../javascript/vakkenfuncties.js">
   </script>
     <link rel="stylesheet" href="../css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -44,12 +44,52 @@
 </div>
 
 
-<div class='vakInfo' id='Pro' style='color:red;display:none'>
-Prolog
+<div class='vakInfo' id='Prolog' style='display:none'>
+<?php include 'Vakkenjaar1/prolog.php' ?>
 </div>
 
-<div class='vakInfo' id='Iki' style='color:red;display:none'>
-Inleiding KI
+<div class='vakInfo' id='Inleiding KI' style='display:none'>
+<?php include 'Vakkenjaar1/inleiding_ki.php' ?>
+</div>
+
+<div class='vakInfo' id='Inleiding Logica' style='display:none'>
+<?php include 'Vakkenjaar1/inleiding_logica.php' ?>
+</div>
+
+<div class='vakInfo' id='Introductie in programmeren' style='display:none'>
+<?php include 'Vakkenjaar1/intro_programmeren.php' ?>
+</div>
+
+<div class='vakInfo' id='Webtechnologie' style='display:none'>
+<?php include 'Vakkenjaar1/webtech.php' ?>
+</div>
+
+<div class='vakInfo' id='Lineare algebra' style='display:none'>
+<?php include 'Vakkenjaar1/linalg.php' ?>
+</div>
+
+<div class='vakInfo' id='Inleiding Cognitieve Psychologie' style='display:none'>
+<?php include 'Vakkenjaar1/inleiding_cogpsy.php' ?>
+</div>
+
+<div class='vakInfo' id='Calculus en Optimalisatie' style='display:none'>
+<?php include 'Vakkenjaar1/calculus.php' ?>
+</div>
+
+<div class='vakInfo' id='Taaltheorie en taalverwerking' style='display:none'>
+<?php include 'Vakkenjaar1/taaltheorie.php' ?>
+</div>
+
+<div class='vakInfo' id='Informatievisualisatie' style='display:none'>
+<?php include 'Vakkenjaar1/infovis.php' ?>
+</div>
+
+<div class='vakInfo' id='PAV' style='display:none'>
+<?php include 'Vakkenjaar1/PAV.php' ?>
+</div>
+
+<div class='vakInfo' id='Algemeen jaar 1' style='display:none'>
+<?php include 'Vakkenjaar1/algjaar1.php' ?>
 </div>
 
 </body>
