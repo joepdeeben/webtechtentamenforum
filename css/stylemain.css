@@ -944,6 +944,10 @@ textarea {
     width: 80%;
     margin-left: 10%;
     border-radius: 20PX;
+    float: left;
+    overflow: hidden;
+    display: grid;
+    grid-row: inherit;
 
 }
 .titelvraagtemplate{
@@ -951,10 +955,16 @@ textarea {
     text-align: left;
     background-color: #1b223d;
     width: 80%;
+    margin-right: 0;
 }
 .vraagintro{
     padding-top: 12px;
     background-color: #29fd53;
     font-size: larger;
     width: 80%;
+}
+.vraagvan, .likes{
+    width: 10%;
+    float: right;
+    top: 0;
 }

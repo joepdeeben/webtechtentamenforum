@@ -25,14 +25,17 @@ $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? eve
       echo $vraagtitel;
       ?>
     </div>
+    <div class="vraagvan">
+      van iemadn
+    </div>
     <div class="vraagintro">
       <?php
       echo substr($vraagintro, 0, 200), '...';
       ?>
     </div>
-  </div>
-  <div style='color:orange;font-size:50px;text-align:center'>
- 
+    <div class="likes">
+      aantal like asdfasd
+    </div>
   </div>
 
 
