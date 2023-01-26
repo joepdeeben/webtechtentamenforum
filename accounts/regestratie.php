@@ -16,7 +16,7 @@
     <script src="../javascript/login.js"></script>
 </head>
 <body>
-      <?php include '../header.php';?>
+      <?php include '../standard/header.php';?>
     <form>
         <label for="name" ></label>
         <input type="text" id="name" placeholder="Naam" name="name" required>
@@ -44,6 +44,6 @@
       </form>
       
 
-      <?php include '../footer.php';?>
+      <?php include '../standard/footer.php';?>
       </body>
   </html>
