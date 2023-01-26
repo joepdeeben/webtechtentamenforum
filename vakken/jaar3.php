@@ -47,7 +47,7 @@
 <?php include 'Vakkenjaar3/keuzevak.php' ?>
 </div>
 
-<div class='vakInfo' id='Afstudeerproject BSC KI' style='display:none'>
+<div class='vakInfo' id='Afstudeerproject BSc KI' style='display:none'>
 <?php include 'Vakkenjaar3/afstudeerproject.php' ?>
 </div>
 
