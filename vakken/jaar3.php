@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="../javascript/formopen.js"></script>
+  <script src="../javascript/vakkenfuncties.js"></script>
     <link rel="stylesheet" href="../css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -10,17 +10,28 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
-    <title>Jaar 2</title>
-
+    <title>Jaar 3</title>
 </head>
 
 <body>
 
   <div class="main-div-head">
-    Jaar 2
+    Jaar 3
   </div>
 
-  <div style="color:maroon; text-align:center">Hier moet alles te vinden zijn over de vakken uit jaar 2</div>
+  <div class="vaktextdiv" style='text-align:center'>
+
+    <a class="vaktext"> Over welk vak wil je meer informatie zien?</a>
+</div>
+<div  style='text-align:center'>
+<select name="vakQ" id="dropdownvakkenjaar3">
+    <option value="select" disabled selected>Selecteer een Vak</option>
+    <option value="Keuzes">Keuzevakken</option>
+    <option value="Fil">Filosofie en AI</option>
+    <option value="Keuze">Keuzevak</option>
+    <option value="Afst">Afstudeerproject BSc KI</option>
+  </select>
+</div>
 
 </body>
 </html>

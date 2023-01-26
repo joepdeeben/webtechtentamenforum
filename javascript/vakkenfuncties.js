@@ -8,6 +8,7 @@ function FormJarenClose(){
     }
 
 function ShowYearOne(){
+    document.getElementById('selectiejaren').style.visibility='collapse'
     document.getElementById('framejaar1').style.display='block';
     document.getElementById('framejaar3').style.display='none';
     document.getElementById('framejaar2').style.display='none';
@@ -20,6 +21,7 @@ function ShowYearOne(){
 }
 
 function ShowYearTwo(){
+    document.getElementById('selectiejaren').style.visibility='collapse'
     document.getElementById('framejaar2').style.display='block';
     document.getElementById('framejaar3').style.display='none';
     document.getElementById('framejaar1').style.display='none';
@@ -32,6 +34,7 @@ function ShowYearTwo(){
 }
 
 function ShowYearThree(){
+    document.getElementById('selectiejaren').style.visibility='collapse'
     document.getElementById('framejaar3').style.display='block';
     document.getElementById('framejaar1').style.display='none';
     document.getElementById('framejaar2').style.display='none';
@@ -42,3 +45,9 @@ function ShowYearThree(){
     document.getElementById('buttonjaar1').style.background='#304ba3';
     document.getElementById('buttonjaar1').style.color='white'
     }
+
+function ShowInfo(){
+document.getElementById('dropdownvakkenjaar1').onsclick='Pro';
+document.getElementById('Protekst').style.display='block';
+}
+
