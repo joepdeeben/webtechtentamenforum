@@ -843,13 +843,14 @@ textarea {
 }
 .subex{
     width: 90%;
+    height: fit-content;
     margin-left: 5%;
-    height: 100%;
     margin-top: 12px;
     border-radius: 23px;
     background: linear-gradient(225deg, #f0f0f0, #ebebeb);
     box-shadow:  -32px 32px 64px #cccccc,
                  32px -32px 64px #f4f4f4;
+    padding-bottom: 8px;
 }
 .titel-vraag{
     font-size: 50px;
@@ -871,7 +872,7 @@ textarea {
 
 .info-vraag, .antwoord-opgave, .opgave, .afbeelding, textarea{
     /* border: 3px #304ba3 solid; */
-    margin: 12px;
+    margin: 8px;
     width: 90%;
 }
 .jaar-vraag, .vak-vraag{
@@ -907,8 +908,31 @@ textarea {
 .antwoord-opgave textarea, .opgave textarea, .titel-opgave-sub{ 
     border: 3px var(--bg-color) solid;
     border-radius: 10px;
-    padding: 4px;
+    padding: 6px;
     }
 .subex input, .subex textarea{
     background: linear-gradient(225deg, #f0f0f0, #ebebeb);
 }
+.afbeelding{
+    width: 80%;
+    color: var(--bg-color);
+    margin-left: 2%;
+}
+.submitbtn  input[type="submit"]{
+    color: white;
+    border: 3px var(--bg-color) solid;
+    margin-left: 30%;
+    width: 30%;
+    height: 50px;
+    font-size: large;
+    background: var(--bg-color);
+    border-radius: 10px;
+}
+.submitbtn{
+    margin-right: 20px;
+    padding-bottom: 200px;
+    
+    align-content: center;
+    
+}
+

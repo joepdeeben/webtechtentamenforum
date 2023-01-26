@@ -6,73 +6,75 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="viewport" content="with=device-width, initialscale=1.0">
     <meta charset="UTF-8">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
-    <title>Stel je vraag</title>
+    <title>Submit een opgave</title>
 </head>
 
 <body>
-    
+
 <?php include '../standard/header.php';?>
 
-<div class="submitdiv" >
-    <h1 class="headline">Stel een vraag over een vak</h1>
-    <div class="titelvraagdiv">
-        <div class="titelvraagtextdiv">
-
-            <a class="titelvraagtext"> Wat is de titel van uw vraag </a>
+<div class="subex">
+    <span class="titel-vraag">Stel een Vraag!</span>
+    <form>
+    <div class="info-vraag">
+        <div class="jaar-vraag">
+            <select name="jaar" id="jaar">
+                <option value="" disabled selected>Kies een jaar</option>
+                <option value="Algemeen">Algemeen</option>
+                <option value="jaar1">Jaar 1</option>
+                <option value="jaar2">Jaar 2</option>
+                <option value="jaar3">Jaar 3</option>
+            </select>
         </div>
-        <div class="titelvraaginvuldiv">
-            <input type="text" id="titelvraag" name="vraagnaam" placeholder="Hier de titel van uw vraag"><br>
+        <div class="vak-vraag">
+            <select id="vakken" name="vakken">
+            <option value="" disabled selected>Kies een vak</option>
+            </select>
         </div>
-
-    </div>
-    <div class="vraagdiv">
-        <div class="vraagtextdiv">
-
-            <a class="vraagtext"> Wat is uw volledige vraag? </a>
-        </div>
-        <div class="vraaginvuldiv">
-                <textarea id="vraagvolledig" placeholder="Vul hier de geformuleerde vraag in" name="vraagcontent" rows="9" cols="230"></textarea>
-    </div>
-   
-
-    </div>
-<div class="dropdownjaardiv">
-
-    <div class="jaartextdiv">
-
-        <a class="jaartext"> In welk jaar wordt het vak van uw vraag gegeven</a>
-    </div>
-    <select name="jaarvanvak" id="jaardrop">
-        <option value="select" disabled selected>Selecteer een jaar</option>
-        <option value="jaar 1">Jaar 1</option>
-        <option value="jaar 2">Jaar 2</option>
-        <option value="jaar 3">Jaar 3</option>
-      </select>
     </div>
 
-    <div class="dropdownvakdiv">
-
-        <div class="vaktextdiv">
+    <div class="titel-opgave-sub">
+        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw vraag?">
+    </div>
+    <div class="opgave">
+            <textarea id="vraagvolledig" placeholder="Vul hier een geformuleerde vraag in" name="vraagcontent" rows="9" cols="230"></textarea>
+  
+    </div>
     
-            <a class="vaktext"> Over welk vak stelt u een vraag?</a>
-        </div>
-        <select name="vakQ" id="vakdrop">
-            <option value="select" disabled selected>Selecteer een Vak</option>
-            <option value="Prolog">Prolog</option>
-            <option value="Inleiding KI">Inleiding KI</option>
-            <option value="Inleiding logica">Inleidin logica</option>
-          </select>
-        </div>
-      
-        <div class="submitQbuttondiv">
-            <button class="submitQbutton" type="submit">Submit</button>
-            </div> 
-</div>  
+    <div class="afbeelding">
+        Upload een afbeelding bij de opgave: <br>
+        <input type="file" accept="image/*">
+    </div>
+    <div class="submitbtn">
+    <input  type="submit" value="Stel uw vraag!" onclick="return validateForm()">
+</div>
+       </form>
+</div>
 
 
+
+<script>
+var options = {
+  "jaar1": ["Prolog", "Inleiding KI", "Inleiding Logica", "Introductie in programmeren", "Webtechnologie", "Lineare algebra", "Inleiding Cognitieve Psychologie", "Calculus en Optimalisatie", "Taaltheorie en taalverwerking", "Informatievisualisatie", "PAV", "Algemeen jaar 1"],
+  "jaar2": ["Bayesian Statistics for Machine Learning", "Computersystemen", "Computationele logica", "Leren", "Leren en Beslissen", "Datastructuren en Algoritmen", "Natuurlijke taalmodellen en interface", "Cognitive modelling","Introduction to computer vision","Tweedejaarsproject BSc KI", "Oriëntatie op studie en loopbaan", "Algemeen jaar 2"  ],
+  "jaar3": ["Keuzevakken", "Filosofie en AI", "Keuzevak", "Afstudeerproject BSc KI", "Algemeen jaar 3"],
+  "Algemeen": ["Algemeen jaar 1", "Algemeen jaar 2", "Algemeen jaar 3", "Algemeen studie" ]
+};
+
+$("#jaar").change(function() {
+  var selected = $(this).val();
+  var vakken = $("#vakken");
+  vakken.html("");
+  options[selected].forEach(function(opt) {
+    vakken.append($("<option>").text(opt));
+  });
+});
+</script>
+
+<?php include '../standard/footer.php';?>
 
 
 </body>
