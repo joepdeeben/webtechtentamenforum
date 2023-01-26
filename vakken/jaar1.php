@@ -26,7 +26,7 @@
     <a class="vaktext"> Over welk vak wil je meer informatie zien?</a>
 </div>
 <div  style='text-align:center'>
-<select id="dropdownvakkenjaar1" onchange="ShowInfoJaar1()">
+<select id="dropdownvakkenjaar1" onclick="ShowInfoJaar1()">
     <option value="select" disabled selected>Selecteer een Vak</option>
     <option value="Prolog">Prolog</option>
     <option value="Inleiding KI">Inleiding KI</option>
@@ -43,11 +43,12 @@
   </select>
 </div>
 
-<div id='Pro' style='color:red;display:none'>
+
+<div class='vakInfo' id='Pro' style='color:red;display:none'>
 Prolog
 </div>
 
-<div id='Iki' style='color:red;display:none'>
+<div class='vakInfo' id='Iki' style='color:red;display:none'>
 Inleiding KI
 </div>
 

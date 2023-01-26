@@ -50,7 +50,13 @@ function ShowInfoJaar1(){
     var select = document.getElementById("dropdownvakkenjaar1");
     var output = document.getElementById("vaktekstjaar1");
     
-    select.onchange = function() {
+    select.onclick = function() {
+
+                //get all elements with the class name "vakInfo" and set their display property to 'none'
+                var vakInfoElements = document.getElementsByClassName("vakInfo");
+                for(var i = 0; i < vakInfoElements.length; i++){
+                    vakInfoElements[i].style.display = "none";
+                }
       var selectedValue = select.options[select.selectedIndex].value;
       document.getElementById(selectedValue).style.display='block';
     }
