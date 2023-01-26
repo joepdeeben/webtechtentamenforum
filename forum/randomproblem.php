@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
     <meta name="viewport" content="with=device-width, initialscale=1.0">
     <title>Give me a problem</title>
 </head>
@@ -12,7 +12,7 @@
 
 <div class="opgave_form">
 
-    <link rel="stylesheet" href="css/stylerandomproblem.css">
+    <link rel="stylesheet" href="../css/stylerandomproblem.css">
 
     <button id="giveprob">geef me een oefening</button>
     <p id="dothis"></p>

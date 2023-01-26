@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script src="javascript/formopen.js"></script>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="viewport" content="with=device-width, initialscale=1.0">
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="user-image">
-                    <img class="user-image-image" src="images/uva-logo2.png" alt="uva-logo">
+                    <img class="user-image-image" src="../images/uva-logo2.png" alt="uva-logo">
                 </div>
 
                 <div class="contact-infos">
@@ -53,7 +53,7 @@
             </div>
 
             <div class="user-image">
-                <img class="user-image-image" src="images/uva-logo2.png" alt="uva-logo">
+                <img class="user-image-image" src="../images/uva-logo2.png" alt="uva-logo">
             </div>
             
             <div class="contact-info">
@@ -71,7 +71,7 @@
         </div>
 
         <div class="user-image">
-            <img class="user-image-image" src="images/uva-logo2.png" alt="uva-logo">
+            <img class="user-image-image" src="../images/uva-logo2.png" alt="uva-logo">
         </div>
         
         <div class="contact-info">
@@ -89,7 +89,7 @@
     </div>
 
     <div class="user-image">
-        <img class="user-image-image" src="images/uva-logo2.png" alt="uva-logo">
+        <img class="user-image-image" src="../images/uva-logo2.png" alt="uva-logo">
     </div>
     
     <div class="contact-info">
@@ -107,7 +107,7 @@
     </div>
 
     <div class="user-image">
-        <img class="user-image-image" src="images/uva-logo2.png" alt="uva-logo">
+        <img class="user-image-image" src="../images/uva-logo2.png" alt="uva-logo">
     </div>
     
     <div class="contact-info">
@@ -125,7 +125,7 @@
     </div>
 
     <div class="user-image">
-        <img class="user-image-image" src="images/uva-logo2.png" alt="uva-logo">
+        <img class="user-image-image" src="../images/uva-logo2.png" alt="uva-logo">
     </div>
     
     <div class="contact-info">

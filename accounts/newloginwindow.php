@@ -12,19 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
     <title>Login</title>
-    <script src="submitQ.js"></script>
+    <script src="../javascript/login.js"></script>
 </head>
- <script>
-        function changeIframe() {
-            var iframe = document.getElementById("my-iframe");
-            iframe.src = "accounts\changeinfo.html";
-        }
-    </script>
+
 <body>
-   
+    
 
 <div class="logindiv" >
-    <form>
+    <form action="changeinfo.php">
         
         <div class="logintextdiv">
             <h1 class="logintext">KI Forum</h1>
@@ -39,7 +34,7 @@
         <input type="submit" value="Log in!" onclick="return validateForm()">
       </form>
       <div class="registeraanraaddiv">
-        <a href="../accounts/regestratie.html" class="registeraanraadtext" target="_blank">Nog geen account? registreer je nu!</a>
+        <a href="regestratie.php" class="registeraanraadtext" target="_blank">Nog geen account? registreer je nu!</a>
         </div>   
     </div>
     
