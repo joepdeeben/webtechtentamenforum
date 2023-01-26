@@ -30,17 +30,18 @@
 <div  style='text-align:center'>
 <select id="dropdownvakkenjaar2" onchange="ShowInfoJaar2()">
     <option value="select" disabled selected>Selecteer een Vak</option>
-    <option value="Bay">Bayesian statistics for machine learning</option>
-    <option value="Com">Computersystemen</option>
-    <option value="Complog">Computationele logica</option>
-    <option value="Ler">Leren</option>
-    <option value="Bes">Leren en beslissen</option>
-    <option value="Dat">Datastructuren en algoritmen</option>
-    <option value="Nat">Natuurlijke taalmodellen en interfaces</option>
-    <option value="Cogmod">Cognitive modelling</option>
-    <option value="Compvis">Introduction to computer vision</option>
-    <option value="Twee">Tweedejaarsproject BSc KI</option>
-    <option value="Ori">Oriëntatie op studie en loopbaan</option>
+    <option value="Bayesian Statistics for Machine Learning">Bayesian statistics for machine learning</option>
+    <option value="Computersystemen">Computersystemen</option>
+    <option value="Computationele logica">Computationele logica</option>
+    <option value="Leren">Leren</option>
+    <option value="Leren en Beslissen">Leren en beslissen</option>
+    <option value="Datastructuren en Algoritmen">Datastructuren en algoritmen</option>
+    <option value="Natuurlijke taalmodellen en interface">Natuurlijke taalmodellen en interfaces</option>
+    <option value="Cognitive modelling">Cognitive modelling</option>
+    <option value="Introduction to computer vision">Introduction to computer vision</option>
+    <option value="Tweedejaarsproject BSc KI">Tweedejaarsproject BSc KI</option>
+    <option value="Oriëntatie op studie en loopbaan">Oriëntatie op studie en loopbaan</option>
+    <option value="Algemeen jaar 2">Algemen vragen jaar 2</option>
   </select>
 </div>
 

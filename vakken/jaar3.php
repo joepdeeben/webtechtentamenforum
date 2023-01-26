@@ -26,10 +26,12 @@
 <div  style='text-align:center'>
 <select id="dropdownvakkenjaar3" onchange="ShowInfoJaar3()">
     <option value="select" disabled selected>Selecteer een Vak</option>
-    <option value="Keuzes">Keuzevakken</option>
-    <option value="Fil">Filosofie en AI</option>
-    <option value="Keuze">Keuzevak</option>
-    <option value="Afst">Afstudeerproject BSc KI</option>
+    <option value="Keuzevakken">Keuzevakken</option>
+    <option value="Filosofie en AI">Filosofie en AI</option>
+    <option value="Keuzevak">Keuzevak</option>
+    <option value="Afstudeerproject BSc KI">Afstudeerproject BSc KI</option>
+    <option value="Algemeen jaar 3">Algemene vragen jaar 3</option>
+    
   </select>
 </div>
 
