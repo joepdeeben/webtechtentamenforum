@@ -46,8 +46,34 @@ function ShowYearThree(){
     document.getElementById('buttonjaar1').style.color='white'
     }
 
-function ShowInfo(){
-document.getElementById('dropdownvakkenjaar1').onsclick='Pro';
-document.getElementById('Protekst').style.display='block';
+function ShowInfoJaar1(){
+    var select = document.getElementById("dropdownvakkenjaar1");
+    var output = document.getElementById("vaktekstjaar1");
+    
+    select.onchange = function() {
+      var selectedValue = select.options[select.selectedIndex].value;
+      document.getElementById(selectedValue).style.display='block';
+    }
 }
+
+function ShowInfoJaar2(){
+    var select = document.getElementById("dropdownvakkenjaar2");
+    var output = document.getElementById("vaktekstjaar2");
+    
+    select.onchange = function() {
+      var selectedValue = select.options[select.selectedIndex].value;
+      output.innerHTML = "You selected: " + selectedValue;
+    }
+}
+
+function ShowInfoJaar3(){
+    var select = document.getElementById("dropdownvakkenjaar3");
+    var output = document.getElementById("vaktekstjaar3");
+    
+    select.onclick = function() {
+      var selectedValue = select.options[select.selectedIndex].value;
+      document.getElementById(selectedValue).style.display='block';
+    }
+}
+
 

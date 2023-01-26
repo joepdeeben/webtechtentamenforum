@@ -24,13 +24,16 @@
     <a class="vaktext"> Over welk vak wil je meer informatie zien?</a>
 </div>
 <div  style='text-align:center'>
-<select name="vakQ" id="dropdownvakkenjaar3">
+<select id="dropdownvakkenjaar3" onchange="ShowInfoJaar3()">
     <option value="select" disabled selected>Selecteer een Vak</option>
     <option value="Keuzes">Keuzevakken</option>
     <option value="Fil">Filosofie en AI</option>
     <option value="Keuze">Keuzevak</option>
     <option value="Afst">Afstudeerproject BSc KI</option>
   </select>
+</div>
+
+<div id='vaktekstjaar3' style='color:red'>
 </div>
 
 </body>
