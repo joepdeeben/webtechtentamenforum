@@ -17,7 +17,7 @@
 </head>
 <body>
       <?php include '../standard/header.php';?>
-    <form>
+    <form action="includes/regestratie.inc.php">
         <label for="name" ></label>
         <input type="text" id="name" placeholder="Naam" name="name" required>
         <br>
