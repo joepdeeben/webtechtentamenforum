@@ -1,5 +1,6 @@
 <?php
     $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
+    if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
 
     $threadId = mysqli_real_escape_string($db, $_POST['Thread_thread_Id']);
     $sql = "SELECT * FROM Comment WHERE Thread_thread_Id = '$threadId'";
@@ -30,7 +31,6 @@
                 <select name="vakken">
                 <?php
                         $sql = "SELECT DISTINCT threadcourse FROM Thread";
-                        $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
                         $result = mysqli_query($db, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<option value='" . $row['vakken'] . "'>" . $row['vakken'] . "</option>";
@@ -40,7 +40,6 @@
                 <ul>
                     <?php
                         $sql = "SELECT Thread_thread_Id, threadtitle FROM Threads WHERE threadcourse = '$vakken'";
-                        $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
                         $result = mysqli_query($db, $sql);
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<li><a href='?thread_id=" . $row['thread_id'] . "'>" . $row['thread_name'] . "</a></li>";
