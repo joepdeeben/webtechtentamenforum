@@ -43,6 +43,9 @@ $likes = "23"
       ?>
       <i class="ri-thumb-up-fill"></i>
     </div>
+    <div class="vraaagmeer">
+    <a href="#"> Zie hier meer! </a>
+  </div>
   </div>
 
 
