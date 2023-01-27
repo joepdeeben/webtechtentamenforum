@@ -16,7 +16,7 @@
 </head>
 
 <header>
-    <a href="../standard/index.php" class="logo"><img src="../images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button">Home</button></span></a>
+    <a href="../index.php" class="logo"><img src="../images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button">Home</button></span></a>
         
 
     <ul class="navigatie">
@@ -26,20 +26,20 @@
           <div class="dropdown-content">
             <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearOne();">Jaar 1</button></a>
             <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearTwo();">Jaar 2</button></a>
-            <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
+            <a href="../vakken/vakken.php"Z><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
           </div>
         </div>
         
         <div class="dropdown">
           <a href="../submit/submitQ.php"><button class="dropbtn" onclick="document.getElementById('testid').innerHTML = 'Stel je vraag'">Stel je vraag</button></a>
-          <div class="dropdown-content">
+          <!-- <div class="dropdown-content">
             <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
             <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
-          </div>
+          </div> -->
           
         </div>
         <div class="dropdown">
-        <a href="../standard/index.php"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>
+        <a href="../submit/submitex.php"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>
         <div class="dropdown-content">
           <!-- <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
           <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
