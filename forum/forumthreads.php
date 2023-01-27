@@ -18,9 +18,9 @@
 // ?>
 <html>
 <head>
-    <link rel="stylesheet" href="../css/stylemain.css">
+<?php include '../standard/header.php';?>
     <title>Forum</title>
-</head>
+</head>          
 <body>
     <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
     <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> <!-- include veranderen joep-->
@@ -70,6 +70,6 @@
             </div>
         <?php endforeach; ?>
     </div>
-    <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <?php include '../standard/footer.php';?>
 </body>
 </html>
