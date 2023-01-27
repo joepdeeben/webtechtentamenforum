@@ -1,21 +1,21 @@
-// <?php
-//     $db = mysqli_connect('hostname','username','password','dbname');
-//
-//     $threadId = mysqli_real_escape_string($db, $_POST['thread-id']);
-//     $sql = "SELECT * FROM posts WHERE thread_id = '$threadId'";
-//     $result = mysqli_query($db, $sql);
-//
-//     $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
-//
-//     if(isset($_POST['submit'])){
-//         $content = mysqli_real_escape_string($db, $_POST['content']);
-//         $username = mysqli_real_escape_string($db, $_POST['username']);
-//         $datum = mysqli_real_escape_string($db, $_POST['datum']);
-//
-//         $sql = "INSERT INTO posts (content, username, datum, thread_id) VALUES ('$content', '$username', '$datum', '$threadId')";
-//         mysqli_query($db, $sql);
-//     }
-// ?>
+<?php
+    $db = mysqli_connect('hostname','username','password','dbname');
+
+    $threadId = mysqli_real_escape_string($db, $_POST['thread-id']);
+    $sql = "SELECT * FROM Thread WHERE thread_id = '$threadId'";
+    $result = mysqli_query($db, $sql);
+
+    $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    if(isset($_POST['submit'])){
+        $content = mysqli_real_escape_string($db, $_POST['content']);
+        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $datum = mysqli_real_escape_string($db, $_POST['datum']);
+
+        $sql = "INSERT INTO Comment (commentcontent, User_user_id, datum, thread_id) VALUES ('$content', '$username', '$datum', '$threadId')";
+        mysqli_query($db, $sql);
+    }
+?>
 <html>
 <head>
     <link rel="stylesheet" href="../css/stylemain.css">
@@ -66,6 +66,7 @@
                 </div>
                 <div class="post-content">
                     <h4><?php echo $post['content']; ?></h4>
+
                 </div>
             </div>
         <?php endforeach; ?>
