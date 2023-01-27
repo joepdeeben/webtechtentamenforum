@@ -1,5 +1,5 @@
 <?php
-    $db = mysqli_connect('hostname','username','password','dbname');
+    $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
 
     $threadId = mysqli_real_escape_string($db, $_POST['Thread_thread_Id']);
     $sql = "SELECT * FROM Comment WHERE Thread_thread_Id = '$threadId'";
