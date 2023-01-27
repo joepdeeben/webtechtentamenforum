@@ -952,7 +952,10 @@ textarea {
     display: grid;
     grid-row: inherit;
  
-  box-shadow:  5px 5px 21px #1a203a,
+  
+}
+.vraagtemplate:hover{
+    box-shadow:  5px 5px 21px #1a203a,
              -5px -5px 21px #1c2440;
 }
 .titelvraagtemplate{

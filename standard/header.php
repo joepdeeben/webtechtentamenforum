@@ -16,7 +16,7 @@
 </head>
 
 <header>
-    <a href="../standard/index.php" class="logo"><img src="../images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button">Home</button></span></a>
+    <a href="../index.php" class="logo"><img src="../images/uva-logo2.png" alt="uva-logo" height=50px, border-radius="1px"></i>&nbsp;&nbsp;<span><button class="homebtn" type="button">Home</button></span></a>
         
 
     <ul class="navigatie">
