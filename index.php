@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<?php include 'header.php';?>
+<?php include 'standard/header.php';?>
   <div class="main-div-head" id="main-div">
        Welkom op  KI forum 
   </div>   
@@ -153,6 +153,6 @@
 </div>   
 
 
-<?php include 'footer.php';?>
+<?php include 'standard/footer.php';?>
   </body>
 </html>
