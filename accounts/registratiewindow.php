@@ -54,7 +54,7 @@
     }
 
   </script>
-    <form>
+    <form action="../includes/regestratie.inc.php">
         <label for="name" ></label>
         <input type="text" id="name" placeholder="Naam" name="name" required>
         <br>
@@ -68,13 +68,13 @@
         </select>
         <br>
         <label for="username"></label>
-        <input type="text" id="username" placeholder="Username" name="username" required>
+        <input type="text" id="logingebruikersnaam" placeholder="Gebruikersnaam" name="gebruikersnaam" required>
         <br>
         <label for="email"></label>
         <input type="email" id="email" placeholder="E-mail" name="email" required>
         <br>
         <label for="password"></label>
-        <input type="password" id="wachtwoord" placeholder="wachtwoord" name="wachtwoord" required>
+        <input type="password" id="wachtwoord" placeholder="Wachtwoord" name="wachtwoord" required>
         <br>
         
         <input type="submit" value="Registreer!" onclick="return validateForm()">
