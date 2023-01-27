@@ -15,8 +15,10 @@
 
 </head>
 <?php
-$vraagtitel = "dit is de titel van de vraag";
+$vraagtitel = "Dit is de titel van de vraag";
 $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? even kijken hoe dat gaat met phpaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddd dddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssss";
+$vraagmaker = "Olivier Stam";
+$likes = "23"
 ?>
 <body>
   <div class="vraagtemplate">
@@ -26,7 +28,9 @@ $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? eve
       ?>
     </div>
     <div class="vraagvan">
-      van iemadn
+    <?php
+      echo 'Vraag van: ', $vraagmaker;
+      ?>
     </div>
     <div class="vraagintro">
       <?php
@@ -34,7 +38,10 @@ $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? eve
       ?>
     </div>
     <div class="likes">
-      aantal like asdfasd
+    <?php
+      echo  $likes. " ";
+      ?>
+      <i class="ri-thumb-up-fill"></i>
     </div>
   </div>
 
