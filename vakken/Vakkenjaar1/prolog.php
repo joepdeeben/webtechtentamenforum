@@ -22,8 +22,12 @@
   </div>
 
 <div>
-<?php include '../vakken/vraag.php'?>
-<?php include '../vakken/vraag.php'?>
+
+<?php
+ $vraagtitel = 'prolog';
+ include '../vakken/vraag.php'?>
+<?php $vraagtitel = 'iets anders';
+include '../vakken/vraag.php'?>
 <?php include '../vakken/vraag.php'?>
 </div>
 
