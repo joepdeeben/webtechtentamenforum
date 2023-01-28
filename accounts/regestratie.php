@@ -17,6 +17,7 @@
 </head>
 <body>
       <?php include '../standard/header.php';?>
+
       <?php include 'registratiewindow.php';?>
 
       <?php include '../standard/footer.php';?>
