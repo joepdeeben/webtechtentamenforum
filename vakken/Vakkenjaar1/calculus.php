@@ -22,7 +22,9 @@
   </div>
 
 <div>
-<?php include 'vraag.php'?>
+<?php
+$vraagtitel = 'test';
+include 'vraag.php'?>
 </div>
 
 
