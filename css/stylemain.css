@@ -990,3 +990,32 @@ textarea {
 .vraagvan{
     font-size: small;
 }
+.vraaagmeer{
+    background: white;
+    
+    width:200px;
+    margin-left:85%;
+    right: 0;
+    text-align: center;
+    height:30px;
+    padding: 5px;
+    border-top-right-radius: 10px;
+}
+.vraaagmeer a{
+
+    color: #1a203a;
+    font-size: large;
+ 
+}
+.vraaagmeer:hover{
+    background: white;
+    
+    width:220px;
+    margin-left:85%;
+    right: 0;
+    text-align: center;
+    height:35px;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    transition: .3s;
+}

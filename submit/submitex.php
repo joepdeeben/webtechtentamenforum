@@ -12,14 +12,18 @@
     <title>Submit een opgave</title>
 </head>
 
-<body>
+body>
 
 <?php include '../standard/header.php';?>
 
+<a class="hoi" href="../test2.php"></a>
+
 <div class="subex">
-    <span class="titel-vraag"> Submit een opgave</span>
-    <form>
-    <div class="info-vraag">
+<span class="titel-vraag"> Submit een opgave</span>
+<a class="hoi" href="../test2.php">amongus</a>
+<form>
+<div class="info-vraag">
+
         <div class="jaar-vraag">
             <select name="jaar" id="jaar">
                 <option value="" disabled selected>Kies een jaar</option>
