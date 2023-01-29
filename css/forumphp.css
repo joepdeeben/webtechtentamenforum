@@ -70,40 +70,44 @@ cursor: pointer;
 }
 
 h5 {
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
+font-size: 18px;
+font-weight: bold;
+color: black;
 }
 
 h6 {
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
+font-size: 16px;
+font-weight: bold;
+color: black;
 }
 
 #sidebar {
-    width: 200px;
-    height: 100%;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background-color: #f1f1f1;
-    padding: 20px;
+width: 200px;
+height: 100%;
+position: absolute;
+top: 80px;
+right: 0;
+background-color: #f1f1f1;
+padding: 20px;
 }
 
 #sidebar ul {
-    list-style-type: none;
-    padding: 0;
+list-style-type: none;
+padding: 0;
 }
 
 #sidebar ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    display: block;
+text-decoration: none;
+color: black;
+padding: 10px;
+display: block;
 }
 
 #sidebar ul li a:hover {
-    background-color: #555;
-    color: white;
+background-color: #555;
+color: white;
+}
+
+#maindiv {
+margin-right: 200px;
 }
