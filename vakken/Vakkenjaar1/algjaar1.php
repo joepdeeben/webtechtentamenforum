@@ -22,9 +22,9 @@
   </div>
 
 <div>
-<?php include '../../vakken/vraag.php'?>
-<?php include '../../vakken/vraag.php'?>
-<?php include '../../vakken/vraag.php'?>
+<?php include '../vakken/vraag.php'?>
+<?php include '../vakken/vraag.php'?>
+<?php include '../vakken/vraag.php'?>
 </div>
 
 
