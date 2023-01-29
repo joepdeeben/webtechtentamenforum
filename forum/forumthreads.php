@@ -26,28 +26,33 @@
     <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
     <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe> <!-- include veranderen joep-->
     <div id="sidebar">
-            <form action="" method="get">
-                <h5>Selecteer vak:</h>
-                <select name="vakken">
-                <?php
-                        $sql = "SELECT DISTINCT threadcourse FROM Thread";
-                        $result = mysqli_query($db, $sql);
-                        while ($row = mysqli_fetch_array($result)) {
-                            echo "<option value='" . $row['vakken'] . "'>" . $row['vakken'] . "</option>";
-                        }
+            <form action="" method="post">
+                <select name="threadcourse">
+                    <?php
+                    $sql = "SELECT DISTINCT threadcourse FROM Thread";
+                    $result = mysqli_query($db, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo "<option value='" . $row['threadcourse'] . "'>" . $row['threadcourse'] . "</option>";
+                    }
                     ?>
                 </select>
-                <ul>
-                    <?php
-                        $sql = "SELECT Thread_thread_Id, threadtitle FROM Threads WHERE threadcourse = '$vakken'";
-                        $result = mysqli_query($db, $sql);
-                        while ($row = mysqli_fetch_array($result)) {
-                            echo "<li><a href='?thread_id=" . $row['thread_id'] . "'>" . $row['thread_name'] . "</a></li>";
-                        }
-                    ?>
-                </ul>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+            <ul>
+                <?php
+                if (isset($_POST['submit'])) {
+                    $threadcourse = $_POST['threadcourse'];
+                    $sql = "SELECT Thread_thread_Id, threadtitle FROM Threads WHERE threadcourse = '$threadcourse'";
+                    $result = mysqli_query($db, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo "<li><a href='?thread_id=" . $row['thread_id'] . "'>" . $row['thread_name'] . "</a></li>";
+                    }
+                }
+                ?>
+            </ul>
             </form>
         </div>
+    <div id="maindiv">
     <form action="" method="post">
             <h5>Username:</h>
             <input type="text" name="username" id="username">
@@ -70,6 +75,7 @@
                 </div>
             </div>
         <?php endforeach; ?>
+    </div>
     </div>
     <?php include '../standard/footer.php';?>
 </body>
