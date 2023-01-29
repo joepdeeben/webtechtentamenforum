@@ -13,8 +13,8 @@
     $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = 3";
     $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
     $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
-    $test = $vraagtitel['threadtitle'];
-    $vraagtitel  = mysqli_query($db, $vraagtitelvar);
+    $vraagtiteloutput = $vraagtitel['threadtitle'];
+    
 
     $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = 3";
     $vraagcontentresult = mysqli_query($db, $vraagcontentvar);
@@ -29,7 +29,10 @@
     $username = mysqli_fetch_assoc($usernameresult);
     $usernameoutput = $username['username'];
 
-    $likes = "23"
+    $vraaglikesvar = "SELECT threadlikes FROM Thread WHERE thread_id = 3";
+    $vraaglikesresult = mysqli_query($db, $vraaglikesvar);
+    $vraaglikes = mysqli_fetch_assoc($vraaglikesresult);
+    $vraaglikesoutput = $vraaglikes['threadlikes'];
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +58,7 @@
   <div class="vraagtemplate">
     <div class="titelvraagtemplate">
       <?php
-      echo $test;
+      echo $vraagtiteloutput;
       ?>
     </div>
     <div class="vraagvan">
@@ -75,7 +78,7 @@
     </div>
     <div class="likes">
     <?php
-      echo  $likes. " ";
+      echo  $vraaglikesoutput. " ";
       ?>
       <i class="ri-thumb-up-fill"></i>
     </div>
