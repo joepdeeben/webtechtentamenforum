@@ -10,7 +10,8 @@
     $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
     $result = mysqli_query($db, $sql);
     $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    $vraagtitel  = mysqli_real_escape_string($db,"SELECT threadtitle FROM Thread WHERE thread_id = 3");
+    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = 3";
+    $vraagtitel  = mysqli_real_escape_string($db, $vraagtitelvar);
     $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? even kijken hoe dat gaat met phpaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddd dddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssss";
     $vraagmaker = "Olivier Stam";
     $likes = "23"
