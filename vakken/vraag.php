@@ -1,3 +1,20 @@
+<?php
+    $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
+    if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
+
+    $threadId = "";
+    if (isset($_GET['thread_id'])) {
+        $threadId = mysqli_real_escape_string($db, $_GET['thread_id']);
+    }
+
+    $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
+    $result = mysqli_query($db, $sql);
+    $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $vraagtitel  = "SELECT threadtitle FROM Thread WHERE thread_id = 3";
+    $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? even kijken hoe dat gaat met phpaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddd dddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssss";
+    $vraagmaker = "Olivier Stam";
+    $likes = "23"
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +33,7 @@
 </head>
 <?php
 
-$vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? even kijken hoe dat gaat met phpaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddd dddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssss";
-$vraagmaker = "Olivier Stam";
-$likes = "23"
+
 ?>
 <body>
   <div class="vraagtemplate">
