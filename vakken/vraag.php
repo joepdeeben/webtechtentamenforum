@@ -21,7 +21,12 @@
     $vraagcontent = mysqli_fetch_assoc($vraagcontentresult);
     $vraagcontentoutput = $vraagcontent['threadcontent'];
 
-    $vraagmaker = "Olivier Stam";
+
+    $vraaguservar = "SELECT User_user_id FROM Thread WHERE thread_id = 3";
+    $vraaguserresult = mysqli_query($db, $vraaguservar);
+    $vraaguser = mysqli_fetch_assoc($vraaguserresult);
+    $vraaguseroutput = $vraaguser['User_user_id'];
+
     $likes = "23"
     ?>
 <!DOCTYPE html>
@@ -53,12 +58,17 @@
     </div>
     <div class="vraagvan">
     <?php
-      echo 'Vraag van: ', $vraagmaker;
+      echo 'Vraag van: ', $vraaguseroutput;
       ?>
     </div>
     <div class="vraagintro">
       <?php
-      echo substr($vraagcontentoutput, 0, 200), '...';
+      if (strlen($vraagcontentoutput) > 200) {
+        echo substr($vraagcontentoutput, 0, 200), '...';
+      }
+      else {
+        echo $vraagcontentoutput;
+      }
       ?>
     </div>
     <div class="likes">
