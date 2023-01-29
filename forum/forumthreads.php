@@ -68,18 +68,20 @@
         </form>
 
     <div id="thread-posts">
-
-        <?php
+    <?php
         if (isset($_GET['thread_id'])) {
-          foreach($posts as $post): ?>
+              foreach($posts as $post):
+                $username = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$post['User_user_id']."'");
+                $username = mysqli_fetch_assoc($username)['username'];
+                ?>
             <div id="thread-posts">
                 <div class="post">
                     <div class="post-info">
-                        <div id="username"><b><?php echo $post['username']; ?></b></div>
-                        <div id="datum"><b><?php echo $post['datum']; ?></b></div>
+                        <div id="username"><b><?php echo $username; ?></b></div>
+                        <div id="datum"><b><?php echo $post['dateofcomment']; ?></b></div>
                     </div>
                     <div class="post-content">
-                        <h4><?php echo $post['content']; ?></h4>
+                        <h4><?php echo $post['commentcontent']; ?></h4>
                     </div>
                 </div>
           <?php endforeach;
