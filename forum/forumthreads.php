@@ -48,6 +48,7 @@
                 </ul>
             </form>
         </div>
+    <div id="maindiv">
     <form action="" method="post">
             <h5>Username:</h>
             <input type="text" name="username" id="username">
@@ -70,6 +71,7 @@
                 </div>
             </div>
         <?php endforeach; ?>
+    </div>
     </div>
     <?php include '../standard/footer.php';?>
 </body>
