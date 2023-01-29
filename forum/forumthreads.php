@@ -25,9 +25,10 @@
 <head>
 <?php include '../standard/header.php';?>
     <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
+
     <div id="sidebar">
             <form action="" method="post">
                 <select name="threadcourse">
