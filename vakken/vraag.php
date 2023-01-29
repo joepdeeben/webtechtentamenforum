@@ -25,7 +25,9 @@
     $vraaguservar = "SELECT User_user_id FROM Thread WHERE thread_id = 3";
     $vraaguserresult = mysqli_query($db, $vraaguservar);
     $vraaguser = mysqli_fetch_assoc($vraaguserresult);
-    $vraaguseroutput = $vraaguser['User_user_id'];
+    $usernameresult = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$vraaguser['User_user_id']."'");
+    $username = mysqli_fetch_assoc($usernameresult);
+    $usernameoutput = $username['username'];
 
     $likes = "23"
     ?>
@@ -58,7 +60,7 @@
     </div>
     <div class="vraagvan">
     <?php
-      echo 'Vraag van: ', $vraaguseroutput;
+      echo 'Vraag van: ', $usernameoutput;
       ?>
     </div>
     <div class="vraagintro">
