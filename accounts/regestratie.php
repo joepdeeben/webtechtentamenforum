@@ -17,32 +17,8 @@
 </head>
 <body>
       <?php include '../standard/header.php';?>
-    <form>
-        <label for="name" ></label>
-        <input type="text" id="name" placeholder="Naam" name="name" required>
-        <br>
-        <label for="geslacht"></label>
-        <select id="geslacht"  name="geslacht" required>
-          <option value="" disabled selected>geslacht</option>
-          <option value="man">Man</option>
-          <option value="vrouw">Vrouw</option>
-          <option value="non-binair">Non-binair</option>
-          <option value="anders">Anders</option>
-        </select>
-        <br>
-        <label for="username"></label>
-        <input type="text" id="logingebruikersnaam" placeholder="Gebruikersnaam" name="gebruikersnaam" required>
-        <br>
-        <label for="email"></label>
-        <input type="email" id="email" placeholder="E-mail" name="email" required>
-        <br>
-        <label for="password"></label>
-        <input type="password" id="wachtwoord" placeholder="Wachtwoord" name="wachtwoord" required>
-        <br>
-        
-        <input type="submit" value="Registreer!" onclick="return validateForm()">
-      </form>
-      
+
+      <?php include 'registratiewindow.php';?>
 
       <?php include '../standard/footer.php';?>
       </body>

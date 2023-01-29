@@ -12,18 +12,14 @@
     <title>Submit een opgave</title>
 </head>
 
-body>
+<body>
 
-<?php include '../standard/header.php';?>
 
-<a class="hoi" href="../test2.php"></a>
 
 <div class="subex">
-<span class="titel-vraag"> Submit een opgave</span>
-<a class="hoi" href="../test2.php">amongus</a>
-<form>
-<div class="info-vraag">
-
+    <span class="titel-vraag">Stel een Vraag!</span>
+    <form>
+    <div class="info-vraag">
         <div class="jaar-vraag">
             <select name="jaar" id="jaar">
                 <option value="" disabled selected>Kies een jaar</option>
@@ -41,21 +37,19 @@ body>
     </div>
 
     <div class="titel-opgave-sub">
-        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw opgave?">
+        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw vraag?">
     </div>
     <div class="opgave">
-            <textarea id="vraagvolledig" placeholder="Vul hier de geformuleerde opgave in" name="vraagcontent" rows="9" cols="230"></textarea>
+            <textarea id="vraagvolledig" placeholder="Vul hier een geformuleerde vraag in" name="vraagcontent" rows="9" cols="230"></textarea>
   
     </div>
-    <div class="antwoord-opgave">
-            <textarea id="vraagvolledig" placeholder="Vul hier het antwoord in" name="vraagcontent" rows="9" cols="230"></textarea>
-    </div>
+    
     <div class="afbeelding">
-        Upload een afbeelding bij de vraag: <br>
+        Upload een afbeelding bij de opgave: <br>
         <input type="file" accept="image/*">
     </div>
     <div class="submitbtn">
-    <input  type="submit" value="Submit de opgave!" onclick="return validateForm()">
+    <input  type="submit" value="Stel uw vraag!" onclick="return validateForm()">
 </div>
        </form>
 </div>
@@ -80,7 +74,6 @@ $("#jaar").change(function() {
 });
 </script>
 
-<?php include '../standard/footer.php';?>
 
 
 </body>
