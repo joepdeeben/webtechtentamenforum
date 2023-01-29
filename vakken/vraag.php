@@ -13,7 +13,7 @@
     $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = 3";
     $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
     $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
-    echo $vraagtitel['threadtitle'];
+    $test = $vraagtitel['threadtitle'];
 
     $vraagtitel  = mysqli_query($db, $vraagtitelvar);
     $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? even kijken hoe dat gaat met phpaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddd dddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssss";
@@ -44,7 +44,7 @@
   <div class="vraagtemplate">
     <div class="titelvraagtemplate">
       <?php
-      echo $vraagtitel['threadtitle'];
+      echo $test;
       ?>
     </div>
     <div class="vraagvan">
