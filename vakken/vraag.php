@@ -10,10 +10,29 @@
     $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
     $result = mysqli_query($db, $sql);
     $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    $vraagtitel  = mysqli_real_escape_string($db,"SELECT threadtitle FROM Thread WHERE thread_id = 3");
-    $vraagintro = "hier komen dan de eerste 200 char van de vraag te staan ofzo? even kijken hoe dat gaat met phpaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadddddddddddddddddddd dddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffgggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssssssss";
-    $vraagmaker = "Olivier Stam";
-    $likes = "23"
+    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = 3";
+    $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
+    $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
+    $vraagtiteloutput = $vraagtitel['threadtitle'];
+    
+
+    $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = 3";
+    $vraagcontentresult = mysqli_query($db, $vraagcontentvar);
+    $vraagcontent = mysqli_fetch_assoc($vraagcontentresult);
+    $vraagcontentoutput = $vraagcontent['threadcontent'];
+
+
+    $vraaguservar = "SELECT User_user_id FROM Thread WHERE thread_id = 3";
+    $vraaguserresult = mysqli_query($db, $vraaguservar);
+    $vraaguser = mysqli_fetch_assoc($vraaguserresult);
+    $usernameresult = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$vraaguser['User_user_id']."'");
+    $username = mysqli_fetch_assoc($usernameresult);
+    $usernameoutput = $username['username'];
+
+    $vraaglikesvar = "SELECT threadlikes FROM Thread WHERE thread_id = 3";
+    $vraaglikesresult = mysqli_query($db, $vraaglikesvar);
+    $vraaglikes = mysqli_fetch_assoc($vraaglikesresult);
+    $vraaglikesoutput = $vraaglikes['threadlikes'];
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,22 +58,27 @@
   <div class="vraagtemplate">
     <div class="titelvraagtemplate">
       <?php
-      echo $vraagtitel;
+      echo $vraagtiteloutput;
       ?>
     </div>
     <div class="vraagvan">
     <?php
-      echo 'Vraag van: ', $vraagmaker;
+      echo 'Vraag van: ', $usernameoutput;
       ?>
     </div>
     <div class="vraagintro">
       <?php
-      echo substr($vraagintro, 0, 200), '...';
+      if (strlen($vraagcontentoutput) > 200) {
+        echo substr($vraagcontentoutput, 0, 200), '...';
+      }
+      else {
+        echo $vraagcontentoutput;
+      }
       ?>
     </div>
     <div class="likes">
     <?php
-      echo  $likes. " ";
+      echo  $vraaglikesoutput. " ";
       ?>
       <i class="ri-thumb-up-fill"></i>
     </div>

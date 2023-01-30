@@ -55,7 +55,7 @@
     echo $vraagtiteloutput
     ?>
   </div>
-<div> hallo</div>
+
 <div>
 <?php include 'vraag.php'?>
 </div>
