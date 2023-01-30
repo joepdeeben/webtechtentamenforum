@@ -40,7 +40,7 @@
     Inleiding logica
     <?php
     echo "hallo";
-    echo $threads
+    echo $threads;
     ?>
   </div>
 
