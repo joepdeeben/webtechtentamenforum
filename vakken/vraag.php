@@ -10,7 +10,7 @@
     $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
     $result = mysqli_query($db, $sql);
     $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = 3";
+    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = '$current_thread'";
     $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
     $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
     $vraagtiteloutput = $vraagtitel['threadtitle'];
