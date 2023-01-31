@@ -48,7 +48,7 @@
     }
     print_r($threads);
     foreach ($threads as $thread) {
-      print_r($thread);
+       echo $thread['thread_id'];
    }
 ?>
   </div>
