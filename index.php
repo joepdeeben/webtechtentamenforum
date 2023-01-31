@@ -1,6 +1,6 @@
 <?php
   $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
-  if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
+  if (!$db) { die("Connection failed: " . mysqli_connect_error()); };
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <meta name="viewport" content="with=device-width, initialscale=1.0">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
     <meta charset="UTF-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,8 +147,6 @@
     </span>
   </div>
   </div>
-
-  
 </div>
 
     
