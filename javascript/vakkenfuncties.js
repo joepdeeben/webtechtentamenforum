@@ -1,12 +1,3 @@
-function FormJarenOpen() {
-document.getElementById('formjaren').style.visibility='visible';
-document.getElementById('selectiejaren').style.visibility='collapse'
-}
-
-function FormJarenClose(){
-    document.getElementById('formjaren').style.visibility='collapse';
-    }
-
 function ShowYearOne(){
     document.getElementById('framejaar1').style.display='block';
     document.getElementById('framejaar3').style.display='none';
@@ -49,7 +40,6 @@ function ShowInfoJaar1(){
     
     select.onclick = function() {
 
-                //get all elements with the class name "vakInfo" and set their display property to 'none'
                 var vakInfoElements = document.getElementsByClassName("vakInfo");
                 for(var i = 0; i < vakInfoElements.length; i++){
                     vakInfoElements[i].style.display = "none";
@@ -65,7 +55,6 @@ function ShowInfoJaar2(){
     
     select.onclick = function() {
 
-        //get all elements with the class name "vakInfo" and set their display property to 'none'
         var vakInfoElements = document.getElementsByClassName("vakInfo");
         for(var i = 0; i < vakInfoElements.length; i++){
             vakInfoElements[i].style.display = "none";
@@ -81,7 +70,6 @@ function ShowInfoJaar3(){
     
     select.onclick = function() {
 
-        //get all elements with the class name "vakInfo" and set their display property to 'none'
         var vakInfoElements = document.getElementsByClassName("vakInfo");
         for(var i = 0; i < vakInfoElements.length; i++){
             vakInfoElements[i].style.display = "none";
