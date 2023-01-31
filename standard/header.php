@@ -20,31 +20,17 @@
         
 
     <ul class="navigatie">
-        
-        <div class="dropdown">
-          <a href="../vakken/vakken.php"><button class="dropbtn" onclick="FormJarenOpen()">Vakken</button></a> 
-          <div class="dropdown-content">
-            <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearOne();">Jaar 1</button></a>
-            <a href="../vakken/vakken.php"><button class="dropdown-contentbutton" onclick="ShowYearTwo();">Jaar 2</button></a>
-            <a href="../vakken/vakken.php"Z><button class="dropdown-contentbutton" onclick="ShowYearThree();">Jaar 3</button></a>
-          </div>
-        </div>
-        
-        <div class="dropdown">
-          <a href="../submit/submitQ.php"><button class="dropbtn" onclick="document.getElementById('testid').innerHTML = 'Stel je vraag'">Stel je vraag</button></a>
-          <!-- <div class="dropdown-content">
-            <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
-            <a href="#"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
-          </div> -->
-          
+    <div class="dropdown">
+          <a href="../forum/forumthreads.php"><button class="dropbtn">Forum</button></a> 
         </div>
         <div class="dropdown">
-        <a href="../submit/submitex.php"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>
-        <div class="dropdown-content">
-          <!-- <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Algemene vraag'">Algemene vraag</button></a>
-          <a href="index.html"><button class="dropdown-contentbutton" onclick="document.getElementById('testid').innerHTML = 'Vak specifiek'">Vak specifiek</button></a>
-     -->   </div> 
-        
+          <a href="../vakken/vakken.php"><button class="dropbtn">Vakken</button></a> 
+        </div>
+        <div class="dropdown">
+          <a href="../submit/submitQ.php"><button class="dropbtn" >Stel je vraag</button></a>
+        </div>
+        <div class="dropdown">
+        <a href="../submit/submitex.php"><button  class="dropbtn">Submit een opgave<i class="ri-add-circle-line"></i></button></a>        
       </div>
         
     </ul>

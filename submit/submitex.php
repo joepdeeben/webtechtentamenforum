@@ -12,7 +12,7 @@
     <title>Submit een opgave</title>
 </head>
 
-body>
+<body>
 
 <?php include '../standard/header.php';?>
 
