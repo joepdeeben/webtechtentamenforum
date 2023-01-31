@@ -18,12 +18,12 @@
 <body>
   <?php include '../standard/header.php'?>
 
-  <div style="text-align:center">
-    <button class="vakkennavbutton">Ga naar het forum</button>
+  <div style="text-align:center;padding:20px">
+    <button id="buttonforum" class="vakkennavbutton" onclick="document.getElementById('buttonforum').style.background='white';document.getElementById('buttonforum').style.color='#304ba3';document.getElementById('knoppenjaren').style.display='block'">Ga naar het forum</button>
     <a href="../forum/randomproblem.php"><button class="vakkennavbutton">Maak oefenopgaves</button></a>
   </div>
 
-  <div style="margin: 0 auto; text-align: center;">
+  <div id="knoppenjaren" style="margin: 0 auto; text-align: center;display:none">
     <button id="buttonjaar1" class="vakkennavbutton" onclick="ShowYearOne()" width="200px">Jaar 1</button>
     <button id="buttonjaar2" class="vakkennavbutton" onclick="ShowYearTwo()" width="200px">Jaar 2</button>
     <button id="buttonjaar3" class="vakkennavbutton" onclick="ShowYearThree()" width="200px">Jaar 3</button>
