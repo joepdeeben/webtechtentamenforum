@@ -47,7 +47,7 @@
 
     <?php
     $sql = "SELECT username, userexp FROM `User` ORDER BY userexp DESC LIMIT 5";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($db, $sql);
     $i = 1;
     while($row = mysqli_fetch_assoc($result)) {
         $username = $row["username"];
