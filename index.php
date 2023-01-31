@@ -1,3 +1,7 @@
+<?php
+  $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
+  if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,16 +46,16 @@
     </div>
 
     <?php
-    $leader = "Joep";
-    $leaderXP = 250;
-    $second = "Mark";
-    $secondXP = 200;
-    $third = "Olivier";
-    $thirdXP = 150;
-    $fourth = "Surja";
-    $fourthXP = 100;
-    $fifth = "Florian";
-    $fifthXP = 0;
+    $sql = "SELECT username, userexp FROM `User` ORDER BY userexp DESC LIMIT 5";
+    $result = mysqli_query($conn, $sql);
+    $i = 1;
+    while($row = mysqli_fetch_assoc($result)) {
+        $username = $row["username"];
+        $userexp = $row["userexp"];
+        ${'user'.$i} = $username;
+        ${'userxp'.$i} = $userexp;
+        $i++;
+    }
     ?>
     <div class="inmain">
       <div class="titel-main">
@@ -66,12 +70,12 @@
             
             <span class="leaderboard-username">
             <?php
-            echo $leader;
+            echo $user1;
             ?>
             </span>
             <span class="leaderboard-userxp">
             <?php
-            echo " $leaderXP XP";
+            echo " $userxp1 XP";
             ?>
             </span>
           </div>
@@ -83,12 +87,12 @@
         
         <span class="leaderboard-username">
             <?php
-            echo $second;
+            echo $user2;
             ?>
         </span>
         <span class="leaderboard-userxp">
         <?php
-            echo "$secondXP XP";
+            echo "$userxp2 XP";
             ?>
         </span>
       </div>
@@ -100,12 +104,12 @@
     
     <span class="leaderboard-username">
     <?php
-            echo $third;
+            echo $user3;
             ?>
     </span>
     <span class="leaderboard-userxp">
     <?php
-            echo "$thirdXP XP";
+            echo "$userxp3 XP";
             ?>
     </span>
   </div>
@@ -116,12 +120,12 @@
     
     <span class="leaderboard-username">
     <?php
-            echo $fourth;
+            echo $user4;
             ?>
     </span>
     <span class="leaderboard-userxp">
     <?php
-            echo "$fourthXP XP";
+            echo "$userxp4 XP";
             ?>
     </span>
   </div>
@@ -133,12 +137,12 @@
     
     <span class="leaderboard-username">
     <?php
-            echo $fifth;
+            echo $user5;
             ?>
     </span>
     <span class="leaderboard-userxp">
     <?php
-            echo "$fifthXP XP";
+            echo "$userxp5 XP";
             ?>
     </span>
   </div>
