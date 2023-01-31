@@ -36,12 +36,8 @@
     Inleiding logica
     <?php
     echo "hallo";
-
-    ?>
-  </div>
-<?php
     $course = 'Inleiding Logica';
-    $sql = "SELECT thread_id FROM `Thread` where threadcourse=\'Inleiding Logica\';";
+    $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse = $course;"
     $result = mysqli_query($db, $sql);
     $threads = array();
     if (mysqli_num_rows($result)> 0){
@@ -52,7 +48,9 @@
     foreach ($threads as $thread) {
   echo $data['thread_id'];
     }
-  ?>
+?>
+  </div>
+
 <div>
 <?php include 'vraag.php'?>
 </div>
