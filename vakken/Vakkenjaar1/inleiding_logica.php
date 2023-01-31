@@ -46,9 +46,9 @@
         $threads[] = $row;
       }
     }
-    print_r($threads);
     foreach ($threads as $thread) {
        echo $thread['thread_id'];
+       include 'vraag.php';
    }
 ?>
   </div>
