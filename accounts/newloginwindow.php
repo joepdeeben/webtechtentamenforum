@@ -16,28 +16,28 @@
 </head>
 
 <body>
-    
+
 
 <div class="logindiv" >
-    <form action="changeinfo.php">
-        
+    <form action="login.php" method="post">
+
         <div class="logintextdiv">
             <h1 class="logintext">KI Forum</h1>
         </div>
         <label for="username"></label>
         <input type="text" id="logingebruikersnaam" name="gebruikersnaam" placeholder=" Gebruikersnaam of E-mail"><br>
-        
+
         <label for="password"></label>
         <input type="password" id="wachtwoord" name="wachtwoord" placeholder=" Wachtwoord"><br>
        <br>
-        
+
         <input type="submit" value="Log in!" onclick="return validateForm()">
       </form>
       <div class="registeraanraaddiv">
         <a href="regestratie.php" class="registeraanraadtext" target="_blank">Nog geen account? registreer je nu!</a>
-        </div>   
+        </div>
     </div>
-    
+
 
 
 

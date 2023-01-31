@@ -2,6 +2,10 @@
     $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
     if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
 
+    session_start();
+    $username = $_SESSION["user_id"];
+
+
     $threadId = "";
     if (isset($_GET['thread_id'])) {
         $threadId = mysqli_real_escape_string($db, $_GET['thread_id']);
@@ -13,12 +17,11 @@
 
     if(isset($_POST['submit'])){
             $content = mysqli_real_escape_string($db, $_POST['content']);
-            $username = mysqli_real_escape_string($db, $_POST['username']);
-            $datum = date("Y-m-d H:i:s"); // set the current date and time
-
+            $datum = date("Y-m-d H:i:s");
             $sql = "INSERT INTO Comment (commentcontent, User_user_Id, dateofcomment, Thread_thread_Id) VALUES ('$content', '$username', '$datum', '$threadId')";
             mysqli_query($db, $sql);
         }
+
 ?>
 <html>
 <head>
@@ -58,9 +61,6 @@
     <div id="maindiv">
 
     <form action="" method="post">
-            <h5>Username:</h5>
-            <input type="text" name="username" id="username">
-            <br>
             <h6>Content:</h6>
             <textarea name="content" id="content"></textarea>
             <br>
@@ -68,26 +68,26 @@
         </form>
 
     <div id="thread-posts">
-    <?php
-        if (isset($_GET['thread_id'])) {
-              foreach($posts as $post):
-                $username = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$post['User_user_id']."'");
-                $username = mysqli_fetch_assoc($username)['username'];
-                ?>
-            <div id="thread-posts">
-                <div class="post">
-                    <div class="post-info">
-                        <div id="username"><b><?php echo $username; ?></b></div>
-                        <div id="datum"><b><?php echo $post['dateofcomment']; ?></b></div>
-                    </div>
-                    <div class="post-content">
-                        <h4><?php echo $post['commentcontent']; ?></h4>
-                    </div>
-                </div>
-          <?php endforeach;
-        }
+        <?php
+            if (isset($_GET['thread_id'])) {
+                $posts = mysqli_query($db, "SELECT * FROM Comment WHERE Thread_thread_id = '".$_GET['thread_id']."'");
+                while ($post = mysqli_fetch_assoc($posts)):
+                    $username = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$post['User_user_id']."'");
+                    $username = mysqli_fetch_assoc($username)['username'];
         ?>
-    </div>
+                    <div class="post">
+                        <div class="post-info">
+                            <div id="username"><b><?php echo $username; ?></b></div>
+                            <div id="datum"><b><?php echo $post['dateofcomment']; ?></b></div>
+                        </div>
+                        <div class="post-content">
+                            <h4><?php echo $post['commentcontent']; ?></h4>
+                        </div>
+                    </div>
+        <?php
+                endwhile;
+            }
+        ?>
     </div>
 
     <?php include '../standard/footer.php';?>
