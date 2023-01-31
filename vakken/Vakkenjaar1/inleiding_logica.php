@@ -47,9 +47,9 @@
       }
     }
     print_r($threads);
-    // foreach ($threads as $thread) {
-    //   echo $thread;
-    // }
+    foreach ($threads as $thread) {
+      print_r($thread);
+   }
 ?>
   </div>
 
