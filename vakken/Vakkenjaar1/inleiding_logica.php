@@ -7,10 +7,6 @@
         $threadId = mysqli_real_escape_string($db, $_GET['thread_id']);
     }
 
-    $course = 'Inleiding Logica';
-    $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse =\'Inleiding Logica\';";
-    $result = mysqli_query($db, $sql);
-    $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
 
@@ -43,7 +39,20 @@
     echo $threads;
     ?>
   </div>
-<div> hallo</div>
+<?php
+    $course = 'Inleiding Logica';
+    $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse =$course";
+    $result = mysqli_query($db, $sql);
+    $threads = array();
+    if (mysqli_num_rows($result)> 0){
+      while($row = mysqli_fetch_assoc($result)){
+        $threads[] = $row;
+      }
+    }
+    foreach ($threads as $thread) {
+  echo $data['thread_id'];
+    }
+  ?>
 <div>
 <?php include 'vraag.php'?>
 </div>
