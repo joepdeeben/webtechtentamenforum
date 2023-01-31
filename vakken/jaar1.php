@@ -45,7 +45,7 @@
 </div>
 
 
-<div class='vakInfo' id='Prolog' style='display:none'>
+<div class='vakInfo' id='Prolog' style='display:none'>w
 <?php include 'Vakkenjaar1/prolog.php' ?>
 </div>
 
