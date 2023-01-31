@@ -21,9 +21,22 @@
     Filosofie en AI
   </div>
 
-<div>
-<?php include 'vraag.php'?>
-</div>
+  <?php
+    $course = 'Filosofie en AI';
+    $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse = '$course';";
+    $result = mysqli_query($db, $sql);
+    $threads = array();
+    $result = mysqli_query($db, $sql);
+    if (mysqli_num_rows($result)> 0){
+      while($row = mysqli_fetch_assoc($result)){
+        $threads[] = $row;
+      }
+    }
+    foreach ($threads as $thread) {
+      $current_thread = $thread['thread_id'];
+       include 'vraag.php';
+       echo $current_thread;
+   } ?>
 
 
 </body>
