@@ -44,14 +44,14 @@
             </form>
             <ul>
                 <?php
-                if (isset($_POST['submit1'])) {
-                    $threadcourse = $_POST['threadcourse'];
-                    $sql = "SELECT thread_id, threadtitle FROM Thread WHERE threadcourse = '$threadcourse'";
-                    $result = mysqli_query($db, $sql);
-                    while ($row = mysqli_fetch_array($result)) {
-                        echo "<li><a href='?thread_id=" . $row['thread_id'] . "'>" . $row['threadtitle'] . "</a></li>";
+                if(isset($_POST['submit'])){
+                        $content = mysqli_real_escape_string($db, $_POST['content']);
+                        $username = mysqli_real_escape_string($db, $_POST['username']);
+                        $datum = date("Y-m-d H:i:s"); // set the current date and time
+
+                        $sql = "INSERT INTO Comment (commentcontent, User_user_Id, datum, Thread_thread_Id) VALUES ('$content', '$username', '$datum', '$threadId')";
+                        mysqli_query($db, $sql);
                     }
-                }
                 ?>
             </ul>
             </form>
