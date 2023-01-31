@@ -40,6 +40,7 @@
     $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse = '$course';";
     $result = mysqli_query($db, $sql);
     $threads = array();
+    $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result)> 0){
       while($row = mysqli_fetch_assoc($result)){
         $threads[] = $row;
