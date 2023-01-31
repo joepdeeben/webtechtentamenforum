@@ -47,7 +47,7 @@
       }
     }
     foreach ($threads as $thread) {
-  echo $data['thread_id'];
+  echo $thread['course_id'];
     }
 ?>
   </div>
