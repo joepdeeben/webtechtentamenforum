@@ -154,26 +154,6 @@
     </div>
 </div>   
 
-<div style="color:red"><?php
-session_start();
-$username = $_SESSION["user_id"];
-
-if (!session_start()) {
-  print "Session failed to start!<br />";
-}
-
-# note the use of a constant:
-print "This is session " . SID . "<p />";
-print "This is session " . session_id() . "<p />";
-
-if (isset($_SESSION['views'])) {
-  $_SESSION['views']++;
-} else {
-  $_SESSION['views'] = 0;
-}
-
-print $_SESSION['views'];
-?></div>
 
 
 <?php include 'standard/footer.php';?>
