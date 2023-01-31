@@ -62,7 +62,7 @@ return true;
 <option value="" disabled selected>geslacht</option>
 <option value="man">Man</option>
 <option value="vrouw">Vrouw</option>
-<option value="non-binair">Non-binair</option>
+<option value="nb">Non-binair</option>
 <option value="anders">Anders</option>
 </select>
 <br>
