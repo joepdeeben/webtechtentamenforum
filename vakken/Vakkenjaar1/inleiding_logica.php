@@ -34,8 +34,10 @@
 
   <div class="main-div-head">
     Inleiding logica
-    <?php
-    echo "hallo";
+    
+  </div>
+
+  <?php
     $course = 'Inleiding Logica';
     $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse = '$course';";
     $result = mysqli_query($db, $sql);
@@ -51,8 +53,6 @@
        include 'vraag.php';
    }
 ?>
-  </div>
-
 <div>
 <?php include 'vraag.php'?>
 </div>
