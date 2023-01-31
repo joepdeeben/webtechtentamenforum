@@ -54,9 +54,6 @@
        echo $current_thread;
    }
 ?>
-<div>
-<?php include 'vraag.php'?>
-</div>
 
 
 </body>
