@@ -153,6 +153,9 @@
 </div>   
 
 <div style="color:red"><?php
+session_start();
+$username = $_SESSION["user_id"];
+
 if (!session_start()) {
   print "Session failed to start!<br />";
 }

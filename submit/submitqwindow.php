@@ -18,7 +18,7 @@
 
 <div class="subex">
     <span class="titel-vraag">Stel een Vraag!</span>
-    <form>
+    <form action="../submit/submitQ.inc.php">
     <div class="info-vraag">
         <div class="jaar-vraag">
             <select name="jaar" id="jaar">
@@ -46,7 +46,7 @@
     
     <div class="afbeelding">
         Upload een afbeelding bij de opgave: <br>
-        <input type="file" accept="image/*">
+        <input type="file" accept="image/*" name="vraagimage">
     </div>
     <div class="submitbtn">
     <input  type="submit" value="Stel uw vraag!" onclick="return validateForm()">
