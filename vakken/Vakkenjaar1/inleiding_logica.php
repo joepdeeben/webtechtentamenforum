@@ -36,7 +36,7 @@
     Inleiding logica
     <?php
     echo "hallo";
-    echo $threads;
+
     ?>
   </div>
 <?php
