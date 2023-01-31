@@ -10,26 +10,26 @@
     $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
     $result = mysqli_query($db, $sql);
     $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = 3";
+    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = '$current_thread'";
     $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
     $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
     $vraagtiteloutput = $vraagtitel['threadtitle'];
     
 
-    $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = 3";
+    $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = '$current_thread'";
     $vraagcontentresult = mysqli_query($db, $vraagcontentvar);
     $vraagcontent = mysqli_fetch_assoc($vraagcontentresult);
     $vraagcontentoutput = $vraagcontent['threadcontent'];
 
 
-    $vraaguservar = "SELECT User_user_id FROM Thread WHERE thread_id = 3";
+    $vraaguservar = "SELECT User_user_id FROM Thread WHERE thread_id = '$current_thread'";
     $vraaguserresult = mysqli_query($db, $vraaguservar);
     $vraaguser = mysqli_fetch_assoc($vraaguserresult);
     $usernameresult = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$vraaguser['User_user_id']."'");
     $username = mysqli_fetch_assoc($usernameresult);
     $usernameoutput = $username['username'];
 
-    $vraaglikesvar = "SELECT threadlikes FROM Thread WHERE thread_id = 3";
+    $vraaglikesvar = "SELECT threadlikes FROM Thread WHERE thread_id = '$current_thread'";
     $vraaglikesresult = mysqli_query($db, $vraaglikesvar);
     $vraaglikes = mysqli_fetch_assoc($vraaglikesresult);
     $vraaglikesoutput = $vraaglikes['threadlikes'];
