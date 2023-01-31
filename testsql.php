@@ -8,10 +8,22 @@
     }
 
     $course = 'Inleiding Logica';
-    $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse =\'Inleiding Logica\';";
+
+    $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
     $result = mysqli_query($db, $sql);
     $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $vraagtitelvar = "SELECT thread_id FROM Thread WHERE threadcourse = $course";
 
+
+    $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
+    $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
+    $vraagtiteloutput = $vraagtitel['thread_id'];
+    
+
+    $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = 3";
+    $vraagcontentresult = mysqli_query($db, $vraagcontentvar);
+    $vraagcontent = mysqli_fetch_assoc($vraagcontentresult);
+    $vraagcontentoutput = $vraagcontent['threadcontent'];
 ?>
 
 
@@ -40,10 +52,10 @@
     Inleiding logica
     <?php
     echo "hallo";
-    echo $threads;
+    echo $vraagtiteloutput
     ?>
   </div>
-<div> hallo</div>
+
 <div>
 <?php include 'vraag.php'?>
 </div>
