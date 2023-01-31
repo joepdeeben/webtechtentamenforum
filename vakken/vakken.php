@@ -18,12 +18,9 @@
 <body>
   <?php include '../standard/header.php'?>
 
-  <div class="test-div" id="testid">
-    Vakken
-  </div>
-  
-  <div id="selectiejaren" style="color:red; text-align: center;">
-    Selecteer hier in welk jaar je zit
+  <div style="text-align:center">
+    <button class="vakkennavbutton">Ga naar het forum</button>
+    <a href="../forum/randomproblem.php"><button class="vakkennavbutton">Maak oefenopgaves</button></a>
   </div>
 
   <div style="margin: 0 auto; text-align: center;">
