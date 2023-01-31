@@ -7,23 +7,7 @@
         $threadId = mysqli_real_escape_string($db, $_GET['thread_id']);
     }
 
-    $course = 'Inleiding Logica';
 
-    $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
-    $result = mysqli_query($db, $sql);
-    $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    $vraagtitelvar = "SELECT thread_id FROM Thread WHERE threadcourse = $course";
-
-
-    $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
-    $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
-    $vraagtiteloutput = $vraagtitel['thread_id'];
-    
-
-    $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = 3";
-    $vraagcontentresult = mysqli_query($db, $vraagcontentvar);
-    $vraagcontent = mysqli_fetch_assoc($vraagcontentresult);
-    $vraagcontentoutput = $vraagcontent['threadcontent'];
 ?>
 
 
@@ -52,10 +36,22 @@
     Inleiding logica
     <?php
     echo "hallo";
-    echo $vraagtiteloutput
-    ?>
+    $course = 'Inleiding Logica';
+    $sql = "SELECT thread_id FROM `Thread` WHERE threadcourse = '$course';";
+    $result = mysqli_query($db, $sql);
+    $threads = array();
+    $result = mysqli_query($db, $sql);
+    if (mysqli_num_rows($result)> 0){
+      while($row = mysqli_fetch_assoc($result)){
+        $threads[] = $row;
+      }
+    }
+    foreach ($threads as $thread) {
+  echo $thread['course_id'];
+    }
+?>
   </div>
-<div> hallo</div>
+
 <div>
 <?php include 'vraag.php'?>
 </div>
