@@ -46,7 +46,7 @@
         $threads[] = $row;
       }
     }
-    echo $threads;
+    print_r($threads);
     // foreach ($threads as $thread) {
     //   echo $thread;
     // }
