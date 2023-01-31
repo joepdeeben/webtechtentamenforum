@@ -36,6 +36,7 @@ background-color: white;
 padding: 10px;
 box-shadow: 1px 1px 10px #ccc;
 margin-bottom: 10px;
+margin-right: 20px;
 }
 
 label, input, textarea, button {
