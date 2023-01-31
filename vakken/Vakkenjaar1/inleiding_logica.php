@@ -49,8 +49,9 @@
       }
     }
     foreach ($threads as $thread) {
-       echo $thread['thread_id'];
+      $current_thread = $thread['thread_id'];
        include 'vraag.php';
+       echo $current_thread;
    }
 ?>
 <div>
