@@ -49,7 +49,7 @@
 <?php include 'Vakkenjaar2/baystat.php' ?>
 </div>
 
-<div class='vakInfo' id='Computersystemen' style='display:none'>
+<div class='vakInfo' id='Computersystemen' style='display:none'>s
 <?php include 'Vakkenjaar2/compsys.php' ?>
 </div>
 
