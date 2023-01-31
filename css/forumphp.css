@@ -36,6 +36,7 @@ background-color: white;
 padding: 10px;
 box-shadow: 1px 1px 10px #ccc;
 margin-bottom: 10px;
+margin-right: 20px;
 }
 
 label, input, textarea, button {
@@ -76,15 +77,20 @@ color: black;
 }
 
 #maindiv {
-margin-right: 200px;
+margin-right: 240px;
 padding-right: 20px;
 float: right;
-width: calc(100% - 200px);
+width: calc(100% - 240px);
 }
 
 h6 {
 font-size: 16px;
 font-weight: bold;
+color: black;
+}
+
+h4 {
+font-size: 14px;
 color: black;
 }
 
