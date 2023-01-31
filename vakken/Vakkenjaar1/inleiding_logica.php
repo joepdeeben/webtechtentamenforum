@@ -46,9 +46,10 @@
         $threads[] = $row;
       }
     }
-    foreach ($threads as $thread) {
-  echo $thread['course_id'];
-    }
+    echo $threads;
+    // foreach ($threads as $thread) {
+    //   echo $thread;
+    // }
 ?>
   </div>
 
