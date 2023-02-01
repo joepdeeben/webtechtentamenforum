@@ -53,7 +53,7 @@ return true;
 }
 
 </script>
-<form action="../test2.php">
+<form action="../test2.php" method="post">
 <label for="name" ></label>
 <input type="text" id="name" placeholder="Naam" name="name" required>
 <br>
