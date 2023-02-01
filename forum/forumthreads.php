@@ -1,6 +1,6 @@
 <?php
     $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
-    if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
+    if (!$db) { die("Connection failed: " . mysqli_connect_error()); } ;
 
     session_start();
     $username = $_SESSION["user_id"];
