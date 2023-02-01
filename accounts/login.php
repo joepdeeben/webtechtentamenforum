@@ -2,6 +2,7 @@
 session_start();
 
 $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
+    if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
 
 
 if (isset($_POST["gebruikersnaam"]) && isset($_POST["wachtwoord"])) {

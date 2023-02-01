@@ -39,16 +39,21 @@
         $thread_title = mysqli_query($db, "SELECT threadtitle FROM Thread WHERE thread_id = '$thread_id'");
         $thread_title = mysqli_fetch_assoc($thread_title)['threadtitle'];
     ?>
-    <?php
-          if (isset($_GET['thread_id'])) {
-            $thread_id = $_GET['thread_id'];
-            $thread_content= mysqli_query($db, "SELECT threadcontent FROM Thread WHERE thread_id = '$thread_id'");
-            $thread_content = mysqli_fetch_assoc($thread_title)['threadcontent'];
-        ?>
-        <h4><?php echo $thread_content; ?></h4>
+        <h1><?php echo $thread_title; ?></h1>
     <?php
       }
     ?>
+
+    <?php
+          if (isset($_GET['thread_id'])) {
+            $thread_id = $_GET['thread_id'];
+            $thread_content = mysqli_query($db, "SELECT threadcontent FROM Thread WHERE thread_id = '$thread_id'");
+            $thread_content = mysqli_fetch_assoc($thread_content)['threadcontent'];
+        ?>
+            <h4><?php echo $thread_content; ?></h4>
+        <?php
+          }
+        ?>
   <div id="maindiv">
 
 
@@ -76,7 +81,7 @@
     </div>
 
     <form action="" method="post">
-          <h6>Plaats jouw comment!:</h6>
+          <h6>Content:</h6>
           <textarea name="content" id="content"></textarea>
           <br>
           <button type="submit" name="submit">Posten</button>
