@@ -20,8 +20,7 @@
 
 <div class="subex">
 <span class="titel-vraag"> Submit een opgave</span>
-<a class="hoi" href="../test2.php">amongus</a>
-<form>
+<form method="post" action="../test.php">
 <div class="info-vraag">
 
         <div class="jaar-vraag">

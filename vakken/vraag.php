@@ -43,13 +43,6 @@
     
     ?>
 
-    <script>
-
-
-
-    </script>
-
-    
 
    
 <!DOCTYPE html>
@@ -101,7 +94,7 @@
       <i class="ri-thumb-up-fill"></i>
     </div>
     <div class="vraaagmeer">
-    <a href=""> Zie hier meer! </a>
+    <a href="> Zie hier meer! </a>
   </div>
   </div>
 
