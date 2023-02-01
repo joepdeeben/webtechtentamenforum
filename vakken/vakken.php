@@ -2,7 +2,6 @@
   $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
   if (!$db) { die("Connection failed: " . mysqli_connect_error()); };
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,9 +55,6 @@ function ShowYearThree(){
     document.getElementById('buttonjaar1').style.background='#304ba3';
     document.getElementById('buttonjaar1').style.color='white'
     }
-
-
-
 
 
 

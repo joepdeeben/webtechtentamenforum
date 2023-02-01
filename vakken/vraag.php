@@ -37,7 +37,6 @@
     $vraaglikes = mysqli_fetch_assoc($vraaglikesresult);
     $vraaglikesoutput = $vraaglikes['threadlikes'];
 
-      $fullstring = "Location: https://webtech-ki37.webtech-uva.nl/forum/forumthreads.php?thread_id=".$threadId;
       
     
     
@@ -94,7 +93,7 @@
       <i class="ri-thumb-up-fill"></i>
     </div>
     <div class="vraaagmeer">
-    <a href="> Zie hier meer! </a>
+    <a href=""> Zie hier meer! </a>
   </div>
   </div>
 
