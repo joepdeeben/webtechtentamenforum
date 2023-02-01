@@ -39,7 +39,13 @@
         $thread_title = mysqli_query($db, "SELECT threadtitle FROM Thread WHERE thread_id = '$thread_id'");
         $thread_title = mysqli_fetch_assoc($thread_title)['threadtitle'];
     ?>
-        <h1><?php echo $thread_title; ?></h1>
+    <?php
+          if (isset($_GET['thread_id'])) {
+            $thread_id = $_GET['thread_id'];
+            $thread_content= mysqli_query($db, "SELECT threadcontent FROM Thread WHERE thread_id = '$thread_id'");
+            $thread_content = mysqli_fetch_assoc($thread_title)['threadcontent'];
+        ?>
+        <h4><?php echo $thread_content; ?></h4>
     <?php
       }
     ?>

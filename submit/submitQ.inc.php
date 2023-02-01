@@ -14,7 +14,7 @@ $vraagimage = $_POST['w'];
 date_default_timezone_set('Europe/Amsterdam');
 $date = date("d-m-Y");
 
-$sql = "INSERT INTO  (User_user_id, threadtitle, threadcontent, threadschoolyear, threadcourse, threadlikes, dateofpost, image) VALUES ('$username', '$vraagtitel', '$vraagcontent', '$vraagjaar', '$vraagvak', 0, '$date', '$vraagimage)";
+$sql = "INSERT INTO Thread (User_user_id, threadtitle, threadcontent, threadschoolyear, threadcourse, threadlikes, dateofpost, image) VALUES ('$username', '$vraagtitel', '$vraagcontent', '$vraagjaar', '$vraagvak', 0, '$date', '$vraagimage)";
 $result = mysqli_query($db, $sql);
 
 ?>
