@@ -43,6 +43,17 @@
     <?php
       }
     ?>
+
+    <?php
+          if (isset($_GET['thread_id'])) {
+            $thread_id = $_GET['thread_id'];
+            $thread_content = mysqli_query($db, "SELECT threadcontent FROM Thread WHERE thread_id = '$thread_id'");
+            $thread_content = mysqli_fetch_assoc($thread_content)['threadcontent'];
+        ?>
+            <h4><?php echo $thread_content; ?></h4>
+        <?php
+          }
+        ?>
   <div id="maindiv">
 
 

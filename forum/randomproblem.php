@@ -27,7 +27,7 @@ $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kit
                         }
                         ?>
                     </select>
-                    <input type="submit" name="submit1" value="Laat vakken zien">
+                    <input type="submit" name="submit1" value="selecteer vak">
                 </form>
 
     <button id="giveprob">geef me een oefening</button>
