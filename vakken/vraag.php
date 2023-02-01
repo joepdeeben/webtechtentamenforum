@@ -6,6 +6,9 @@
     if (isset($_GET['thread_id'])) {
         $threadId = mysqli_real_escape_string($db, $_GET['thread_id']);
     }
+    
+    
+    
 
     $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
     $result = mysqli_query($db, $sql);
@@ -33,7 +36,22 @@
     $vraaglikesresult = mysqli_query($db, $vraaglikesvar);
     $vraaglikes = mysqli_fetch_assoc($vraaglikesresult);
     $vraaglikesoutput = $vraaglikes['threadlikes'];
+
+      $fullstring = "Location: https://webtech-ki37.webtech-uva.nl/forum/forumthreads.php?thread_id=".$threadId;
+      
+    
+    
     ?>
+
+    <script>
+
+
+
+    </script>
+
+    
+
+   
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +101,7 @@
       <i class="ri-thumb-up-fill"></i>
     </div>
     <div class="vraaagmeer">
-    <a href="#"> Zie hier meer! </a>
+    <a href=""> Zie hier meer! </a>
   </div>
   </div>
 
