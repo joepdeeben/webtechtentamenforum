@@ -15,10 +15,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
     <title>Homepage</title>
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMxx-ToW1t9-iK6i-2ydhsiEYbeRIa1fU"></script>
+    <script>
+      function initMap() {
+        var latitude = 52.3538242;
+	var longitude = 4.9572223;
+        var location = new google.maps.LatLng(latitude, longitude);
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          zoom: 8
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
+    </script>
 </head>
 
-<body>
+<body onload="initMap()">
 <?php include 'standard/header.php';?>
   <div class="main-div-head" id="main-div">
        Welkom op  KI forum 
@@ -26,10 +41,10 @@
   <div class="main-div" id="main-div">
     <div class="inmain">
       <div class="titel-main">
-        Over ons
+        Onze Locatie
       </div>
-      <div class="message-main">
-        florian graag wat typen met link naar de volledige pagina
+      <div  class="message-main">
+        <div id="map" style="width:100%;height:480px;"></div>
       </div>
     </div>
     <div class="inmain-mid">
