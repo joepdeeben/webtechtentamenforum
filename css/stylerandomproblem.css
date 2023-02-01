@@ -1,73 +1,75 @@
 body {
-font-family: Arial, sans-serif;
-background-color: #F5F5F5;
-}
-
-.opgave_form {
-width: 80%;
-margin: auto;
-padding: 20px;
-background-color: white;
-box-shadow: 1px 1px 10px #ccc;
-text-align: center;
-}
-
-#giveprob {
-background-color: #29fd53;
-color: white;
-padding: 8px 15px;
-border-radius: 4px;
-border: none;
-cursor: pointer;
-margin-bottom: 10px;
-}
-
-#checkans {
-background-color: #29fd53;
-color: white;
-padding: 8px 15px;
-border-radius: 4px;
-border: none;
-cursor: pointer;
-margin-bottom: 10px;
-margin-right: 10px;
-}
-
-#showanswer {
-background-color: #29fd53;
-color: white;
-padding: 8px 15px;
-border-radius: 4px;
-border: none;
-cursor: pointer;
-margin-bottom: 10px;
-}
-
-#dothis {
-font-size: 0.8em;
-font-weight: bold;
-margin-bottom: 10px;
-text-align: center;
-}
-
-#numb {
-padding: 5px;
-border: 1px solid #ccc;
-border-radius: 4px;
-font-size: 0.8em;
-margin-bottom: 10px;
-}
-
-#feedback {
-font-size: 1.2em;
-color: gray;
-margin-bottom: 10px;
-}
-
-
-#ans{
-font-size: 0.8em;
-font-weight: bold;
-margin-bottom: 10px;
-color: gray;
-}
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    }
+    
+    .opgave_form {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px #ccc;
+    text-align: center;
+    }
+    
+    #giveprob {
+    background-color: #304ba3;;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    }
+    
+    #checkans {
+    background-color: #304ba3;;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 45%;
+    }
+    
+    #showanswer {
+    background-color: #304ba3;;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 46.5%;
+    }
+    
+    #dothis {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    
+    #numb {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    width: 70%;
+    }
+    
+    #feedback {
+    font-size: 1.2em;
+    color: gray;
+    margin-bottom: 10px;
+    }
+    
+    
+    #ans{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: gray;
+    }
