@@ -9,8 +9,8 @@ session_start();
 $vraagjaar = $_POST['jaar'];
 $vraagvak = $_POST['vakken'];
 $vraagtitel = $_POST['titelvraag'];
-$vraagcontent = $_POST['email'];
-$vraagimage = $_POST['w'];
+$vraagcontent = $_POST['vraagcontent'];
+$vraagimage = $_POST['vraagimage'];
 date_default_timezone_set('Europe/Amsterdam');
 $date = date("d-m-Y");
 
