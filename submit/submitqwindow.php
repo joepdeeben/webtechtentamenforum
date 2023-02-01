@@ -46,7 +46,7 @@
     
     <div class="afbeelding">
         Upload een afbeelding bij de opgave: <br>
-        <input type="file" accept="image/*" name="vraagimage">
+        <input type="file" accept="image/*" name="vraagimage" name="submit">
     </div>
     <div class="submitbtn">
     <input  type="submit" value="Stel uw vraag!" onclick="return validateForm()">
