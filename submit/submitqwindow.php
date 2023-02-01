@@ -18,7 +18,7 @@
 
 <div class="subex">
     <span class="titel-vraag">Stel een Vraag!</span>
-    <form action="../submit/submitQ.inc.php">
+    <form action="../submit/submitQ.inc.php" method="post">
     <div class="info-vraag">
         <div class="jaar-vraag">
             <select name="jaar" id="jaar">
