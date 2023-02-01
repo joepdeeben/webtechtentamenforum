@@ -70,7 +70,7 @@
     </div>
 
     <form action="" method="post">
-          <h6>Content:</h6>
+          <h6>Plaats jouw comment!:</h6>
           <textarea name="content" id="content"></textarea>
           <br>
           <button type="submit" name="submit">Posten</button>
