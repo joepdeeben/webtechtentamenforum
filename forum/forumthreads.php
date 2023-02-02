@@ -35,13 +35,30 @@
     <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
 </head>
 <body>
+
+<?php
+            if (isset($_GET['thread_id'])) {
+                $posts = mysqli_query($db, "SELECT * FROM Comment WHERE Thread_thread_id = '".$_GET['thread_id']."'");
+                $post = mysqli_fetch_assoc($posts);
+                    $username = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$post['User_user_id']."'");
+                    $username = mysqli_fetch_assoc($username)['username'];
+        ?>
+        <h1><?php echo $username; ?>:</h1>
+
+            <?php
+              }
+            ?>
+
   <?php
       if (isset($_GET['thread_id'])) {
         $thread_id = $_GET['thread_id'];
         $thread_title = mysqli_query($db, "SELECT threadtitle FROM Thread WHERE thread_id = '$thread_id'");
         $thread_title = mysqli_fetch_assoc($thread_title)['threadtitle'];
+
+
     ?>
         <h1><?php echo $thread_title; ?></h1>
+
     <?php
       }
     ?>
@@ -118,6 +135,6 @@
         </div>
 
 
-    <?php include '../standard/footer.php';?>
 </body>
+<?php include '../standard/footer.php';?>
 </html>
