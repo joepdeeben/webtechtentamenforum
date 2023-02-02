@@ -35,11 +35,60 @@
         
     </ul>
 
-        <div class="main">
+        <?php
+          session_start();
+          if(isset($_SESSION["user_id"])) {
+        ?>
+          <div class="main">
             <li><a href="#" class="user"><i class="ri-inbox-line"></i>Inbox</a></a></li>
-            <li><a href="../accounts/account.php" class="user"><i class="ri-user-3-line"></i>Account</a></li>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
+            <li class="account-menu">
+              <a href="#" class="user account-toggle"><i class="ri-user-3-line"></i>Account</a>
+              <ul class="account-options">
+                <li><a href="../accounts/logout.php">Log Out</a></li>
+                <li><a href="../accounts/changeinfo.php">Change Info</a></li>
+              </ul>
+            </li>
+          </div>
+          <script>
+          const accountToggle = document.querySelector(".account-toggle");
+          const accountOptions = document.querySelector(".account-options");
+
+          accountToggle.addEventListener("click", function(event) {
+            event.preventDefault();
+            accountOptions.classList.toggle("show");
+          });
+
+          document.addEventListener("click", function(event) {
+            if (!event.target.closest(".account-menu")) {
+              accountOptions.classList.remove("show");
+            }
+          });
+          </script>
+          <style>
+          .account-options {
+              display: none;
+              position: absolute;
+              background-color: #304ba3;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              border-radius: 8px;
+          }
+
+          .account-options.show {
+              display: block;
+          }
+          </style>
+
+        <?php
+          } else {
+        ?>
+          <div class="main">
+            <li><a href="#" class="user"><i class="ri-inbox-line"></i>Inbox</a></a></li>
+            <li><a href="../accounts/newloginwindow.php" class="user"><i class="ri-user-3-line"></i>Account</a></li>
+          </div>
+        <?php
+          }
+        ?>
         <script type="text/javascript" src="javascript/scriptnav.js"></script>
 
 </header>
