@@ -47,7 +47,7 @@
   
     </div>
     <div class="antwoord-opgave">
-            <textarea id="vraagvolledig" placeholder="Vul hier het antwoord in" name="vraagcontent" rows="9" cols="230"></textarea>
+            <textarea id="vraagvolledig" placeholder="Vul hier het antwoord in" name="vraaganswer" rows="9" cols="230"></textarea>
     </div>
     <div class="afbeelding">
         Upload een afbeelding bij de vraag: <br>
