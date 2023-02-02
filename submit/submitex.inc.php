@@ -17,6 +17,6 @@ $date = date("Y-m-d");
 $sql = "INSERT INTO Exercise (User_user_id, exercisetitle, exercisecontent, exerciseanswer, exercisejaar, exercisecourse, exerciselikes) VALUES ('$user_id', '$vraagtitel', '$vraagcontent', '$vraaganswer', '$vraagjaar', '$vraagvak', 0)";
 $result = mysqli_query($db, $sql);
 
-header("Location: submitQ.php");
+header("Location: submitex.php");
 
 ?>

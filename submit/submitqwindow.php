@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: ../accounts/login.php");
+      exit;
+    }
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,18 +23,17 @@
     <title>Submit een opgave</title>
 </head>
 
-<body>
+<body >
 
 
 
-<div class="subex">
+<div class="subex" >
     <span class="titel-vraag">Stel een Vraag!</span>
     <form action="../submit/submitQ.inc.php" method="post">
     <div class="info-vraag">
         <div class="jaar-vraag">
             <select name="jaar" id="jaar">
                 <option value="" disabled selected>Kies een jaar</option>
-                <option value="Algemeen">Algemeen</option>
                 <option value="jaar1">Jaar 1</option>
                 <option value="jaar2">Jaar 2</option>
                 <option value="jaar3">Jaar 3</option>
