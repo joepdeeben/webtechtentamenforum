@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="javascript/vakkenfuncties.js"></script>
     <link rel="stylesheet" href="css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -36,7 +35,6 @@ Deze website maakt gebruik van cookies. Door gebruik te maken van deze website g
     <button class="cookiebtnaccept" onclick='cookiesAccept();'>Accepteer</button>
     <button class="cookiebtndecline" onclick='cookiesDecline();'>Weiger</button>
 </div>
-<div><button class='cookiebtnaccept' onclick='cookiePopUp()'>Kom terug</button></div>
 </body>
 </html>
 
