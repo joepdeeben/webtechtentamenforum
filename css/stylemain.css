@@ -1022,3 +1022,65 @@ textarea {
     border-top-right-radius: 10px;
     transition: .3s;
 }
+
+.cookiesbanner{
+    height: 100px;
+    width: 50%;
+    background: rgba(48, 75, 163, 0.35);
+    position: fixed;
+    justify-content: right;
+    align-items: center;
+    height: 100px; 
+    display: flex;  
+    left: 25%;
+    right: 25%;
+    bottom:20%;
+    padding:1em;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.50);
+    }
+    
+    .cookiesbanner:hover{
+    
+    background: var(--bg-color);
+    
+    color: rgba(0, 0, 0, 1);
+    }
+    
+    .cookiebtnaccept{
+    padding: 15px;
+    width:100px;
+    text-align: center;
+    margin: 5px;
+    border:none;
+    background-color:rgba(48, 163, 67, 0.5);
+    color: var(--text-color);
+    }
+    
+    .cookiebtnaccept:hover{
+        padding: 15px;
+        width:100px;
+        text-align: center;
+        margin: 5px;
+        border:none;
+        background-color:rgba(48, 163, 67, 1)
+        }
+    
+    .cookiebtndecline{
+        padding: 15px;
+        width:100px;
+        text-align: center;
+        margin: 5px;
+        border:none;
+        background-color:rgba(163, 81, 48, 0.5);
+        color: var(--text-color);
+        }
+    
+    .cookiebtndecline:hover{
+        padding: 15px;
+        width:100px;
+        text-align: center;
+        margin: 5px;
+        border:none;
+        background-color:rgba(163, 81, 48, 1)
+        }
