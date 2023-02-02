@@ -17,7 +17,7 @@
 
 <body>
 
-
+<?php include '../standard/header.php';?>
 <div class="logindiv" >
     <form action="login.php" method="post">
 
@@ -39,7 +39,7 @@
     </div>
 
 
-
+    <?php include '../standard/footer.php';?>
 
 </body>
 </html>

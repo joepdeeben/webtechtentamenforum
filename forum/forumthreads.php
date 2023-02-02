@@ -33,6 +33,7 @@
 <?php include '../standard/header.php';?>
     <title>Forum</title>
     <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
+    <link rel="stylesheet" type="text/css" href="../css/stylemain.css">
 </head>
 <body>
 

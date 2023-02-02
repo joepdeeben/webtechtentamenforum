@@ -16,7 +16,7 @@
 
 <?php include '../standard/header.php';?>
 
-<a class="hoi" href="../test2.php"></a>
+<a class="hoi" href="../submit/submitex.inc.php"></a>
 
 <div class="subex">
 <span class="titel-vraag"> Submit een opgave</span>
@@ -26,7 +26,6 @@
         <div class="jaar-vraag">
             <select name="jaar" id="jaar">
                 <option value="" disabled selected>Kies een jaar</option>
-                <option value="Algemeen">Algemeen</option>
                 <option value="jaar1">Jaar 1</option>
                 <option value="jaar2">Jaar 2</option>
                 <option value="jaar3">Jaar 3</option>
@@ -47,7 +46,7 @@
   
     </div>
     <div class="antwoord-opgave">
-            <textarea id="vraagvolledig" placeholder="Vul hier het antwoord in" name="vraagcontent" rows="9" cols="230"></textarea>
+            <textarea id="vraagvolledig" placeholder="Vul hier het antwoord in" name="vraaganswer" rows="9" cols="230"></textarea>
     </div>
     <div class="afbeelding">
         Upload een afbeelding bij de vraag: <br>

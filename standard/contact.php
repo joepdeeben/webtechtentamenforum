@@ -57,7 +57,7 @@
             </div>
             
             <div class="contact-info">
-                <a href="mailto:surja.sarker@student.uva.nl">Email:&nbspsurja.sarker@student@student.uva.nl</a>
+                <a href="mailto:surja.sarker@student.uva.nl">Email:&nbspsurja.sarker@student.uva.nl</a>
                 <br> Telefoon:&nbsp 020 525 8626
             </div>
     </div>
@@ -75,7 +75,7 @@
         </div>
         
         <div class="contact-info">
-            <a href="mailto:mark.broerse@student.uva.nl">Email:&nbspmark.broerse@student@student.uva.nl</a>
+            <a href="mailto:mark.broerse@student.uva.nl">Email:&nbspmark.broerse@student.uva.nl</a>
             <br> Telefoon:&nbsp020 525 5387
         </div>
 </div>
@@ -93,7 +93,7 @@
     </div>
     
     <div class="contact-info">
-        <a href="mailto:olivier.stam@student.uva.nl">Email:&nbspolivier.stam@student@student.uva.nl</a>
+        <a href="mailto:olivier.stam@student.uva.nl">Email:&nbspolivier.stam@student.uva.nl</a>
         <br> Telefoon:&nbsp020 525 9111
     </div>
 </div>
@@ -111,7 +111,7 @@
     </div>
     
     <div class="contact-info">
-        <a href="mailto:joep.deeben@student.uva.nl">Email:&nbspjoep.deeben@student@student.uva.nl</a>
+        <a href="mailto:joep.deeben@student.uva.nl">Email:&nbspjoep.deeben@student.uva.nl</a>
         <br> Telefoon:&nbsp020 525 9110
     </div>
 </div>
@@ -130,7 +130,7 @@
     </div>
     
     <div class="contact-info">
-        <a href="mailto:florian.v.daleboudt@student.uva.nl">Email:&nbspflorian.v.daleboudt@student@student.uva.nl</a>
+        <a href="mailto:florian.v.daleboudt@student.uva.nl">Email:&nbspflorian.v.daleboudt@student.uva.nl</a>
         <br> Telefoon:&nbsp020 525 4410
     </div>
 </div>
