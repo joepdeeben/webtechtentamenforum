@@ -10,11 +10,11 @@ $vraagjaar = $_POST['jaar'];
 $vraagvak = $_POST['vakken'];
 $vraagtitel = $_POST['titelvraag'];
 $vraagcontent = $_POST['vraagcontent'];
-$vraagimage = $_POST['vraagimage'];
+$vraaganswer = $_POST['vraaganswer'];
 date_default_timezone_set('Europe/Amsterdam');
 $date = date("Y-m-d");
 
-$sql = "INSERT INTO Thread (User_user_id, exercisetitle, exercisecontent, exerciseanswer, exercisejaar, exercisecourse, exerciselikes) VALUES ('$user_id', '$vraagtitel', '$vraagcontent', '$vraaganswer', '$vraagjaar', $vraagvak, 0)";
+$sql = "INSERT INTO Exercise (User_user_id, exercisetitle, exercisecontent, exerciseanswer, exercisejaar, exercisecourse, exerciselikes) VALUES ('$user_id', '$vraagtitel', '$vraagcontent', '$vraaganswer', '$vraagjaar', '$vraagvak', 0)";
 $result = mysqli_query($db, $sql);
 
 header("Location: submitQ.php");
