@@ -15,12 +15,13 @@
 <section class="footer">
 
     <div class="people-info">
+    <a href="../standard/contact.php"  target="_blank">
       <h3>Ons Team</h3>
       
         
           <h4>Mark Broerse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Surja Sarker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olivier Stam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joep Deeben&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
        
-          
+</a>
         
        
     </div>
