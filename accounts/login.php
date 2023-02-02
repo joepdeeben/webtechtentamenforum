@@ -2,7 +2,7 @@
 session_start();
 
 $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
-    if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
+    if (!$db) { die("Connection failed: " . mysqli_connect_error()); };
 
 
 if (isset($_POST["gebruikersnaam"]) && isset($_POST["wachtwoord"])) {
@@ -18,10 +18,10 @@ if (isset($_POST["gebruikersnaam"]) && isset($_POST["wachtwoord"])) {
                $_SESSION["username"] = $user["username"];
                header("Location: ../index.php");
            } else {
-               echo "Incorrect password";
+               echo "Incorrect username or password ";
            }
         } else {
-           echo "Incorrect username";
+           echo "Incorrect username or password";
         }
 }
 ?>

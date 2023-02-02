@@ -6,9 +6,6 @@
     if (isset($_GET['thread_id'])) {
         $threadId = mysqli_real_escape_string($db, $_GET['thread_id']);
     }
-    
-    
-    
 
     $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
     $result = mysqli_query($db, $sql);
@@ -93,8 +90,8 @@
       <i class="ri-thumb-up-fill"></i>
     </div>
     <div class="vraaagmeer">
-    <a href=""> Zie hier meer! </a>
-  </div>
+        <a href="../forum/forumthreads.php?thread_id=<?php echo $current_thread; ?>"> Zie hier meer! </a>
+    </div>
   </div>
 
 
