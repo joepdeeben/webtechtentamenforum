@@ -169,7 +169,7 @@
     </div>
 </div>   
 
-
+<? include 'standard/cookiebanner.php'?>
 
 <?php include 'standard/footer.php';?>
   </body>
