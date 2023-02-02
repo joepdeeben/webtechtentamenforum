@@ -52,9 +52,9 @@
         KI forum
       </div>
       <div class="message-main">
-        Hier op het <b>KI forum </b>staat de student centraal, deze site is gedisgned om zo 
-        gebruikersvriendelijk te zijn voor een student die Kunstmatige Intelligentie studeerd aan de UvA. <br> <br>
-        Met functies om te overleggen met medestudenten over vak specefieke vragen of over andere dingen, een funtie om oefenopgaven 
+        Hier op het <b>KI forum </b>staat de student centraal, deze site is gedesigned om zo 
+        gebruikersvriendelijk te zijn voor een student die Kunstmatige Intelligentie studeert aan de UvA. <br> <br>
+        Met functies om te overleggen met medestudenten over vak specifieke vragen of over andere dingen, een funtie om oefenopgaven 
         te creeëren, oefenen en hier feedback op te krijgen. En hierbij een reward-system om op de leaderbord te klimmen naar de top voor 
         de Hall of fame van de studie. 
       </div>
