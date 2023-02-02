@@ -102,12 +102,12 @@ select{
 }
 #changename, #changegeslacht, #changelogingebruikersnaam, #changewachtwoord, #changeemail{
   height: 50px;
-  width: 30%;
+  /* width: 30%; */
   flex-direction: column;
   justify-content: center;
 }
 .details{
-  width: 60%;
+  /* width: 60%; */
   flex-direction: column;
   margin-left: 5%;
   display: inline-block;
