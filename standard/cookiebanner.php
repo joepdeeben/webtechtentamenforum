@@ -24,7 +24,7 @@
     }
 
     function cookiePopUp(){
-        cookies=getCookie('cookies');
+        var cookies=getCookie('cookies');
         if (cookies !== 'accepted'){
         document.getElementById('cookiepopup').style.display='block';
     }
