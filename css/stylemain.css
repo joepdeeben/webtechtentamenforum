@@ -252,6 +252,14 @@ a {
     border-radius: 4px;
 }
 
+.delete-post a{
+        color: black;
+    }
+
+.delete-post{
+   border: 2px var(--bg-color) solid;
+   }
+
 .dropdown {
     position: relative;
     display: inline-block;

@@ -7,6 +7,12 @@
     session_start();
     $username = $_SESSION["user_id"];
 
+     if (isset($_SESSION['user_id'])) {
+              $user_id = $_SESSION['user_id'];
+              $is_admin = mysqli_query($db, "SELECT is_admin FROM User WHERE user_id = '$user_id'");
+              $is_admin = mysqli_fetch_assoc($is_admin)['is_admin'];
+          }
+
 
     $threadId = "";
     if (isset($_GET['thread_id'])) {
@@ -39,7 +45,7 @@
 
 <?php
             if (isset($_GET['thread_id'])) {
-                $posts = mysqli_query($db, "SELECT * FROM Comment WHERE Thread_thread_id = '".$_GET['thread_id']."'");
+                $posts = mysqli_query($db, "SELECT * FROM Thread WHERE thread_id = '".$_GET['thread_id']."'");
                 $post = mysqli_fetch_assoc($posts);
                     $username = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$post['User_user_id']."'");
                     $username = mysqli_fetch_assoc($username)['username'];
@@ -78,34 +84,53 @@
 
 
     <div id="thread-posts">
-        <?php
-            if (isset($_GET['thread_id'])) {
-                $posts = mysqli_query($db, "SELECT * FROM Comment WHERE Thread_thread_id = '".$_GET['thread_id']."'");
-                while ($post = mysqli_fetch_assoc($posts)):
-                    $username = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$post['User_user_id']."'");
-                    $username = mysqli_fetch_assoc($username)['username'];
-        ?>
-                    <div class="post">
-                        <div class="post-info">
-                            <div id="username"><b><?php echo $username; ?></b></div>
-                            <div id="datum"><b><?php echo $post['dateofcomment']; ?></b></div>
+            <?php
+                if (isset($_GET['thread_id'])) {
+                    $posts = mysqli_query($db, "SELECT * FROM Comment WHERE Thread_thread_id = '".$_GET['thread_id']."'");
+                    while ($post = mysqli_fetch_assoc($posts)):
+                        $username = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$post['User_user_id']."'");
+                        $username = mysqli_fetch_assoc($username)['username'];
+            ?>
+                        <div class="post">
+                            <div class="post-info">
+                                <div id="username"><b><?php echo $username; ?></b></div>
+                                <div id="datum"><b><?php echo $post['dateofcomment']; ?></b></div>
+                                <?php
+                                    if (isset($_SESSION['user_id']) && $is_admin == 1) {
+                                ?>
+                                    <div class="delete-post">
+                                        <a href="delete_post.php?post_id=<?php echo $post['comment_id']; ?>">Delete</a>
+                                    </div>
+                                <?php
+                                    }
+                                ?>
+                            </div>
+                            <div class="post-content">
+                                <h4><?php echo $post['commentcontent']; ?></h4>
+                            </div>
                         </div>
-                        <div class="post-content">
-                            <h4><?php echo $post['commentcontent']; ?></h4>
-                        </div>
-                    </div>
-        <?php
-                endwhile;
-            }
-        ?>
-    </div>
+            <?php
+                    endwhile;
+                }
+            ?>
+        </div>
 
     <form action="" method="post">
-          <h6>Content:</h6>
-          <textarea name="content" id="content"></textarea>
+          <h6>antwoorden:</h6>
+          <textarea name="content" id="content">vul in.</textarea>
           <br>
           <button type="submit" name="submit">Posten</button>
         </form>
+
+        <?php
+            if (isset($_SESSION['user_id']) && $is_admin == 1) {
+        ?>
+            <div class="delete-post">
+                <a href="delete_thread.php?thread_id=<?php echo $_GET['thread_id']; ?>">Delete</a>
+            </div>
+        <?php
+            }
+        ?>
 
     <div id="sidebar">
             <form action="" method="post">
