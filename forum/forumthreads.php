@@ -34,6 +34,13 @@
             }
         }
 ?>
+<?php
+error_reporting(0);
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: ../accounts/newloginwindow.php");
+      exit;
+    }
+?>
 <html>
 <head>
 <?php include '../standard/header.php';?>
