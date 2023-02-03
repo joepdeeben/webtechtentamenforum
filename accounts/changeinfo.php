@@ -83,7 +83,7 @@
           <label for="geslacht"></label>
           <select id="changegeslacht"  name="geslacht" >
             <option value="" disabled selected>geslacht</option>
-            <option value="man">Man</option>11
+            <option value="man">Man</option>
             <option value="vrouw">Vrouw</option>
             <option value="non-binair">Non-binair</option>
             <option value="anders">Anders</option>

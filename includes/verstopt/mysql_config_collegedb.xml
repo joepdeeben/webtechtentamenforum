@@ -2,6 +2,7 @@
 <MySQL_INIT>
 <mysql_host>localhost</mysql_host>
 <mysql_database>kithreads_deb</mysql_database>
-<mysql_username>surjas</mysql_username>
-<mysql_password>lRdSlUpjiOnjFHIGPooskRFTaFcWgRQL</mysql_password>
+<mysql_username>joepd</mysql_username>
+<mysql_password>BOSVJpbLRngcsJinhoZzsflhQvneHIbF</mysql_password>
 </MySQL_INIT>
+includes/dbh.inc.php

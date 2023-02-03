@@ -3,7 +3,7 @@
 <head>
     <<script src="javascript/formopen.js"></script>
     <link rel="stylesheet" href="../css/stylemain.css">
-    <link rel="stylesheet" href="../css/register.css">
+   
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="viewport" content="with=device-width, initialscale=1.0">
@@ -24,7 +24,8 @@
    
 
 
-<button onclick="showdiv()">Click me</button>
+<button onclick="showdiv()"><i class="ri-question-fill"></i></button>
+
 
 <div class="reportdiv" id="popupreport" style="display: none;">
 <form class="reportform" action="">
