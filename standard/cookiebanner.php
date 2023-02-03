@@ -15,9 +15,11 @@
 <body>
 
 <div id='cookiepopup' class="cookiesbanner">
-Deze website maakt gebruik van cookies. Door gebruik te maken van deze website ga je akkoord met ons cookiebeleid.<br>
+Deze website maakt gebruik van cookies. Door gebruik te maken van deze website ga je akkoord met ons <a href='#' onclick="document.getElementById('statement').style.display='block'">cookiebeleid</a>.<br>
     <button class="cookiebtnaccept" onclick='cookiesAccept();'>Accepteer</button>
     <button class="cookiebtndecline" onclick='cookiesDecline();'>Weiger</button>
 </div>
+
+<iframe src='statement.html' id="statement" style="display:none; height:300px; width:300px;">
 </body>
 </html>
