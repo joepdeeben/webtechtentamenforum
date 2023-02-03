@@ -2,10 +2,10 @@
     $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
     if (!$db) { die("Connection failed: " . mysqli_connect_error()); } ;
 
-    error_reporting(0);
 
     session_start();
     $username = $_SESSION["user_id"];
+    error_reporting(0);
 
      if (isset($_SESSION['user_id'])) {
               $user_id = $_SESSION['user_id'];
@@ -25,7 +25,7 @@
 
       if(isset($_POST['submit'])){
             if (!isset($_SESSION['user_id'])) {
-                echo "<script>alert('You must log in first!')</script>";
+                echo "<script>alert('Je moet eerst inloggen!')</script>";
             } else {
                 $content = mysqli_real_escape_string($db, $_POST['content']);
                 $datum = date("Y-m-d H:i:s");
@@ -80,8 +80,53 @@
         <?php
           }
         ?>
+
+
   <div id="maindiv">
 
+    <?php
+    if (isset($_GET['thread_id'])) {
+        $check_query = "SELECT * FROM likes WHERE thread_id = '$thread_id' AND user_id = '$user_id'";
+        $check_result = mysqli_query($db, $check_query);
+        if (mysqli_num_rows($check_result) == 0) {
+              echo '
+                        <form action="" method="post">
+                              <input type="hidden" name="thread_id" value="' . $thread_id . '">
+                              <input type="submit" name="like" value="Like">
+                        </form>';
+            } else {
+              echo '<h4>geliket!</h4>';
+            } }
+            ?>
+
+    <?php
+      $thread_id = $_GET['thread_id'];
+      $user_id = $_SESSION['user_id'];
+
+      if (isset($_POST['like'])) {
+
+        $check_query = "SELECT * FROM likes WHERE thread_id = '$thread_id' AND user_id = '$user_id'";
+        $check_result = mysqli_query($db, $check_query);
+
+        if (mysqli_num_rows($check_result) > 0) {
+            echo "<h1>Je hebt deze thread al geliket!</h1>";
+            exit();
+        }
+
+        $update_query = "UPDATE Thread SET threadlikes = threadlikes + 1 WHERE thread_id = '$thread_id'";
+        $update_result = mysqli_query($db, $update_query);
+
+        $update_query = "UPDATE User SET userexp = userexp+ 1 WHERE user_id = '$user_id'";
+        $update_result = mysqli_query($db, $update_query);
+
+        $insert_query = "INSERT INTO likes (thread_id, user_id) VALUES ('$thread_id', '$user_id')";
+        $insert_result = mysqli_query($db, $insert_query);
+
+        header("Refresh:0");
+
+        echo "Geliket!";
+      }
+    ?>
 
     <div id="thread-posts">
             <?php
@@ -114,13 +159,21 @@
                 }
             ?>
         </div>
-
-    <form action="" method="post">
-          <h6>antwoorden:</h6>
-          <textarea name="content" id="content">vul hier in.</textarea>
-          <br>
-          <button type="submit" name="submit">Posten</button>
-        </form>
+    <?php
+    if (empty($_GET['thread_id'])) {
+      echo '<div class="username"><h1>Selecteer een thread in de sidebar</h1></div>';
+    } else {
+      $thread_id = $_GET['thread_id'];
+      echo '
+      <form action="" method="post">
+        <h6>Antwoorden:</h6>
+        <textarea name="content" id="content">vul hier in.</textarea>
+        <br>
+        <button type="submit" name="submit">Posten</button>
+      </form>
+      ';
+    }
+    ?>
 
         <?php
             if (isset($_SESSION['user_id']) && $is_admin == 1) {

@@ -35,6 +35,7 @@ body {
     
     #username, #datum {
     font-weight: bold;
+    text-color: black;
     }
     
     form {
