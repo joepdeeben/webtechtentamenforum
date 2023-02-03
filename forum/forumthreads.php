@@ -117,7 +117,7 @@
 
     <form action="" method="post">
           <h6>antwoorden:</h6>
-          <textarea name="content" id="content">vul in.</textarea>
+          <textarea name="content" id="content">vul hier in.</textarea>
           <br>
           <button type="submit" name="submit">Posten</button>
         </form>
