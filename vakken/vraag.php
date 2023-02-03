@@ -7,32 +7,55 @@
         $threadId = mysqli_real_escape_string($db, $_GET['thread_id']);
     }
 
-    $sql = "SELECT * FROM Thread WHERE thread_Id = '$threadId'";
-    $result = mysqli_query($db, $sql);
+    $sql = "SELECT * FROM Thread WHERE thread_Id = ?";
+    $stmt = mysqli_prepare($db, $sql);
+    mysqli_stmt_bind_param($stmt, "s", $threadId);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
     $threads = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = '$current_thread'";
-    $vraagtitelresult = mysqli_query($db, $vraagtitelvar);
+
+    $vraagtitelvar = "SELECT threadtitle FROM Thread WHERE thread_id = ?";
+    $stmt2 = mysqli_prepare($db, $vraagtitelvar);
+    mysqli_stmt_bind_param($stmt2, "s", $current_thread);
+    mysqli_stmt_execute($stmt2);
+    $vraagtitelresult = mysqli_stmt_get_result($stmt2);
     $vraagtitel = mysqli_fetch_assoc($vraagtitelresult);
     $vraagtiteloutput = $vraagtitel['threadtitle'];
+
     
 
-    $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = '$current_thread'";
-    $vraagcontentresult = mysqli_query($db, $vraagcontentvar);
+    $vraagcontentvar = "SELECT threadcontent FROM Thread WHERE thread_id = ?";
+    $stmt = mysqli_prepare($db, $vraagcontentvar);
+    mysqli_stmt_bind_param($stmt, "s", $current_thread);
+    mysqli_stmt_execute($stmt);
+    $vraagcontentresult = mysqli_stmt_get_result($stmt);
     $vraagcontent = mysqli_fetch_assoc($vraagcontentresult);
     $vraagcontentoutput = $vraagcontent['threadcontent'];
 
 
-    $vraaguservar = "SELECT User_user_id FROM Thread WHERE thread_id = '$current_thread'";
-    $vraaguserresult = mysqli_query($db, $vraaguservar);
+    $vraaguservar = "SELECT User_user_id FROM Thread WHERE thread_id = ?";
+    $stmt = mysqli_prepare($db, $vraaguservar);
+    mysqli_stmt_bind_param($stmt, "s", $current_thread);
+    mysqli_stmt_execute($stmt);
+    $vraaguserresult = mysqli_stmt_get_result($stmt);
     $vraaguser = mysqli_fetch_assoc($vraaguserresult);
-    $usernameresult = mysqli_query($db, "SELECT username FROM User WHERE user_id = '".$vraaguser['User_user_id']."'");
+
+    $stmt2 = mysqli_prepare($db, "SELECT username FROM User WHERE user_id = ?");
+    mysqli_stmt_bind_param($stmt2, "s", $vraaguser['User_user_id']);
+    mysqli_stmt_execute($stmt2);
+    $usernameresult = mysqli_stmt_get_result($stmt2);
     $username = mysqli_fetch_assoc($usernameresult);
     $usernameoutput = $username['username'];
 
-    $vraaglikesvar = "SELECT threadlikes FROM Thread WHERE thread_id = '$current_thread'";
-    $vraaglikesresult = mysqli_query($db, $vraaglikesvar);
+
+    $vraaglikesvar = "SELECT threadlikes FROM Thread WHERE thread_id = ?";
+    $stmt = mysqli_prepare($db, $vraaglikesvar);
+    mysqli_stmt_bind_param($stmt, "s", $current_thread);
+    mysqli_stmt_execute($stmt);
+    $vraaglikesresult = mysqli_stmt_get_result($stmt);
     $vraaglikes = mysqli_fetch_assoc($vraaglikesresult);
     $vraaglikesoutput = $vraaglikes['threadlikes'];
+
 
       
     

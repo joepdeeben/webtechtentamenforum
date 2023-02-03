@@ -1,11 +1,15 @@
 <?php
-# move this configuration file out of the web server's range!!!
-$dbconf = simplexml_load_file("/home/surja/phpproject/webtechtentamenforum/includes/verstopt/mysql_config_collegedb.xml");
-if ($dbconf === FALSE) {
-die("Error parsing XML file");
-}
-else {
-    $db = mysqli_connect('localhost','joepd','BOSVJpbLRngcsJinhoZzsflhQvneHIbF','kithreads_deb');
-    if (!$db) { die("Connection failed: " . mysqli_connect_error()); } echo "Connected successfully";
-}
+    $mysql_database = 'kithreads_deb';
+    $mysql_host = 'localhost';
+    $mysql_password = 'BOSVJpbLRngcsJinhoZzsflhQvneHIbF';
+    $mysql_username = 'joepd';
+
+    try {
+        $db = new PDO("mysql:host=$mysql_host;dbname=$mysql_database;charset=utf8",
+        "$mysql_username", "$mysql_password");
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    } catch (PDOException $e) {
+        die('Error connecting to mysql server: ' . $e->getMessage());
+    }
 ?>

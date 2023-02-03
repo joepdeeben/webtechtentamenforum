@@ -22,9 +22,12 @@ $thread_id = mysqli_query($db, "SELECT Thread_thread_id FROM Comment WHERE comme
 $thread_id = mysqli_fetch_assoc($thread_id)['Thread_thread_id'];
 $delete_comment = mysqli_query($db, "DELETE FROM Comment WHERE comment_id = '$comment_id'");
 if ($delete_comment) {
-    header("Location: thread.php?thread_id=".$thread_id);
+    header("Location: forumthreads.php?thread_id=". $thread_id);
 } else {
     echo "Error deleting post.";
 }
 }
 ?>
+
+
+
