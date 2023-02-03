@@ -127,7 +127,7 @@
         echo "Geliket!";
       }
     ?>
-
+<?php include 'reportthreadwindow.php' ?>
     <div id="thread-posts">
             <?php
                 if (isset($_GET['thread_id'])) {
@@ -167,7 +167,7 @@
       echo '
       <form action="" method="post">
         <h6>Antwoorden:</h6>
-        <textarea name="content" id="content" placeholder="Begin hier met typen...">vul hier in</textarea>
+        <textarea name="content" id="content" placeholder="Begin hier met typen..."></textarea>
         <br>
         <button type="submit" name="submit">Posten</button>
       </form>
