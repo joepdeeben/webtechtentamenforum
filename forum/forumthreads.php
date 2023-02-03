@@ -98,6 +98,7 @@
               echo '<h4 style="color:green;">geliket!</h4>';
             } }
             ?>
+<?php include 'reportthreadwindow.php';?>
 
     <?php
       $thread_id = $_GET['thread_id'];
@@ -203,6 +204,8 @@
                             <div class="post-content">
                                 <h4><?php echo $post['commentcontent']; ?></h4>
                             </div>
+                            <?php include 'reportthreadwindow.php';?>
+
                         </div>
             <?php
                     endwhile;
