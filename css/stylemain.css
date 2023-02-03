@@ -1044,15 +1044,16 @@ textarea {
     right: 25%;
     bottom:20%;
     padding:1em;
-    border-radius: 5px;
-    color: rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+    color: rgba(0255, 255, 255, 0.50);
     }
     
     .cookiesbanner:hover{
     
     background: var(--bg-color);
     
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: .3s;
     }
     
     .cookiebtnaccept{
@@ -1092,3 +1093,7 @@ textarea {
         border:none;
         background-color:rgba(163, 81, 48, 1)
         }
+    .cookiebtnaccept, .cookiebtnaccept:hover, .cookiebtndecline, .cookiebtndecline:hover{
+        border-radius: 10px;
+        transition: .3s;
+    }

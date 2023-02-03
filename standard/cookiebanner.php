@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="stylesheet" href="../css/stylemain.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="viewport" content="width=device-width, initialscale=1.0">
@@ -15,7 +15,7 @@
 <body>
 
 <div id='cookiepopup' class="cookiesbanner">
-Deze website maakt gebruik van cookies. Door gebruik te maken van deze website ga je akkoord met ons cookiebeleid.
+Deze website maakt gebruik van cookies. Door gebruik te maken van deze website ga je akkoord met ons cookiebeleid.<br>
     <button class="cookiebtnaccept" onclick='cookiesAccept();'>Accepteer</button>
     <button class="cookiebtndecline" onclick='cookiesDecline();'>Weiger</button>
 </div>
