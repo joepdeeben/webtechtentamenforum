@@ -99,8 +99,8 @@
     </div>
     <div class="vraagintro">
       <?php
-      if (strlen($vraagcontentoutput) > 200) {
-        echo substr($vraagcontentoutput, 0, 200), '...';
+      if (strlen($vraagcontentoutput) > 150) {
+        echo substr($vraagcontentoutput, 0, 150), '...';
       }
       else {
         echo $vraagcontentoutput;
@@ -113,7 +113,7 @@
       ?>
       <i class="ri-thumb-up-fill"></i>
     </div>
-    <h>klik voor meer</h>
+    <h>Klik voor meer</h>
   </div>
 
  </a>
