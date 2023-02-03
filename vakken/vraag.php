@@ -85,6 +85,7 @@
 
 ?>
 <body>
+<a href="../forum/forumthreads.php?thread_id=<?php echo $current_thread; ?>">
   <div class="vraagtemplate">
     <div class="titelvraagtemplate">
       <?php
@@ -112,12 +113,10 @@
       ?>
       <i class="ri-thumb-up-fill"></i>
     </div>
-    <div class="vraaagmeer">
-        <a href="../forum/forumthreads.php?thread_id=<?php echo $current_thread; ?>"> Zie hier meer! </a>
-    </div>
+    <h>klik voor meer</h>
   </div>
 
-
+ </a>
 
 </body>
 </html>

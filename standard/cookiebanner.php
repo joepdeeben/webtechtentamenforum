@@ -10,31 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,600&display=swap" rel="stylesheet">
     <title>cookies</title>
-    <script>
-    
 
-    function cookiesAccept(){
-        var cookies = 'accepted'
-        document.getElementById('cookiepopup').style.display='none';
-    }
-
-    function cookiesDecline(){
-        var cookies='declined';
-        document.getElementById('cookiepopup').style.display='none';
-        setTimeout(cookiePopUp, 10000)
-    }
-
-    function cookiePopUp(){
-        document.getElementById('cookiepopup').style.display='block';
-    }
-    </script>
 </head>
 <body>
-<div id='cookiepopup' class="cookiesbanner" style="display:block">
-Deze website maakt gebruik van cookies. Door gebruik te maken van deze website ga je akkoord met ons cookiebeleid.
+
+<div id='cookiepopup' class="cookiesbanner">
+Deze website maakt gebruik van cookies. Door gebruik te maken van deze website ga je akkoord met ons <a href='statement.html'>cookiebeleid</a>.<br>
     <button class="cookiebtnaccept" onclick='cookiesAccept();'>Accepteer</button>
     <button class="cookiebtndecline" onclick='cookiesDecline();'>Weiger</button>
 </div>
 </body>
 </html>
-

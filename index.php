@@ -31,9 +31,45 @@
         });
       }
     </script>
+        <script>
+
+function cookiesAccept(){
+    document.cookie='cookies=accepted;'
+    document.getElementById('cookiepopup').style.display='none';
+}
+
+function cookiesDecline(){
+    document.cookie='cookies=declined'
+    document.getElementById('cookiepopup').style.display='none';
+    setTimeout(cookiePopUp, 10000)
+}
+
+function cookiePopUp(){
+    var cookies=getCookie('cookies');
+    if (cookies !== 'accepted'){
+    document.getElementById('cookiepopup').style.display='block';
+}
+else {
+    document.getElementById('cookiepopup').style.display='none';
+}}
+
+function getCookie(cname){
+var name = cname + "=";
+var decodedCookie = decodeURIComponent(document.cookie);
+var ca = decodedCookie.split(';');
+for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) === ' ') {
+        c = c.substring(1);
+    }
+    if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+    }
+}}
+</script>
 </head>
 
-<body onload="initMap()">
+<body onload="initMap();cookiePopUp()">
 <?php include 'standard/header.php';?>
   <div class="main-div-head" id="main-div">
        Welkom op  KI forum 

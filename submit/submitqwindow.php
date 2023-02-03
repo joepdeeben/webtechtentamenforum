@@ -47,16 +47,11 @@
     </div>
 
     <div class="titel-opgave-sub">
-        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw vraag?">
+        <input type="text" id="titelvraag" name="titelvraag" placeholder="Wat is de titel van uw vraag?" required>
     </div>
     <div class="opgave">
-            <textarea id="vraagvolledig" placeholder="Vul hier een geformuleerde vraag in" name="vraagcontent" rows="9" cols="230"></textarea>
+            <textarea id="vraagvolledig" placeholder="Vul hier een geformuleerde vraag in" name="vraagcontent" rows="9" cols="230"></textarea required>
   
-    </div>
-    
-    <div class="afbeelding">
-        Upload een afbeelding bij de opgave: <br>
-        <input type="file" accept="image/*" name="vraagimage" name="submit">
     </div>
     <div class="submitbtn">
     <input  type="submit" value="Stel uw vraag!" onclick="return validateForm()">
