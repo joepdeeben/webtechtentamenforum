@@ -4,7 +4,7 @@
     text-decoration: none;
     list-style: none;
     padding: 0;
-    
+    height: fit-content;
 }
 
 
@@ -1044,15 +1044,16 @@ textarea {
     right: 25%;
     bottom:20%;
     padding:1em;
-    border-radius: 5px;
-    color: rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+    color: rgba(0255, 255, 255, 0.50);
     }
     
     .cookiesbanner:hover{
     
     background: var(--bg-color);
     
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: .3s;
     }
     
     .cookiebtnaccept{
@@ -1092,3 +1093,47 @@ textarea {
         border:none;
         background-color:rgba(163, 81, 48, 1)
         }
+    .cookiebtnaccept, .cookiebtnaccept:hover, .cookiebtndecline, .cookiebtndecline:hover{
+        border-radius: 10px;
+        transition: .3s;
+    }
+    .delete-post a{
+        color: black;
+    }
+
+.delete-post{
+   border: 2px var(--bg-color) solid;
+   margin-right: 20px;
+   width: 50px;
+   padding: 4px;
+   border-radius: 4px;
+   margin-left:20px;
+   }
+
+   .terugnaarindex{
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background-color: white;
+    color: #304ba3;
+    border-color: black;
+    width: 30%;
+}
+
+
+button.terugnaarindex a{
+    color:var(--bg-color)
+}
+
+.privacystatement{
+    color: white;
+    text-align: center;
+    }
