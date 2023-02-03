@@ -20,6 +20,6 @@ Deze website maakt gebruik van cookies. Door gebruik te maken van deze website g
     <button class="cookiebtndecline" onclick='cookiesDecline();'>Weiger</button>
 </div>
 
-<iframe src='statement.html' id="statement" style="display:none; height:300px; width:300px;">
+<iframe src='statement.html' id="statement" style="display:none; height:300px; width:500px;">
 </body>
 </html>
