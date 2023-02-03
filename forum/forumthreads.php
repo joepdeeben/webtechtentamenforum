@@ -39,8 +39,7 @@
 <?php include '../standard/header.php';?>
     <title>Forum</title>
     <link rel="stylesheet" type="text/css" href="../css/forumphp.css">
-    <link rel="stylesheet" type="text/css" href="../css/stylemain.css">    
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/stylemain.css">
 </head>
 <body>
 
@@ -84,56 +83,6 @@
 
 
   <div id="maindiv">
-  <?php
-    if (isset($_GET['thread_id'])) {
-        $check_query = "SELECT * FROM likes WHERE thread_id = '$thread_id' AND user_id = '$user_id'";
-        $check_result = mysqli_query($db, $check_query);
-        if (mysqli_num_rows($check_result) == 0) {
-              echo '
-                        <form action="" method="post">
-                              <input type="hidden" name="thread_id" value="' . $thread_id . '">
-                              <input type="submit" name="like" value="Like> 
-                       </form>';
-            } else {
-              echo '<h4 style="color:green;">geliket!</h4>';
-            } }
-            ?>
-<?php include 'reportthreadwindow.php';?>
-
-    <?php
-      $thread_id = $_GET['thread_id'];
-      $user_id = $_SESSION['user_id'];
-
-      if (isset($_POST['like'])) {
-
-        $check_query = "SELECT * FROM likes WHERE thread_id = '$thread_id' AND user_id = '$user_id'";
-        $check_result = mysqli_query($db, $check_query);
-
-        if (mysqli_num_rows($check_result) > 0) {
-            echo "<h1>Je hebt deze thread al geliket!</h1>";
-            exit();
-        }
-        if (isset($_GET['thread_id'])) {
-                        $posts = mysqli_query($db, "SELECT * FROM Thread WHERE thread_id = '".$_GET['thread_id']."'");
-                        $post = mysqli_fetch_assoc($posts);
-                            $username = mysqli_query($db, "SELECT user_id FROM User WHERE user_id = '".$post['User_user_id']."'");
-                            $username = mysqli_fetch_assoc($username)['user_id'];
-
-        $update_query = "UPDATE Thread SET threadlikes = threadlikes + 1 WHERE thread_id = '$thread_id'";
-        $update_result = mysqli_query($db, $update_query);
-
-        $update_query = "UPDATE User SET userexp = userexp+ 1 WHERE user_id = '$username'";
-        $update_result = mysqli_query($db, $update_query);
-
-        $insert_query = "INSERT INTO likes (thread_id, user_id) VALUES ('$thread_id', '$user_id')";
-        $insert_result = mysqli_query($db, $insert_query);
-
-        header("Refresh:0");
-
-        echo "Geliket!";
-        }
-      }
-    ?>
 
     <?php
     if (isset($_GET['thread_id'])) {
@@ -204,8 +153,6 @@
                             <div class="post-content">
                                 <h4><?php echo $post['commentcontent']; ?></h4>
                             </div>
-                            <?php include 'reportthreadwindow.php';?>
-
                         </div>
             <?php
                     endwhile;
@@ -220,7 +167,7 @@
       echo '
       <form action="" method="post">
         <h6>Antwoorden:</h6>
-        <textarea name="content" id="content">vul hier in</textarea>
+        <textarea name="content" id="content" placeholder="Begin hier met typen...">vul hier in</textarea>
         <br>
         <button type="submit" name="submit">Posten</button>
       </form>
