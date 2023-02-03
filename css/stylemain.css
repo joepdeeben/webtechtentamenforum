@@ -1109,7 +1109,7 @@ textarea {
    border-radius: 4px;
    }
 
-   .terugnaarindex {
+   .terugnaarindex{
     cursor: pointer;
     outline: 0;
     display: inline-block;
@@ -1125,6 +1125,11 @@ textarea {
     color: #304ba3;
     border-color: black;
     width: 30%;
+}
+
+
+button.terugnaarindex a{
+    color:var(--bg-color)
 }
 
 .privacystatement{
