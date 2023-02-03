@@ -1127,3 +1127,8 @@ textarea {
     border-color: black;
     width: 30%;
 }
+
+.privacystatement{
+    color: white;
+    text-align: center;
+    }
