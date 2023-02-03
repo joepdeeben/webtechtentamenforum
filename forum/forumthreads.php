@@ -95,7 +95,7 @@
                               <input type="submit" name="like" value="Like">
                         </form>';
             } else {
-              echo '<h4>geliket!</h4>';
+              echo '<h4 style="color:green;">geliket!</h4>';
             } }
             ?>
 
@@ -112,11 +112,16 @@
             echo "<h1>Je hebt deze thread al geliket!</h1>";
             exit();
         }
+        if (isset($_GET['thread_id'])) {
+                        $posts = mysqli_query($db, "SELECT * FROM Thread WHERE thread_id = '".$_GET['thread_id']."'");
+                        $post = mysqli_fetch_assoc($posts);
+                            $username = mysqli_query($db, "SELECT user_id FROM User WHERE user_id = '".$post['User_user_id']."'");
+                            $username = mysqli_fetch_assoc($username)['user_id'];
 
         $update_query = "UPDATE Thread SET threadlikes = threadlikes + 1 WHERE thread_id = '$thread_id'";
         $update_result = mysqli_query($db, $update_query);
 
-        $update_query = "UPDATE User SET userexp = userexp+ 1 WHERE user_id = '$user_id'";
+        $update_query = "UPDATE User SET userexp = userexp+ 1 WHERE user_id = '$username'";
         $update_result = mysqli_query($db, $update_query);
 
         $insert_query = "INSERT INTO likes (thread_id, user_id) VALUES ('$thread_id', '$user_id')";
@@ -125,6 +130,7 @@
         header("Refresh:0");
 
         echo "Geliket!";
+        }
       }
     ?>
 
