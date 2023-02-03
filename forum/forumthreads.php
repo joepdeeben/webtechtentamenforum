@@ -4,8 +4,9 @@
 
 
     session_start();
-    $username = $_SESSION["user_id"];
     error_reporting(0);
+    $username = $_SESSION["user_id"];
+    
 
      if (isset($_SESSION['user_id'])) {
               $user_id = $_SESSION['user_id'];
