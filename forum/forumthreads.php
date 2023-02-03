@@ -116,8 +116,8 @@
         </div>
 
     <form action="" method="post">
-          <h6>antwoorden:</h6>
-          <textarea name="content" id="content">vul hier in.</textarea>
+          <h6>Antwoorden:</h6>
+          <textarea name="content" id="content" placeholder="Begin met typen"></textarea>
           <br>
           <button type="submit" name="submit">Posten</button>
         </form>
