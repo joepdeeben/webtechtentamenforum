@@ -49,7 +49,7 @@
 </head>
 <body onload="cookiePopUp()">
 
-<div id='cookiepopup' class="cookiesbanner" style="display:none">
+<div id='cookiepopup' class="cookiesbanner">
 Deze website maakt gebruik van cookies. Door gebruik te maken van deze website ga je akkoord met ons cookiebeleid.
     <button class="cookiebtnaccept" onclick='cookiesAccept();'>Accepteer</button>
     <button class="cookiebtndecline" onclick='cookiesDecline();'>Weiger</button>
