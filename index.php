@@ -69,7 +69,7 @@ for(var i = 0; i <ca.length; i++) {
 </script>
 </head>
 
-<body onload="initMap()">
+<body onload="initMap();cookiePopUp()">
 <?php include 'standard/header.php';?>
   <div class="main-div-head" id="main-div">
        Welkom op  KI forum 
