@@ -1103,4 +1103,5 @@ textarea {
 
 .delete-post{
    border: 2px var(--bg-color) solid;
+   margin-right: 20px;
    }
